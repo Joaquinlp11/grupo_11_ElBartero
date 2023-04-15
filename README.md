@@ -14,7 +14,8 @@ De este referente nos puede servir la organizacion general de la web, ademas las
     De esta pagina nos podria servir como inspiracion la manera en que muestra sus categorias y como en el index estan direccionados los diferentes productos, con una variedad amplia.
 - Amazon - https://www.amazon.com/
     Tanto el header como el footer de esta pagina nos podria servir mucho, ya que la manera en que esta ubicado el carrito de compras, el login, la lupita de busqueda y el logo combinaria con nuestro proyecto El Bartero.
--Shopee: https://shopee.com.co/
+
+- Shopee: https://shopee.com.co/
  *Se eligio este referente por sus colores llamativos, y llama mucho la atencion la seccion ofertas Top, la cual nos puede servir de guia para implementarla en la web que deseamos desarrollar
 *pagina de registro Usuario nuevo de shopee:
 https://shopee.com.co/buyer/signup?gclid=Cj0KCQjwlumhBhClARIsABO6p-zpXwZxlxE5QZSqTLEIvgbgYfxeFSqUZIq9AtPbaHHj_meP5tIGIawaAv7FEALw_wcB&next=https%3A%2F%2Fshopee.com.co%2F%3Fgclid%3DCj0KCQjwlumhBhClARIsABO6p-zpXwZxlxE5QZSqTLEIvgbgYfxeFSqUZIq9AtPbaHHj_meP5tIGIawaAv7FEALw_wcB
