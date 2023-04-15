@@ -4,6 +4,7 @@ Al publico que apuntamos especificamente es al que desea darle una segunda oport
 
 ## Referentes
 - Mercado Libre  - https://www.mercadolibre.com.co/#from=homecom
+De este referente nos puede servir la organizacion general de la web, ademas las secciones que se muestran con cada uno de sus estilos
 - 0800 Don rouch - https://www.0800donrouch.com.ar/home
 - Megatone - https://www.megatone.net/
 - Garbarino - https://www.garbarino.com/
