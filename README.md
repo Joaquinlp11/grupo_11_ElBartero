@@ -10,6 +10,6 @@ Al publico que apuntamos especificamente es al que desea darle una segunda oport
 - Port of Mokha - https://portofmokha.com/
 - Drops-BA - https://drops-ba.com/
 - Ali Express - https://es.aliexpress.com/ 
-    De estar pagina nos podria servir como inspiracion la manera en que muestra sus caterias y como en el index estan direccionados los diferentes productos, con una variedad amplia.
+    De esta pagina nos podria servir como inspiracion la manera en que muestra sus categorias y como en el index estan direccionados los diferentes productos, con una variedad amplia.
 - Amazon - https://www.amazon.com/
     Tanto el header como el footer de esta pagina nos podria servir mucho, ya que la manera en que esta ubicado el carrito de compras, el login, la lupita de busqueda y el logo combinaria con nuestro proyecto El Bartero.
