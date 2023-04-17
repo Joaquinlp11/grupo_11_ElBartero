@@ -13,7 +13,7 @@ Al publico que apuntamos especificamente es al que desea darle una segunda oport
     Tanto Megatone como Garbarino, tienen colores y carteles con ofertas bastantes llamativas, otro aspecto a resaltar es que ambas cuentan con secciones donde dan la     ubicación de sus distintas sucursales a nivel nacional.
     
 - Drops-BA - https://drops-ba.com/ 
-    Destacamos de drops, como incluye dentro de dos secciones todos sus productos dividiéndolos en “marcas” y “categorías”, otra parte a destacar es cómo incluye           fotografías de artistas reconocidos, influencers y modelos posando y promocionando sus productos, por último, esta página incluye un sistema de consignación, la       ubicación de su local casi al final de la página y buen diseño de login/register y carrito de compra.
+    Destacamos de drops, como incluye dentro de dos secciones todos sus productos dividiéndolos en “marcas” y “categorías”, otra parte a destacar es cómo incluye           fotografías de artistas reconocidos, influencers y modelos posando y promocionando sus productos, por último, esta página incluye un sistema de consignación, la       ubicación de su local casi al final de la página y buen diseño de login/register y carrito de compra
     
 - Ali Express - https://es.aliexpress.com/ 
     De esta pagina nos podria servir como inspiracion la manera en que muestra sus categorias y como en el index estan direccionados los diferentes productos, con una     variedad amplia.
