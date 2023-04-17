@@ -1,8 +1,0 @@
-#colores
-- amarillo
-- naranja
-- negro
-- blanco
-
-#Tipografia:
-- por definir
