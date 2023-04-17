@@ -1,6 +1,6 @@
 # proyecto-el-bartero
 El Bartero es un proyecto que esta pensado por Miguel, Jean Carlos, Joaquin y Lautaro. Con el objetivo de realizar compras/ventas de productos ofrecidos por el vendedor o comprador sin restriccion alguna. En El Bartero no solo podras comprar o vender, sino que tambien podras realizar el trueque de productos, si el comprador desea comprarle al vendedor un productos pero no quiere pagar el valor que le puso el vendedor, tiene la opcion de realizar el trueque de algun producto que el comprador va a ofrecerle, el trueque sera valido siempre y cuando ambas partes esten de acuerdo con lo negociado.
-Al publico que apuntamos especificamente es al que desea darle una segunda oportunidad a sus productos mediante el trueque, pero no esta limitado a eso, sino que tambien podremos comprar/vender productos nuevos.
+Al publico que apuntamos especificamente es al que desea darle una segunda oportunidad a sus productos mediante el trueque, pero no esta limitado a eso, sino que tambien podremos comprar/vender productos nuevos
 
 ## Referentes
 - Mercado Libre - https://www.mercadolibre.com.co/#from=homecom
@@ -13,7 +13,7 @@ Al publico que apuntamos especificamente es al que desea darle una segunda oport
     Tanto Megatone como Garbarino, tienen colores y carteles con ofertas bastantes llamativas, otro aspecto a resaltar es que ambas cuentan con secciones donde dan la     ubicación de sus distintas sucursales a nivel nacional.
     
 - Drops-BA - https://drops-ba.com/ 
-    Destacamos de drops, como incluye dentro de dos secciones todos sus productos dividiéndolos en “marcas” y “categorías”, otra parte a destacar es cómo incluye           fotografías de artistas reconocidos, influencers y modelos posando y promocionando sus productos, por último, esta página incluye un sistema de consignación, la       ubicación de su local casi al final de la página y buen diseño de login/register y carrito de compra
+    Destacamos de drops, como incluye dentro de dos secciones todos sus productos dividiéndolos en “marcas” y “categorías”, otra parte a destacar es cómo incluye           fotografías de artistas reconocidos, influencers y modelos posando y promocionando sus productos, por último, esta página incluye un sistema de consignación, la       ubicación de su local casi al final de la página y buen diseño de login/register y carrito de compra.
     
 - Ali Express - https://es.aliexpress.com/ 
     De esta pagina nos podria servir como inspiracion la manera en que muestra sus categorias y como en el index estan direccionados los diferentes productos, con una     variedad amplia.
