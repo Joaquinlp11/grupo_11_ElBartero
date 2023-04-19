@@ -1,6 +1,6 @@
 # Proyecto el Bartero
 El Bartero es un proyecto que esta pensado por Miguel, Jean Carlos, Joaquin y Lautaro. Con el objetivo de realizar compras/ventas de productos ofrecidos por el vendedor o comprador sin restriccion alguna. En El Bartero no solo podras comprar o vender, sino que tambien podras realizar el trueque de productos, si el comprador desea comprarle al vendedor un productos pero no quiere pagar el valor que le puso el vendedor, tiene la opcion de realizar el trueque de algun producto que el comprador va a ofrecerle, el trueque sera valido siempre y cuando ambas partes esten de acuerdo con lo negociado.
-Al publico que apuntamos especificamente es al que desea darle una segunda oportunidad a sus productos mediante el trueque, pero no esta limitado a eso, sino que tambien podremos comprar/vender productos nuevos
+Al publico que apuntamos especificamente es al que desea darle una segunda oportunidad a sus productos mediante el trueque, pero no esta limitado a eso, sino que tambien podremos comprar/vender productos nuevos.
 
 ## Referentes
 - Mercado Libre - https://www.mercadolibre.com.co/#from=homecom
@@ -22,6 +22,4 @@ Al publico que apuntamos especificamente es al que desea darle una segunda oport
     Tanto el header como el footer de esta pagina nos podria servir mucho, ya que la manera en que esta ubicado el carrito de compras, el login, la lupita de busqueda     y el logo combinaria con nuestro proyecto El Bartero.
 
 - Shopee: https://shopee.com.co/
-    Se eligio este referente por sus colores llamativos, y llama mucho la atencion la seccion ofertas Top, la cual nos puede servir de guia para implementarla en la       web que deseamos desarrollar
-    pagina de registro Usuario nuevo de shopee:
-    https://shopee.com.co/buyer/signup?gclid=Cj0KCQjwlumhBhClARIsABO6p- 
+    Se eligio este referente por sus colores llamativos, y llama mucho la atencion la seccion ofertas Top, la cual nos puede servir de guia para implementarla en la       web que deseamos desarrollar.
