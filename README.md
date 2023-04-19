@@ -24,4 +24,4 @@ Al publico que apuntamos especificamente es al que desea darle una segunda oport
 - Shopee: https://shopee.com.co/
     Se eligio este referente por sus colores llamativos, y llama mucho la atencion la seccion ofertas Top, la cual nos puede servir de guia para implementarla en la       web que deseamos desarrollar
     pagina de registro Usuario nuevo de shopee:
-    https://shopee.com.co/buyer/signup?gclid=Cj0KCQjwlumhBhClARIsABO6p-               zpXwZxlxE5QZSqTLEIvgbgYfxeFSqUZIq9AtPbaHHj_meP5tIGIawaAv7FEALw_wcB&next=https%3A%2F%2Fshopee.com.co%2F%3Fgclid%3DCj0KCQjwlumhBhClARIsABO6p-zpXwZxlxE5QZSqTLEIvgbgYfxeFSqUZIq9AtPbaHHj_meP5tIGIawaAv7FEALw_wcB
+    https://shopee.com.co/buyer/signup?gclid=Cj0KCQjwlumhBhClARIsABO6p- 
