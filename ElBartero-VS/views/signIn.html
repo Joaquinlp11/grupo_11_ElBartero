@@ -1,16 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iniciar sesion</title>
-    <link href="/css/styles.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css" /> 
-</head>
-<body>
-    
-</body>
+    <link href="/css/logIn-logUp.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/74839f3c8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="main-header">
+        <div>
+          <img src="/images/logo.PNG" class="logo-bartero" />
+        </div>
+        <div>
+          <h1 id="elbartero">El Bartero</h1>
+        </div>
+      </div>
+      <div class="main-search">
+        <div class="busqueda">
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Buscar..."
+          />
+          <button type="submit" aria-label="Buscar">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <nav class="main-navbar">
+          <ul class="">
+            <li><a href="#">Instructivo de actividades</a></li>
+            <li><a href="#">Ir a la Balanza</a></li>
+            <li><a href="#">Ir al mercado</a></li>
+            <li><a href="#">Ir a la subasta</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- inicio del MAIN -->
+    <main>
+      <div class="principal-main">
+        <h2>Iniciar sesion</h2>
+        <div>
+          <img src="/images/logo.PNG" alt="" />
+        </div>
+        <form action="index.html">
+          <div class="usuario">
+            <label for="nombre">Nombre de usuario o email</label>
+            <input type="text" name="Nombre" id="nombre" required />
+          </div>
+          <div class="usuario">
+            <label for="contraseña">contraseña</label>
+            <input type="password" name="Nombre" id="contraseña" required />
+          </div>
+          <div id="recordarme">
+            <input type="checkbox" id="record" name="recordarme" />
+            <label for="record">recordarme</label>
+          </div>
+          <div class="submit-continuar">
+            <input type="submit" value="Continuar" />
+          </div>
+
+          <a href="#">¿olvidó su contraseña o usario?</a>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
