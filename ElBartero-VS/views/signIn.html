@@ -18,19 +18,24 @@
   </head>
   <body>
     <header>
-      <div>
-        <i class="fa-solid fa-bars"></i>
+      <div class="iconos">
+        <div>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
       </div>
       <div class="main-header">
         <div>
-          <img src="/images/logo.PNG" class="logo-bartero" />
+          <img src="/images/logo-sin-fondo.png" class="logo-bartero" />
         </div>
         <div>
           <h1 id="elbartero">El Bartero</h1>
         </div>
       </div>
       <div class="main-search">
-        <div class="busqueda">
+        <div>
           <input
             type="text"
             id="search"
@@ -52,13 +57,13 @@
       </div>
     </header>
     <!-- inicio del MAIN -->
-    <main>
+    <main class="main-login">
       <div class="principal-main">
-        <h2>Iniciar sesion</h2>
-        <div>
-          <img src="/images/logo.PNG" alt="" />
+        <h2 id="subtitulo">Iniciar sesion</h2>
+        <div id="logo-login">
+          <img src="/images/logo-sin-fondo.png" alt="" />
         </div>
-        <form action="index.html">
+        <form action="index.html" method="post">
           <div class="usuario">
             <label for="nombre">Nombre de usuario o email</label>
             <input type="text" name="Nombre" id="nombre" required />
@@ -71,14 +76,20 @@
             <input type="checkbox" id="record" name="recordarme" />
             <label for="record">recordarme</label>
           </div>
-          <div class="submit-continuar">
-            <input type="submit" value="Continuar" />
+          <div class="continuar">
+            <input type="submit" value="Continuar" class="submit-continuar" />
           </div>
 
           <a href="#">¿olvidó su contraseña o usario?</a>
         </form>
       </div>
     </main>
-    <footer></footer>
+    <footer class="main-footer">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </footer>
   </body>
 </html>

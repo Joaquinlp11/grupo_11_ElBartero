@@ -3,8 +3,21 @@
   margin: 0;
   padding: 0;
 }
-
 @media (min-width: 360px) {
+  .main-login{
+    background-image: radial-gradient(circle, #ffee00, #ffdc00, #ffc900, #ffb700, #ffa500);
+  }
+  .iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+
+  }
+  .fa-solid, .fa-bars{
+    color: #f29100;
+  }
+
   .logo-bartero {
     width: 50px;
     height: 50px;
@@ -16,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffa500;
+   /*  background-color: #ffa500; */
   }
   .main-search {
     display: flex;
@@ -27,14 +40,14 @@
   #search {
     width: 70vw;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffa500;
     border-radius: 4px 0 0 4px;
     margin-right: 0px;
   }
 
   button[type="submit"] {
     background-color: #ffa500;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -46,13 +59,13 @@
   }
 
   .principal-main {
-    border-top: solid 2px #ffa500;
+    border-top: solid 2px #f29100;
     margin-top: 10px;
-    border-bottom: solid 2px #ffa500;
+    border-bottom: solid 2px #f29100;
     display: flex;
     flex-direction: column;
-
     align-items: center;
+
   }
 
   .usuario {
@@ -60,13 +73,53 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #contraseña, #record, #nombre{
+    border-color: #ffa500;
+  }
+  #contraseña, #nombre{
+    width: 90%;
+    padding: 7px;
   }
 
   #recordarme {
     flex-direction: row;
     text-align: center;
+    margin-bottom: 5px;
   }
-  .submit-continuar {
+  .continuar {
+    width: 72px;
     text-align: center;
+    box-shadow: 1px 1px 1px 1px #000000;
+    margin: auto;
+    
   }
+  .submit-continuar{
+    border: none;
+    background-color: transparent;
+    font-size: 100%;
+  }
+ .submit-continuar:focus{
+  color: #0f0c07;
+  background-color: #faf9f988;
+  text-align: center;
+  
+ }
+
+#subtitulo{
+margin-bottom: 10px;
+margin-top: 10px;
+ }
+ .usuario label{
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 10px;
+ }
+ .main-footer{
+  background-color: aliceblue;
+ }
+ 
+
 }
