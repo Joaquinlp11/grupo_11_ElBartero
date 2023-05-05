@@ -152,9 +152,9 @@
     background-color: transparent;
     font-size: 15px;
     margin: 5px;
-    color: #ebe9e5;
+    
     font-weight: 400;
-    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    text-shadow: 2px 2px 1px rgba(248, 244, 244, 0.541);
   }
   .submit-continuar:focus {
     
