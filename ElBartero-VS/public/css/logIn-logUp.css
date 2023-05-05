@@ -62,7 +62,7 @@
   }
 
   .logo-bartero {
-    width: 50px;
+    
     height: 50px;
     margin-right: 5px;
     margin-top: 5px;
@@ -74,11 +74,12 @@
     align-items: center;
     /*  background-color: #ffa500; */
   }
-  .main-search {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    padding-top: 5px;
+  #logoYletra{
+    display: none;
+  }
+ 
+  .s-search{
+    text-align: center;
   }
   #search {
     width: 70vw;
@@ -157,10 +158,13 @@
     text-shadow: 2px 2px 1px rgba(248, 244, 244, 0.541);
   }
   .submit-continuar:focus {
-    
     background-color: transparent;
-    
   }
+  .continuar:hover {
+    background-color: #ffa500;
+  }
+
+
 
   #subtitulo {
     margin-bottom: 10px;
@@ -172,19 +176,21 @@
     margin-top: 10px;
   }
   .main-footer {
-    background-image: url(/images/Colored\ Shapes.svg);
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-repeat: round;
+    
   }
   .box-items li {
     list-style: none;
+    font-size: 12px;
   }
 
-  .tems{
+  .items{
     align-items: center;
+    
   }
 
   .redes{
@@ -199,4 +205,58 @@
   .redes a{
     color: #f29100;
   }
+  }
+
+  @media (min-width: 768px){
+    .s-search{
+      display: none;
+    }
+    .main-navbar{
+      display: block;
+    }
+    .main-ul{
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 7px;
+    }
+
+    .main-ul li{
+      list-style: none;
+     border: solid 1px #000000;
+     padding: 5px 70px 5px 6px;
+     align-items: start;
+    }
+
+    .main-ul a{
+      text-decoration: none;
+      color: #000000;
+    }
+    .first-header{
+      position: relative;
+    }
+    .main-header{
+      justify-content: start;
+    position: relative;
+    bottom: -10px;
+    margin-bottom: 40px;
+    }
+
+    i.fa-solid.fa-bars {
+      display: none;
+    }
+
+    i.fa-solid.fa-circle-user {
+      font-size: 30px;
+      position: relative;
+      top: 20px;
+      right: 30px;
+      border: #f29100 solid 1px;
+      padding: 15px 5px 0px 5px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    
   }
