@@ -1,0 +1,57 @@
+
+/* 
+HEAD 
+*/
+
+
+/* 
+BODY
+*/
+
+
+body{
+
+    margin: 0px;
+    padding: 0px 100px;
+    background-color: orange;
+}
+
+/* BODY - HEADER */
+
+#header{
+
+    display: block;
+    width: 810px;
+    height: 240px;
+
+}
+
+#logo-ElBartero{
+    
+    width: 100px;
+    margin: 20px
+
+}
+
+/* BODY - MAIN */
+
+#input-filter { 
+
+    display: block;
+    background-color: gainsboro;
+    width: 50vw;
+    height: 9vh;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+
+/* BODY - FOOTER */
+
+
+/*
+FOOTER
+*/
