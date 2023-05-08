@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iniciar sesion</title>
-    <link href="/css/logIn-logUp.css" rel="stylesheet" />
+    <link href="/css/logIn.css" rel="stylesheet" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/74839f3c8a.js"
@@ -25,16 +25,16 @@
         <div>
           <i class="fa-solid fa-circle-user" id="user-1"></i>
         </div>
-        <button class="sign-botons"> Sign in</button>
-        <button class="sign-botons" >Sign up</button>
+        <a href="/iniciarsesion" class="signup-botons"><button class="sign-botons" > Sign in</button></a>
+        <a href="/registrarse" class="sign-botons"><button>Sign up</button></a>
       </div>
       <div class="main-header"> 
-          <a href="/"><img src="/images/El-Bartero.png" class="logo-bartero" /></a> 
+        <a href="/"><img src="/images/El-Bartero.png" class="logo-bartero" /></a> 
       </div>
       <div class="s-search">
         <input
-          type="text"
-          id="search"
+        type="text"
+        id="search"
           name="search"
           placeholder="Buscar..."
         />
@@ -46,20 +46,20 @@
           <ul class="main-ul">
             <a href="#"><li>Instructivo de actividades</li></a>
             <a href="#"><li>Ir a la Balanza</li></a>
-              <a href="#"><li>Ir al mercado</li></a>
-              <a href="#"><li>Ir a la subasta</li></a>
-            </ul>
-          </nav>
-        </div>
+            <a href="#"><li>Ir al mercado</li></a>
+            <a href="#"><li>Ir a la subasta</li></a>
+          </ul>
+        </nav>
+      
       </header>
-    <!-- inicio del MAIN -->
-    <main class="main-login">
-      <div class="principal-main">
-       <p id="line1"> __</p>
-        <h2 id="subtitulo">Login</h2>
+      <!-- inicio del MAIN -->
+      <main class="main-login">
+        <div class="principal-main">
+          <p id="line1"> __</p>
+          <h2 id="subtitulo">Login</h2>
         <p id="line2">__</p>
         <div id="logo-login">
-          <img src="/images/logo-sin-fondo.png" alt="" />
+          <img src="/images/logo-sin-fondo.png" alt="logo-bartero" />
         </div>
         <form action="/" method="get">
           <div class="usuario">
@@ -79,7 +79,6 @@
           </div>
           <div id="remember">
             <a  href="#">¿olvidó su contraseña o usario?</a>
-
           </div>
         </form>
       </div>
@@ -93,7 +92,8 @@
           <a href="#"><li>Preguntas Frecuentes</li></a>
         </ul>
       </div>
-      <div><img src="/images/El-Bartero.png" class="logo-bartero2" />
+      <div>
+        <img src="/images/El-Bartero.png" class="logo-bartero2" />
       </div>
       <div class="box-items">
         <ul class="items2">
@@ -104,16 +104,15 @@
         </ul>
       </div>
       <div class="redes">
-        
-         <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          
-        </div>
-        <p class="copyright">Copyright © </p>
-        <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam animi et alias perferendis, sunt molestiae consequuntur quas qui provident modi asperiores voluptatibus sapiente fuga facere unde dolorum, praesentium porro officiis. </p>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      
+      <p class="copyright">Copyright © </p>
+      <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam animi et alias perferendis, sunt molestiae consequuntur quas qui provident modi asperiores voluptatibus sapiente fuga facere unde dolorum, praesentium porro officiis. </p>
     </footer>
   </body>
-</html>
+  
+  </html>
