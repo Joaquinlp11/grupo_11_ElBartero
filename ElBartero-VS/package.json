@@ -1,8 +1,8 @@
 {
-  "name": "elbartero-vs",
+  "name": "proyecto-elbartero",
   "version": "1.0.0",
   "description": "",
-  "main": "ElBartero.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app",
     "dev": "npx nodemon app",

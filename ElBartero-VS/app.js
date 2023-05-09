@@ -1,32 +1,25 @@
 
-const express = require ('express');
+const express = require ( 'express' );
 const app = express();
 const path = require ('path');
 
 
-const publicPath = path.join (__dirname , './public');
+const publicPath = path.join (__dirname, './public');
+
+app.use ( express.static ( publicPath));
 
 
-app.use ( express.static (publicPath));
-
-
-app.listen ( 3000 , () => {
+app.listen ( 3002 , ()=>{
 
     console.log ( 'Servidor corriendo');
-
 });
 
-app.get ( '/' , ( req , res ) =>{
 
-    res.sendFile ( path.join (__dirname , 'views/index.html'));
+app.get ('/home' , ( req , res )=>{
 
+    res.sendFile ( path.join ( __dirname , '/views/index.html'));
 });
 
-app.get ( '/home' , ( req , res ) =>{
-
-    res.sendFile ( path.join (__dirname , 'views/index.html'));
-
-});
 
 app.get ( '/balanza' , ( req , res ) =>{
 
@@ -39,6 +32,13 @@ app.get ( '/cuentadeusuario' , ( req , res ) =>{
     res.sendFile ( path.join (__dirname , 'views/cuentaDeUsuario.html'));
 
 });
+
+app.get ( '/mercaderiaenexhibicion' , ( req , res ) =>{
+
+    res.sendFile ( path.join (__dirname , 'views/mercaderiaExhibida.html'));
+
+});
+
 
 app.get ( '/arrepentimientodeactividades' , ( req , res ) =>{
 
@@ -87,5 +87,8 @@ app.get ( '/valoracion' , ( req , res ) =>{
     res.sendFile ( path.join (__dirname , 'views/valoracion.html'));
     
 });
+
+
+
 
 
