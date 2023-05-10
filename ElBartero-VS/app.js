@@ -88,6 +88,12 @@ app.get ( '/valoracion' , ( req , res ) =>{
     
 });
 
+app.get ( '/canasta' , ( req , res ) =>{
+
+    res.sendFile ( path.join (__dirname , 'views/canasta.html'));
+    
+});
+
 
 
 
