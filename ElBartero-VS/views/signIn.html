@@ -1,113 +1,119 @@
 
 <!DOCTYPE html>
 <html lang="en">
-   
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesion</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="/css/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesion</title>
+    <link href="/css/logIn.css" rel="stylesheet" />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/74839f3c8a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/normalize.css" />
-
-</head>
-
-<body>
-    <header class="header">
-
-        <div>
-            <a><img class="logo-ElBartero" src="/images/El-Bartero.png" alt="Imagen"></a>
+  </head>
+  <body>
+    <header class="first-header">
+      <div class="iconos">
+        <div class="burger-icon">
+          <i class="fa-solid fa-bars" ></i>
         </div>
-
-        <div><a><img class="balanza-icono" src="/images/Balanza-icono.png"></a></div>
-
-        <section class="seccion-user">
-                <div class="user-option">
-                <a><i class="fa-solid fa-user"></i></a>
-                <a class="descripcion-user">User</a>
-                </div>
-                <div class="sign-out-option">
-                    <a><img class="sign-out-icon" src="/images/Sign-in-blue.png"></a>
-                    <p class="descripcion-sign-out">Sign out</p>
-                </div>
-                <div class="sign-up-option">
-                    <a><i class="fa-solid fa-user-plus"></i></a>
-                    <p class="descripcion-sign-up">Sing up</p>
-                </div>
-
-        </section>
-
-        <section class="seccion-viñetas">
-
-                <a class="instructivo" href="">Instructivo</a>
-                <a class="redirige-mercados">Ir al mercado</a>
-                <a class="redirige-balanza" href="">Ir a la Balanza</a>
-                <a class="redirige-subasta" href="">Ir a la Subasta</a>
-                <a class="redirige-valoracion" href="">Ir a la Valoracion</a>
-                <a class="redirige-canasta" href="">Ir a la Canasta</a>
-
-        </section>
-
-    </header>
-
-    <main class="main">
-
-        <section class="seccion-uno">
-            
-        </section>
-
-        <section class="seccion-dos">
-            
-        </section>
-
-        <section class="seccion-tres">
-
-        </section>
-        <section class="seccion-cuatro">
-            
-        </section>
+        <div>
+          <i class="fa-solid fa-circle-user" id="user-1"></i>
+        </div>
+        <a href="/iniciarsesion" class="signup-botons"><button class="sign-botons" > Sign in</button></a>
+        <a href="/registrarse" class="sign-botons"><button>Sign up</button></a>
+      </div>
+      <div class="main-header"> 
+        <a href="/"><img src="/images/El-Bartero.png" class="logo-bartero" /></a> 
+      </div>
+      <div class="s-search">
+        <input
+        type="text"
+        id="search"
+          name="search"
+          placeholder="Buscar..."
+        />
+        <button type="submit" aria-label="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+        <nav class="main-navbar">
+          <ul class="main-ul">
+            <a href="#"><li>Instructivo de actividades</li></a>
+            <a href="#"><li>Ir a la Balanza</li></a>
+            <a href="#"><li>Ir al mercado</li></a>
+            <a href="#"><li>Ir a la subasta</li></a>
+          </ul>
+        </nav>
+      
+      </header>
+      <!-- inicio del MAIN -->
+      <main class="main-login">
+        <div class="principal-main">
+          <p id="line1"> __</p>
+          <h2 id="subtitulo">Login</h2>
+        <p id="line2">__</p>
+        <div id="logo-login">
+          <img src="/images/logo-sin-fondo.png" alt="logo-bartero" />
+        </div>
+        <form action="/" method="get">
+          <div class="usuario">
+            <label for="nombre">User o email</label>
+            <input type="text" name="Nombre" id="nombre" required />
+          </div>
+          <div class="usuario">
+            <label for="contrasena">Password</label>
+            <input type="password" name="contrasena" id="contrasena" required />
+          </div>
+          <div id="recordarme">
+            <input type="checkbox" id="record" name="recordarme" />
+            <label for="record">recordarme</label>
+          </div>
+          <div class="continuar">
+            <input type="submit" value="Continuar" class="submit-continuar" />
+          </div>
+          <div id="remember">
+            <a  href="#">¿olvidó su contraseña o usario?</a>
+          </div>
+        </form>
+      </div>
     </main>
-
-    <footer>
-        <section class="seccion-footer">
-
-            <article class="bars-button">
-                <a href=""><i class="fa-solid fa-bars"></i></a>
-            </article>
-            
-            <article class="footer-redes">
-                <a class="footer-redes-gmail" href=""><img src=""></a>
-                <a class="footer-redes-instagram" href=""><img src=""></a>
-                <a class="footer-redes-facebook" href=""><img src=""></a>
-                <a class="footer-redes-twitter" href=""><img src=""></a>
-            </article>
-
-           <section class="seccion-footer-listados"> 
-            <article>
-                <ul class="listado-izquierdo">
-                    <p class="footer-cambios-devoluciones" href="">Cambios y devoluciones</p>
-                    <p class="footer-politicas" href="">Politica de privacidad</p>
-                    <p class="footer-arrepentimiento" href="">Arrepentimiento de actividades</p>
-                    <p class="footer-preguntas" href="">Preguntas frecuentes</p>
-                </ul>
-            </article>
-            <article>
-                <ul class="listado-derecho">
-                    <p href="">Contacto</p>
-                    <p href="">Contratacion</p>
-                    <p href="">Terminos y condiciones</p>
-                    <p href="">Transporte</p>
-                </ul>
-            </article>
-           </section>
-            <article class="footer-end">
-                <a><img class="logo-footer" src="/images/El-Bartero.png" alt="Imagen"></a>
-                <p class="copyright">Copyright ©</p>
-            </article>
-
-        </section>
-
+    <footer class="main-footer">
+      <div class="box-items">
+        <ul class="items">
+          <a href="#"><li>Cambios y devoluciones</li></a>
+          <a href="#"><li>Politica de privacidad</li></a>
+          <a href="#"><li>Arrepentimiento de actividades</li></a>
+          <a href="#"><li>Preguntas Frecuentes</li></a>
+        </ul>
+      </div>
+      <div>
+        <img src="/images/El-Bartero.png" class="logo-bartero2" />
+      </div>
+      <div class="box-items">
+        <ul class="items2">
+          <a href="#"><li>Contacto</li></a>
+          <a href="#"><li>Contratacion</li></a>
+          <a href="#"><li>Terminos y condiciones</li></a>
+          <a href="#"><li>Transporte</li></a>
+        </ul>
+      </div>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      
+      <p class="copyright">Copyright © </p>
+      <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam animi et alias perferendis, sunt molestiae consequuntur quas qui provident modi asperiores voluptatibus sapiente fuga facere unde dolorum, praesentium porro officiis. </p>
     </footer>
-</body>
-</html>
+  </body>
+  
+  </html>
