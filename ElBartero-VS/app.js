@@ -64,17 +64,23 @@ app.get ( '/mercadodeusuarios' , ( req , res ) =>{
     
 });
 
-app.get ( '/iniciarsesion' , ( req , res ) =>{
+
+/*  Registrarse e inicio de sesion*/
+
+app.get ( '/iniciosesion' , ( req , res ) =>{
 
     res.sendFile ( path.join (__dirname , 'views/signIn.html'));
     
 });
+
 
 app.get ( '/registrarse' , ( req , res ) =>{
 
     res.sendFile ( path.join (__dirname , 'views/signUp.html'));
     
 });
+
+/*  Registrarse e inicio de sesion */
 
 app.get ( '/subasta' , ( req , res ) =>{
 

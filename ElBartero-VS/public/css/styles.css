@@ -30,6 +30,7 @@ body{
 
 }
 
+
 /* BODY - MAIN */
 
 .main{
@@ -113,8 +114,8 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     box-sizing: border-box;
-    width: 25vw;
-    height: 32vh;
+    width: 20vw;
+    height: 35vh;
     margin: 1%;
     padding: 1%;
     background-color: aqua;
@@ -208,6 +209,8 @@ body{
         display: none;
     }
 
+    /* Cierra Header */
+
 
 /*      BODY  0    */
 /*      BODY  0    */
@@ -216,6 +219,7 @@ body{
 
 
 /* SECCIONES DE UNO A CUATRO LAS PRINCIPALES, HOME */
+/* Estas se representan en la mayoria de las paginas del sitio */
 
 .seccion-uno { 
 
@@ -274,8 +278,10 @@ body{
     position: relative;
 }
 
-/* HASTA ACA SECCIONES UNO A CUATRO ,home */
 
+/* HASTA ACA SECCIONES UNO A CUATRO ,home y otras paginas */
+
+/* Continuan caracteristicas de secciones */
 
 .articulo-filter{
     
@@ -346,81 +352,92 @@ h4 {
     padding-top: 30px;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 }
 
+/* contiene las imagenes */
 
 .cards-list {
-    z-index: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.card {
-    margin: 30px auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.card .card_image {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-}
-
-.card .card_image img {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-    object-fit: cover;
-}
-
-.card .card_title {
-    text-align: center;
-    border-radius: 0px 0px 40px 40px;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: -80px;
-    height: 40px;
-}
-
-.card:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-}
-
-.title-black {
-    color: black;
-}
-
-
-.fa-laptop,
-.fa-mobile-button,
-.fa-washing-machine {
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    border: solid 2px black;
+    width: 100%;
+    height: 80%;
     flex-direction: row;
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    font-size: 30px;
-    background-color: rgb(123, 123, 213);
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    margin: 5px;
+    z-index: 0;
 }
+
+.card-uno , .card-dos , .card-tres , .card-cuatro{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 20%;
+
+}
+
+
+.card_image {
+    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+
+.title-black {
+
+    color: black;
+
+}
+
+.card_title {
+            
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+    margin-top: -20%;
+    height: 40px;
+    width: 100%;
+    
+}
+
+
+.card-uno , .card-dos , .card-tres , .card-cuatro   {
+    
+    margin: 30px auto;
+    width: 20%;
+    height: 20%;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    
+}
+
+
+.card-uno:hover ,.card-dos:hover , .card-tres:hover , .card-cuatro:hover {
+
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+
+    }
+    
+    
+
 
 
 /* El mercado de comercios y el mercado de usuarios es la misma congfiguracion, excepto la seccion uno */
@@ -577,7 +594,7 @@ h4 {
     height: 30%;
     width: 100%;
     flex-grow: .3;
-    font-size: 28px;
+    font-size: 20px;
     justify-content: center;
 }
 
@@ -636,8 +653,9 @@ h4 {
     align-items: flex-start;
     padding: 2%;
     background-color:rgb(17, 202, 202);
+    border-radius: 10px;
     width: 100%;
-    height: 90%;
+    height: 80%;
 
 }
 
@@ -645,6 +663,7 @@ h4 {
 
     display: flex;
     flex-wrap: wrap;
+    font-size: 20px;
     width: 100%;   
     height: 20px;
     order: -1;
@@ -685,6 +704,7 @@ h4 {
 
 
 
+
 /* APLICA A AMBAS , repite esquema , seccion tres y cuatro*/
 
 /* seccion tres, pagina de comercios. ofertas */
@@ -701,9 +721,9 @@ h4 {
     padding: 2%;    
     background-color: whitesmoke;
     border-radius: 2%;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 
 }
 
@@ -711,111 +731,106 @@ h4 {
 /* RECUADRO: productos en muestra fila uno y dos. Se repite esquema en seccion tres y cuatro */
 /* Aqui figuran algunas mercaderias en oferta. */
 
+/* Se muestran dos mercaderias para menos de 480 */
+/* Despues aparecen las otras */
 
-
-.opmc-productos-en-muestra-primera-columna-fila-uno {
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    border: solid 2px black;
-    width: 100%;
-    height: 40%;
-    padding: 5%;
-    order: 0;
-    flex-grow: 1;
-}
-
-.opmc-productos-en-muestra-segunda-columna-fila-uno{
-
-    display: none;
-}
-
-.opmc-productos-en-muestra-primera-columna-fila-dos{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    border: solid 2px black;
-    width: 100%;
-    height: 40%;
-    padding: 5%;
-    order: 1;
-    flex-grow: 1;
-}
-
-.opmc-productos-en-muestra-segunda-columna-fila-dos{
-
-    display: none;
-}
-
-
-.opmc-muestra-pf-mercaderia{
+.opmc-muestra-mercaderia-f1-c1 , .opmc-muestra-mercaderia-f2-c1{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     border: solid 1px gray;
-    width: 100%;
+    border-radius: 10px;
+    max-width: 250px;
+    width: 90%;
+    height: 40%;
+    padding: 20px;
     background-color: gainsboro;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 
 }
 
-.opmc-muestra-pf-mercaderia-info{
+.opmc-muestra-mercaderia-f1-c2{
+
+    display: none;
+}
+
+
+.opmc-muestra-mercaderia-f2-c2{
+
+    display: none;
+}
+
+
+/* En menos de 480 mostramos solo un producto */
+
+/*  */
+
+
+.opmc-muestra-titulo{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 90%;
-    height: 90%;
-    border: solid 1px gray;
-    margin:5px;
-    padding: 10px;
+    width: 80%;
+    height: 10%;
+    font-size: 100%;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
-.opmc-muestra-pf-mercaderia-foto{
+.opmc-muestra-mercaderia-foto{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 100%;
-    height: 70%;
+    width: 80%;
+    height: 40%;
     border: solid 1px gray;
+    border-radius: 10px;
 }
 
-.opmc-muestra-pf-mercaderia-choosewindow{
+.opmc-muestra-mercaderia-choosewindow{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 100%;
-    height: 25%;
+    width: 80%;
+    height: 30%;
     border: solid 1px gray;
     border-radius: 10px;
     padding: 1%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
 
-.opmc-boton-compra{
+/* caracteristicas internas de choosewindow */
+
+.opmc-boton-compra , .opmc-boton-ver ,.opmc-boton-al-almacen{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 50px;
-    height: 50px;
+    width: 30%;
+    height: 90%;
+    min-height: 40px;
+    font-size: 8px;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px ;
+
 }
 
 
+/* cierra body mercado de comercios */
 
 /* On page: Cuenta de usuario : Abre Body */
 
@@ -913,6 +928,7 @@ h4 {
     bottom: 2px;
 
 }
+/* on page- cuenta de usuario , Hasta aca pirmera seccion , donde esta el cuadro del almacen , */
 
 /* on page- cuenta de usuario - cuadro uno - */
 
@@ -969,6 +985,7 @@ h4 {
 }
 
 /* Esto es solo para menos de 480 */
+/*  La imagen debe mostrar las otras opciones como icnos */
 
 .opcu-iconos-choosewindow{
 
@@ -980,6 +997,7 @@ h4 {
     margin: 12px;
 
 }
+
 
 .iconos-negociaciones-Balanza-color{
 
@@ -1066,6 +1084,7 @@ h4 {
     border-radius: 50%;
 
 }
+
 /* hasta aca es disponibilidad del ususario */
 
 /* En el almacen */
@@ -1284,6 +1303,8 @@ h4 {
     border-radius: 5px;
 
 }
+
+
 
 /* Comienza, seccion tres, cuenta de usuario, negociaciones lista. */
 
@@ -1560,7 +1581,6 @@ h4 {
     background-color: gainsboro;
     border-radius: 10px;
     order: 1;
-
     
 }
 
@@ -1621,6 +1641,7 @@ h4 {
     align-items: center;
     border-radius: 5px;
     margin: 2px;
+
 }
 
 .opcu-en-observacion-lista-mercaderia-item , .opcu-en-tracking-lista-mercaderia-item{
@@ -1639,12 +1660,8 @@ h4 {
 
 }
 
-
-
 /* Cuenta de usuario : Cierra Body */
 
-
-/* Mercado de comercios:  CIERRA BODY */
 
 /* On page - mercaderias en exhibicion - aqui es donde redirige clicquear en la mercaderia a la que se averigua. */
 
@@ -1666,7 +1683,7 @@ h4 {
 
 }
 
-.opme-article{
+.opme-caracteristicas-article{
 
     display: flex;
     flex-wrap: wrap;
@@ -1676,14 +1693,133 @@ h4 {
     background-color:gainsboro;
     border: solid 2px black;
     border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
+
+.opme-caracteristicas-nombre{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 10%;
+    border: solid 2px gray;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.opme-caracteristicas-fotos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 30%;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+
+.opme-caracteristicas-info{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 30%;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+
+.opme-caracteristicas-opciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 20%;
+    border: solid 2px gray;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.opme-caracteristicas-fotos-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 24px;
+    width: 100%;
+    height: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opme-caracteristicas-info-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.opme-boton-de-compra{
+
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 60%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 100%;  
+    background-color:blue;
+    color: white;
+}
+
+.opme-boton-interes{
+
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 100%;
+    background-color: blue;
+    color: white;
+
+}
+
+/* on page mercaderia exhibida, cierra body */
 
 /*  On page - balanza. Abre body. */
 
 /*  para las paginas como balanza, subasta, valoracion y canasta no aplica la seccion uno,dos,tres y cuatro.  */
 /*  por eso hay que asignar nuevas secciones. Una que ocupa todo el main */
+/*  entonces es seccion unica para esta pagina. */
 
 .seccion-uno-balanza{
     
@@ -1765,7 +1901,9 @@ h4 {
 }
 
 /* on page balanza - Hasta aca articles principales */
+
 /* continuan caracteristicas de cada article */
+/* corresponde a article comando */
 
 .opb-estado-publico-privado{
 
@@ -1804,7 +1942,7 @@ h4 {
     border-radius: 20%;
 }
 
-/*  */
+/* continua article balanza */
 
 
 .opb-canasta-icono{
@@ -1997,6 +2135,7 @@ h4 {
 }
 
 /* opb - negociacion - usuarios */
+/* en este article debe figurar la votacion y los comentarios debajo */
 
 .opb-negociacion-usuario-consulta , .opb-negociacion-usuario-oferta{
 
@@ -2215,6 +2354,7 @@ h4 {
     /* HEADER   480  */  
     /* HEADER   480  */  
     
+    /*  Header que corresponde a todo el sitio */
 
 .balanza-icono{
 
@@ -2227,6 +2367,8 @@ h4 {
 
         bottom: 20px;
     }
+
+    /*  cierra header para 480 */
 
 
     /* MAIN     480     */
@@ -2249,6 +2391,9 @@ height: 100vh;
 
 }
 
+/* cierra secciones */
+
+/* abre body home 480 */
 
 .articulo-filter{
 
@@ -2357,6 +2502,41 @@ height: 100vh;
     position: relative;
 
 }
+/* cierra body home 480 */
+
+/* Abre  body mercado de comercios 480 */
+
+
+
+.opmc-muestra-mercaderia-f1-c1 , .opmc-muestra-mercaderia-f1-c2 , .opmc-muestra-mercaderia-f2-c1 , .opmc-muestra-mercaderia-f2-c2{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 250px;
+    width: 45%;
+    height: 40%;
+    font-size: 12px;
+    padding: 10px;
+    background-color: gainsboro;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px gray;
+    border-radius: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+/* Cierra   body mercado de comercios 480 */
+
 
 /*  PAgina, Cuenta de usuario. Cuadro del almacen. Cuadro dos. Abre body */
 
@@ -2367,7 +2547,6 @@ height: 100vh;
     margin: 5px;
 
 }
-
 
 
 /*  Cierra body : cuadro del almacen, cuadro dos. iconos y disponibilidad. Cierra*/
@@ -2564,7 +2743,7 @@ height: 100vh;
 
 }
 
-
+/* Aparecen viñetas, la imagen de la balanza continua sin uso */
         /* viñetas del header*/
 
 
@@ -2674,6 +2853,11 @@ height: 100vh;
 
 }
 
+/* cierra header 769 */
+
+
+
+
 
     /*       MAIN  769        */
     /*       MAIN  769        */
@@ -2682,6 +2866,7 @@ height: 100vh;
 
 
     /* secciones del sitio */
+
     .seccion-uno{
 
         height: 60vh;
@@ -2704,13 +2889,14 @@ height: 100vh;
 
 
     /*  on page - cuadro de usuasrio - Cuadro del almacen. Abre body */
-
-
+    /* figura unica imagen que desprende opciones */
 
     .opcu-iconos-choosewindow{
     
         display: none;
     }
+
+    /* continuan imagenes por cambio de la imagen unica que figuraba */
 
     .opcu-iconos-negociaciones{
 
@@ -2734,7 +2920,6 @@ height: 100vh;
 
 
     /* Cambia la imagen que contiene los iconos por los iconos directamente en el cuadro */
-
 
 
 .iconos-negociaciones-Balanza-color , .iconos-negociaciones-Subasta-color , .iconos-negociaciones-Valoracion-color, .iconos-negociaciones-Canasta-color{
@@ -2898,8 +3083,7 @@ height: 100vh;
 }
 
 
-};
-
+} /* MEdia querie 769. cierra */
 
 
 
