@@ -17,7 +17,7 @@
     <header class="header">
 
         <div>
-            <a><img class="logo-ElBartero" src="/images/El-Bartero.png" alt="Imagen"></a>
+            <a href="/home"><img class="logo-ElBartero" src="/images/El-Bartero.png" alt="Imagen"></a>
         </div>
 
         <div><a><img class="balanza-icono" src="/images/Balanza-icono.png"></a></div>
@@ -53,18 +53,61 @@
 
     <main class="main">
 
-        <section class="seccion-uno">
-            
+        <section class="seccion-uno-arrepentimiento">
+
+            <article class="on-page-arrepentimiento">
+            <h4 class="opaa-titular">Arrepentimiento de actividades</h4>
+            <p class="opaa-fecha">Fecha del dia</p>
+            <div class="opaa-checkbox-arrepentimiento">
+            <label for="arrepentimientoActividades">Inicar arrepentimiento de actividades</label>
+            <input  type="checkbox" name="arrepentimientoActividades" id="arrepentimientoActividades">
+            </div>
+        </article>
+
         </section>
 
-        <section class="seccion-dos">
-            
-        </section>
+        <section class="seccion-dos-arrepentimiento">
+            <article class="opaa-motivos">
+                <p class="opaa-motivos-titular">Motivo</p>
+                <select class="opaa-motivos-select" name="motivoscancelacion">
+                    <option value="ya-compro-otro-producto">Ya compre otro producto</option>
+                    <option value="encontro-algo-mejor">Encontré algo mejor</option>
+                    <option value="otros">otros</option>
+                </select>
+                <p class="opaa-motivos-comentario">Comentario</p>
+                <textarea class="opaa-motivos-texto" name="arrepentimiento-comentario" id="arrepentimiento-comentario"></textarea>
+                <button class="opaa-motivos-texto-button" type="submit">Enviar</button>
+            </article>
 
-        <section class="seccion-tres">
+            <article class="opaa-transacciones">
+                <p class="opaa-transacciones-titular">Transacciones realizadas</p>
+                <label for="buscar-transaccion">Buscar</label>
+                <input class="opaa-input-buscar-transaccion" type="search" name="buscar-transaccion" id="buscar-transaccion" placeholder=" Buscar transaccion">
+                <div class="opaa-transacciones-muestra-datos">
+                    <div class="opaa-transaccion-ejemplo">
+                        <p>Informacion de la transaccion</p>
+                    </div>
+                </div>
+            </article>
 
-        </section>
-        <section class="seccion-cuatro">
+            <article class="opaa-terminos-aceptar">
+                <div class="opaa-checkbox-hecho">
+                <label for="constancia-hecho">Tengo y dejo constancia de que las transcciones seleccionadas seran canceladas.<br>De esta manera acepto y aclaro como canceladas las anteriores</label>
+                <input type="checkbox" name="constancia-hecho" id="constancia-hecho">
+                </div>
+                <div class="opaa-checkbox-cargos">
+                <label for="constancia-cargos">De hacerse cargo como responsable de cancelaciones y pagos necesarios para efectuar las cancelaciones</label>
+                <input type="checkbox" name="constancia-cargos" id="constancia-cargos">
+                </div>
+                <div class="opaa-checkbox-condiciones">
+                <label for="constancia-condiciones">Aceptar condiciones</label>
+                <input type="checkbox" name="constancia-condiciones" id="constancia-condiciones">
+            </div>
+            <div class="opaa-terminos-y-condiciones">
+                <a href="">Ver Terminos y condiciones</a>
+            </div>
+                <button class="opaa-button-submit" type="submit">Aceptar</button>
+            </article>
             
         </section>
     </main>
@@ -83,24 +126,25 @@
                 <a class="footer-redes-twitter" href=""><img src=""></a>
             </article>
 
-           <section class="seccion-footer-listados"> 
-            <article>
-                <ul class="listado-izquierdo">
-                    <p class="footer-cambios-devoluciones" href="">Cambios y devoluciones</p>
-                    <p class="footer-politicas" href="">Politica de privacidad</p>
-                    <p class="footer-arrepentimiento" href="">Arrepentimiento de actividades</p>
-                    <p class="footer-preguntas" href="">Preguntas frecuentes</p>
-                </ul>
-            </article>
-            <article>
-                <ul class="listado-derecho">
-                    <p href="">Contacto</p>
-                    <p href="">Contratacion</p>
-                    <p href="">Terminos y condiciones</p>
-                    <p href="">Transporte</p>
-                </ul>
-            </article>
-           </section>
+            <section class="seccion-footer-listados">
+                <article>
+                    <ul class="listado-izquierdo">
+                        <a class="footer-cambios-devoluciones" href="/cambiosydevoluciones">Cambios y devoluciones</a>
+                        <a class="footer-politicas" href="/politicasdeprivacidad">Politica de privacidad</a>
+                        <a class="footer-arrepentimiento" href="/arrepentimientodeactividades">Arrepentimiento de actividades</a>
+                        <a class="footer-preguntas" href="/preguntasfrecuentes">Preguntas frecuentes</a>
+                        <a class="" href="/preguntasblog">Preguntas, blog de usuarios</a>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="listado-derecho">
+                        <a href="/contacto">Contacto</a>
+                        <a href="/contratacion">Contratacion</a>
+                        <a href="/terminosycondiciones">Terminos y condiciones</a>
+                        <a href="/transporte">Transporte</a>
+                    </ul>
+                </article>
+            </section>
             <article class="footer-end">
                 <a><img class="logo-footer" src="/images/El-Bartero.png" alt="Imagen"></a>
                 <p class="copyright">Copyright ©</p>

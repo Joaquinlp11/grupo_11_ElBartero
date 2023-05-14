@@ -665,7 +665,7 @@ h4 {
     flex-wrap: wrap;
     font-size: 20px;
     width: 100%;   
-    height: 20px;
+    height: 15px;
     order: -1;
     flex-grow: .1;
 
@@ -711,7 +711,23 @@ h4 {
 /* seccion cuatro ,pagina de comercios . ofertas */
 
 
-.on-page-comercios-ofertas{
+.on-page-comercios-ofertas-seccion-tres{
+
+    display: flex;
+    flex-wrap: wrap;    
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 2%;    
+    background-color: whitesmoke;
+    border-radius: 2%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.on-page-comercios-ofertas-seccion-cuatro{
 
     display: flex;
     flex-wrap: wrap;    
@@ -748,7 +764,9 @@ h4 {
     background-color: gainsboro;
     flex-direction: column;
     justify-content: space-around;
+    opacity: .8;
     align-items: center;
+    position: relative;
 
 }
 
@@ -781,6 +799,8 @@ h4 {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    position: absolute;
+    z-index: 10;
 }
 
 .opmc-muestra-mercaderia-foto{
@@ -789,7 +809,7 @@ h4 {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 80%;
-    height: 40%;
+    height: 60%;
     border: solid 1px gray;
     border-radius: 10px;
 }
@@ -828,6 +848,24 @@ h4 {
     border-radius: 5px ;
 
 }
+
+
+/* Seccion 4: ofertas */
+
+.opmc-f1-c1 , .opmc-f2-c1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    border: solid 2px gray;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
 
 
 /* cierra body mercado de comercios */
@@ -1691,7 +1729,7 @@ h4 {
     width: 90%;
     height: 90%;
     background-color:gainsboro;
-    border: solid 2px black;
+    border: solid 2px gray;
     border-radius: 10px;
     flex-direction: column;
     justify-content: space-around;
@@ -1752,6 +1790,8 @@ h4 {
     align-items: center;
 
 }
+
+/* Caracteristicas internas */
 
 .opme-caracteristicas-fotos-titular{
 
@@ -1814,6 +1854,168 @@ h4 {
 }
 
 /* on page mercaderia exhibida, cierra body */
+
+/* On oage - mercaderia exhibida USUARIOS, abre body */
+
+/* Atencion: se diferencia de mercaderia exhibida por la letra u. opmeu */
+
+
+.on-page-seccion-mercaderia-en-exhibicion-usuarios{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    min-height: 1600px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.opmeu-caracteristicas-article{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 90%;
+    background-color:gainsboro;
+    border: solid 2px gray;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.opmeu-caracteristicas-nombre{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 80px;
+    border: solid 2px gray;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.opmeu-caracteristicas-fotos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 20%;
+    border: solid 2px gray;
+    border-radius: 10px;
+
+}
+
+.opmeu-caracteristicas-info{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 30%;
+    border: solid 2px gray;
+    border-radius: 10px;
+
+}
+
+.opmeu-caracteristicas-opciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 30%;
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* Caracteristicas internas */
+
+.opmeu-caracteristicas-fotos-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 24px;
+    width: 100%;
+    height: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opmeu-caracteristicas-info-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.opmeu-boton-de-valoracion , .opmeu-boton-interes {
+
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 45%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 100%;
+    background-color: blue;
+    color: white;
+
+
+}
+
+.opmeu-boton-de-compra , .opmeu-boton-de-negociacion{
+
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 100%;
+    background-color: blue;
+    color: white;
+
+}
+
+
+
+/* On oage - mercaderia exhibida USUARIOS, cierra body */
+
+
+
 
 /*  On page - balanza. Abre body. */
 
@@ -2180,7 +2382,1259 @@ h4 {
     height: 50%;
 }
 
+
 /* on page - balanza ,  CIERRA BODY */
+
+
+/* La pagina de contacto cuenta con su propio tamaño de seccion */
+/* on page- contacto abre body */
+
+.seccion-uno-contacto {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seccion-dos-contacto{
+    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    min-height: 1400px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.opc-contacto-info{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: gainsboro;
+}
+
+.opc-contacto-mensaje-datos {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 5%;
+    width: 90%;
+    height: 60%;
+    background-color: gainsboro;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-start;
+    
+}
+
+.opc-contacto-mensaje-texto {
+    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 5%;
+    width: 90%;
+    height: 30%;
+    background-color: gainsboro;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+/* Article */
+
+.opc-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 5%;
+    width: 100%;
+    height: 60px;
+}
+
+.opc-contacto-telefono , .opc-contacto-mail , .opc-contacto-direccion , .opc-contacto-opciones {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+}
+
+/* article dos, enviar mensaje , informacion*/
+
+
+.opc-datos-usuario-mensaje {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 60%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 2px gray;
+    
+}
+
+.opc-mensaje-informacion{
+    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60%;
+    min-height: 60%;
+    margin: 5%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-grow: 1;
+
+}
+
+.opc-mensaje{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: flex-start;
+    position: relative;
+}
+
+.opc-informacion-mensaje-single{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+}
+
+
+.opc-mensaje-configuracion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+}
+
+.opc-mensaje-button{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 15%;
+    width: 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+
+/* on page- contacto cierra body */
+
+/* on page- cmbios y devoluciones Abre body */
+
+.seccion-uno-cambios-devoluciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80vh;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-dos-cambios-devoluciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    min-height: 1400px;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Articles */
+
+.on-page-cambios-devoluciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60vh;
+    padding: 5%;
+    background-color: gainsboro;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.opcd-motivos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: gainsboro;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    padding: 5%;
+    width: 100%;
+    height: 35%;
+    position: relative;
+
+}
+
+
+.opcd-transacciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: gainsboro;
+    padding: 1%;
+    width: 100%;
+    height: 30%;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}    
+
+
+
+.opcd-terminos-aceptar{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 30%;
+    margin-top: 20px;
+}
+
+/* Caracteristicas */
+
+.opcd-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.opcd-fecha{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2%;
+    width: 100%;
+}
+
+.opcd-iniciar-cambio-devolucion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45%;
+    min-height: 200px;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opcd-iniciar-cambio , .opcd-iniciar-devolucion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2%;
+    width: 80%;
+    height: 50%;
+    font-size: 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px gray;
+
+}
+
+.opcd-checkbox-cambio{
+
+    display: flex;
+}
+
+.opcd-checkbox-devolucion{
+
+    display: flex;
+
+}
+
+/* Article dos motivos */
+
+.opcd-motivos-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%;
+    height: 20px;
+    padding: 2%;
+}
+
+.opcd-motivos-select{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcd-motivos-comentario{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%;
+    height: 20px;
+    padding: 2%;
+}
+
+.opcd-motivos-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.opcd-motivos-texto-button{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15%;
+    bottom: 8%;
+    margin-top: 10px;
+}
+
+/* artcile tres transacciones */
+
+
+.opcd-transacciones-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 4%;
+}
+
+.opcd-input-buscar-transaccion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 75%;
+    height: 20px;
+    
+}
+
+
+.opcd-transacciones-muestra-datos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 50%;
+    padding: 2%;
+    border: solid 2px gray;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.opcd-transaccion-ejemplo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2%;
+    height: 15%;
+    font-size: 12px;
+    background-color: gainsboro;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+
+
+/* caracteristicas. terminos de aceptacion */
+
+.opcd-checkbox-hecho-cambios-devoluciones , .opcd-checkbox-cargos-cambios-devoluciones , .opcd-checkbox-condiciones-cambios-devoluciones  {
+
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.opcd-button-submit{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* on page- cmbios y devoluciones Cierra body */
+
+/* La siguiente pagina, arrepentimiento de actividades cuenta con propia seccion uno y dos */
+
+/* on page- arrepentimiento de actividades -Abre body */
+
+.seccion-uno-arrepentimiento{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5%;
+    width: 100%;
+    height: 40vh;
+}
+
+.seccion-dos-arrepentimiento{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5%;
+    width: 100%;
+    min-height: 1200px;
+    height: 100vh;
+}
+
+/* articles */
+
+.on-page-arrepentimiento{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 2%;
+
+}
+
+.opaa-motivos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: gainsboro;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    padding: 5%;
+    width: 100%;
+    height: 35%;
+    position: relative;
+}
+
+.opaa-transacciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: gainsboro;
+    padding: 1%;
+    width: 100%;
+    height: 30%;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opaa-terminos-aceptar{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 30%;
+    margin-top: 20px;
+}
+
+/* Seccion uno. arrepentimiento */
+
+.opaa-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    font-size:20px;
+}
+
+.opaa-fecha{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+
+.opaa-checkbox-arrepentimiento{
+
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    border-bottom: solid 1px gray;
+}
+
+/* article dos motivos */
+
+.opaa-motivos-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20px;
+}
+
+
+.opaa-motivos-select{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 2%;
+    width: 100%;
+    height: 30px;
+
+}
+
+.opaa-motivos-comentario{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20px;
+}
+
+.opaa-motivos-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100px;
+
+}
+
+.opaa-motivos-texto-button{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-top: 20px;
+    position: absolute;
+    right: 5%;
+    bottom: 10px;
+
+}
+
+/* article tres, transacciones realizadas */
+
+.opaa-transacciones-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 4%;
+}
+
+.opaa-input-buscar-transaccion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 75%;
+    height: 20px;
+}
+
+.opaa-transacciones-muestra-datos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 50%;
+    padding: 2%;
+    border: solid 2px gray;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.opaa-transaccion-ejemplo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2%;
+    height: 15%;
+    font-size: 12px;
+    background-color: gainsboro;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+/* seccion cuatro, condiciones */
+
+
+.opaa-checkbox-hecho , .opaa-checkbox-cargos , .opaa-checkbox-condiciones {
+
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.opaa-terminos-y-condiciones{
+
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 12px
+}
+
+
+.opaa-button-submit{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    margin-top: 50px;
+}
+
+/* on page- arrepentimiento de actividades -Cierra body */
+
+
+/* on page - politicas de privacidad Abre body */
+
+.seccion-uno-politicas-privacidad{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+
+}
+
+
+.oppp-politicas-info{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 5%;
+}
+
+.oppp-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+
+.oppp-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+/* on page - politicas de privacidad Cierra body */
+
+
+/* on page - Terminos y condiciones Abre body */
+
+
+.seccion-uno-terminos-condiciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+
+}
+
+
+.optc-terminos-condiciones-info{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 5%;
+}
+
+.optc-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+
+.optc-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/* on page - Terminos y condiciones Cierra body */
+
+/* on page - Transporte Abre body */
+
+
+.seccion-uno-transporte{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+
+}
+
+
+.opt-transporte-info{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 5%;
+}
+
+.opt-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+
+.opt-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+/* on page - Transporte Cierra body */
+
+
+
+/* on page - preguntas frecuentes  Abre body*/
+
+.seccion-uno-preguntas{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 20%;
+    padding: 5%;
+
+}
+
+.seccion-dos-preguntas{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 30vh;
+    min-height: 800px;
+    padding: 5%;
+}
+
+
+.oppf-preguntas-info{
+    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    background-color: gainsboro;
+    padding: 5%;
+}
+
+
+.oppf-respuestas{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 80vh;
+    background-color: gainsboro;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.oppf-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+}
+
+.oppf-realizar-pregunta{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: 50px;
+}
+
+.oppf-respuestas-parrafo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+/* on page - preguntas frecuentes  Cierra body*/
+
+/* on page - Contratacion Abre  body*/
+
+.seccion-uno-contratacion , .seccion-dos-contratacion {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 80vh;
+    min-height: 400px;
+    padding: 5%;
+}
+
+.seccion-tres-contratacion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 80vh;
+    min-height: 1000px;
+    padding: 5%;
+}
+
+
+/* Article  seccion uno dos tres*/
+
+.opcont-contratacion-info , .opcont-solicitud{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: gainsboro;
+
+}
+
+.opcont-enviar-infomacion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: gainsboro;
+
+}
+
+/* caracteristica internas */
+
+.opcont-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px ;
+}
+
+.opcont-parrafo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+    min-height: 200px;
+    padding: 5%;
+    text-align: left;
+}
+
+/* article seccion dos */
+
+.opcont-enviar-solicitud{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 250px;
+    height: 100px;
+    padding: 2%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Article tres, enviar informacion */
+
+
+.opcont-datos-usuario{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 50%;
+    height: 20px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.opcont-informacion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    padding: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opcont-informacion-single{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* on page - Contratacion  Cierra body*/
+
+/* on page - blog de usuarios Abre body */
+
+.seccion-uno-blog {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 5%;
+
+}
+
+.seccion-dos-blog{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.opbu-article-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    padding: 5%;
+    background-color: gainsboro;
+}
+
+.opbu-pregunta{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    padding: 5%;
+    background-color: gainsboro;
+}
+
+.opbu-respuesta{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    padding: 5%;
+    background-color: gainsboro;
+
+}
+
+
+.opbu-titular{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-hacer-pregunta{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+}
+
+.blog-textarea{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 1%;
+}
+
+
+/* on page - blog de usuarios Cierra body */
+
+
 
 
 /*          FOOTER      0     */
@@ -2524,6 +3978,7 @@ height: 100vh;
     align-items: center;
     border: solid 2px gray;
     border-radius: 10px;
+    opacity: .8;
 
 
 }
@@ -2992,8 +4447,32 @@ height: 100vh;
     align-items: center;
 
 }
-
 /* on page - cuenta del usuasrio - cierra body */
+
+/* On page, mercaderia exhibida , abre body*/
+
+.on-page-seccion-mercaderia-en-exhibicion{
+
+    min-height: 1000px;
+}
+
+/* On page, mercaderia exhibida , cierra body*/
+
+/* On page, mercaderia exhibida USUARIOS , abre body*/
+
+
+.on-page-seccion-mercaderia-en-exhibicion-usuarios{
+
+    min-height: 1000px;
+}
+
+
+
+
+/* On page, mercaderia exhibida USUARIOS, cierra body*/
+
+
+
 
     /*      FOOTER  769     */
     /*      FOOTER  769     */
@@ -3116,6 +4595,11 @@ height: 100vh;
 
 
     /* opcu-cuadro del almacen, cuadro dos, iconos negociaciones */
+
+    .seccion-uno{
+
+        height: 60vh;
+    }
 
 
     .iconos-negociaciones-Balanza-color{

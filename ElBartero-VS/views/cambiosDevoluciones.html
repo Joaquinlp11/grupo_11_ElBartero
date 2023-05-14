@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La balanza</title>
+    <title>Cambios y devoluciones</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
@@ -52,97 +53,82 @@
 
     <main class="main">
 
-        <section class="seccion-uno-balanza">
+        <section class="seccion-uno-cambios-devoluciones">
 
-            <article class="on-page-balanza-listas-guardadas">
-                <p>Balanzas guardadas</p>
-            </article>
+            <article class="on-page-cambios-devoluciones">
 
-            <article class="opb-comando">
-
-                <div class="opb-estado-publico-privado">
-
-                </div>
-                <div class="opb-balanza-nombre">
-                    <p>La balanza</p>
-                    <p>Nombre de la balanza</p>
-                    <p>info</p>
-                </div>
-                <div class="opb-balanza-invitacion">
-
-                </div>
-
-            </article>
-
-            <article class="opb-balanza">
-
-                <div class="opb-canasta-icono">
-                    <div class="opb-canasta-consulta-oferta">
-                        <p>Canasta consulta</p>
+                <h4 class="opcd-titular">Cambios y Devoluciones</h4>
+                <p class="opcd-fecha">Fecha del dia</p>
+                <div class="opcd-iniciar-cambio-devolucion">
+                    <div class="opcd-iniciar-cambio">
+                        <p>Cambio</p>
+                        <label for="cambio">Inicar cambio</label>
+                        <input class="opcd-checkbox-cambio" type="checkbox" name="cambio" id="cambio">
                     </div>
-
-                    <div class="opb-icono">
-                        <img class="opb-icono-balanza" src="/images/Balanza-icono.png">
-                    </div>
-
-                    <div class="opb-canasta-consulta-oferta">
-                        Canasta ofertante
+                    <div class="opcd-iniciar-devolucion">
+                        <p>Devolucion</p>
+                        <label for="devolucion">Inicar devolucion</label>
+                        <input class="opcd-checkbox-devolucion" type="checkbox" name="devolucion" id="devolucion">
                     </div>
                 </div>
-
-                <div class="opb-canasta-izq-der">
-
-                    <div class="opb-canasta-representada">
-                        <div class="opb-oferta-canasta-uno"></div>
-                    </div>
-                    
-                    <div class="opb-icono-bartero-flechas">
-                        <img class="imagen-logo-sinNombre" src="/images/Logo-sinNombre-06.png" >
-                    </div>
-                    <div class="opb-canasta-representada">
-                        <div class="opb-oferta-canasta-dos"></div>
-                        
-                    </div>
-
-                </div>
-
-                <div class="opb-negociacion">
-
-                    <div class="opb-negociacion-consulta">
-
-                    </div>
-                    <div class="opb-negociacion-tablero">
-
-                    </div>
-                    <div class="opb-negociacion-oferta">
-
-                    </div>
-
-                </div>
-
-                <div class="opb-negociacion-usuarios">
-
-                    <div class="opb-negociacion-usuario-consulta"></div>
-                    <div class="opb-negociacion-usuario-chat">
-                        <div class="opb-chat-comentarios-destacados"></div>
-                        <div class="opb-chat-privado-publico"></div>
-                    </div>
-                    <div class="opb-negociacion-usuario-oferta"></div>
-
-                </div>
-                <div class="opb-negociacion-cronologia">
-
-                </div>
-
-            </article>
-
-            <article class="opb-usuarios">
-
             </article>
 
         </section>
 
+        <section class="seccion-dos-cambios-devoluciones">
 
+            <article class="opcd-motivos">
+                <p class="opcd-motivos-titular">Motivo</p>
+                <select class="opcd-motivos-select" name="motivodelcambioodevolucion">
+                    <option value="ya-compro-otro-producto">Ya compre otro producto</option>
+                    <option value="encontro-algo-mejor">Encontré algo mejor</option>
+                    <option value="otros">otros</option>
+                </select>
+                <p class="opcd-motivos-comentario">Comentario</p>
+                <textarea class="opcd-motivos-texto" name="cambio-devolucion-comentario"
+                    id="cambio-devolucion-comentario"></textarea>
+                <button class="opcd-motivos-texto-button" type="submit">Enviar</button>
+            </article>
+
+            <article class="opcd-transacciones">
+                <p class="opcd-transacciones-titular">Transacciones realizadas</p>
+                <label for="buscar-transaccion-para-cambio-devolucion">Buscar</label>
+                <input class="opcd-input-buscar-transaccion" type="search" name="buscar-transaccion-cambio-devolucion" id="buscar-transaccion-para-cambio-devolucion" placeholder=" Buscar transaccion">
+                <div class="opcd-transacciones-muestra-datos">
+                    <div class="opcd-transaccion-ejemplo">
+                        <p>Informacion de la transaccion</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="opcd-terminos-aceptar">
+
+                <div class="opcd-checkbox-hecho-cambios-devoluciones">
+
+                    <label for="constancia-hecho-cambios-devoluciones">Tengo y dejo constancia de que las transcciones seleccionadas seran
+                        canceladas.<br>De esta manera acepto y aclaro como canceladas las anteriores</label>
+                    <input type="checkbox" name="constancia-hecho-cambios-devoluciones" id="constancia-hecho-cambios-devoluciones">
+                </div>
+
+                <div class="opcd-checkbox-cargos-cambios-devoluciones">
+
+                    <label for="constancia-cargos-cambios-devoluciones">De hacerse cargo como responsable de cancelaciones y pagos necesarios
+                        para efectuar las cancelaciones</label>
+                    <input type="checkbox" name="constancia-cargos-cambios-devoluciones" id="constancia-cargos-cambios-devoluciones">
+
+                </div>
+
+                <div class="opcd-checkbox-condiciones-cambios-devoluciones">
+
+                    <label for="constancia-condiciones-cambios-devoluciones">Aceptar condiciones</label>
+                    <input type="checkbox" name="constancia-condiciones-cambios-devoluciones" id="constancia-condiciones-cambios-devoluciones">
+               
+                </div>
+                <button class="opcd-button-submit" type="submit">Aceptar</button>
+
+            </article>
+
+        </section>
     </main>
 
     <footer>

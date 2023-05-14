@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratacion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+
+</head>
+
+<body>
+    <header class="header">
+
+        <div>
+            <a href="/home"><img class="logo-ElBartero" src="/images/El-Bartero.png" alt="Imagen"></a>
+        </div>
+
+        <div><a><img class="balanza-icono" src="/images/Balanza-icono.png"></a></div>
+
+        <section class="seccion-user">
+            <div class="user-option">
+                <a><i class="fa-solid fa-user"></i></a>
+                <a class="descripcion-user">User</a>
+            </div>
+            <div class="sign-out-option">
+                <a><img class="sign-out-icon" src="/images/Sign-in-blue.png"></a>
+                <p class="descripcion-sign-out">Sign out</p>
+            </div>
+            <div class="sign-up-option">
+                <a><i class="fa-solid fa-user-plus"></i></a>
+                <p class="descripcion-sign-up">Sing up</p>
+            </div>
+
+        </section>
+
+        <section class="seccion-viñetas">
+
+            <a class="instructivo" href="">Instructivo</a>
+            <a class="redirige-mercados">Ir al mercado</a>
+            <a class="redirige-balanza" href="">Ir a la Balanza</a>
+            <a class="redirige-subasta" href="">Ir a la Subasta</a>
+            <a class="redirige-valoracion" href="">Ir a la Valoracion</a>
+            <a class="redirige-canasta" href="">Ir a la Canasta</a>
+
+        </section>
+
+    </header>
+
+    <main class="main">
+
+        <section class="seccion-uno-contratacion">
+
+            <article class="opcont-contratacion-info">
+                <h4 class="opcont-titular">Contratacion</h4>
+                <p class="opcont-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem sapiente porro tenetur saepe non asperiores assumenda debitis consectetur placeat molestias esse repudiandae, odio reprehenderit atque iure! Libero, quis corrupti?<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quae culpa soluta aliquam vitae, labore tempora corporis quis, dolore ab nisi perspiciatis laudantium similique obcaecati. Nisi ratione omnis nulla facilis!</p>
+            </article>
+        </section>
+        <section class="seccion-dos-contratacion">
+            <article class="opcont-solicitud">
+                <h4 class="opcont-titular">Enviar una solicitud</h4>
+                <p class="opcont-parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam molestiae similique! Nostrum, vel id. Voluptatibus accusamus recusandae repudiandae vitae, aliquid quos saepe minus magni asperiores rerum tempore. Nesciunt, repudiandae!</p>
+                <div class="opcont-enviar-solicitud">
+                    <label for="enviar-solicitud-contratacion">Enviar una solicitud</label>
+                    <input type="checkbox" name="solicituddecontratacion" id="enviar-solicitud-contratacion">
+                </div>
+            </article>   
+         
+        </section>
+        <section class="seccion-tres-contratacion">
+            <article class="opcont-enviar-infomacion">
+                <form action="/solicitudcontratacion" method="get">
+                <h4 class="opcont-titular">Solicitud de contratacion</h4>
+
+                <div class="opcont-datos-usuario">
+                    <label for="usar-datos-usuario-contratacion">Usar datos del usuario</label>
+                    <input type="checkbox" id="usar-datos-usuario-contratacion" name="usar-datos-usuario-contratacion">
+                </div>
+
+                <div class="opcont-informacion">
+
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-nombre">Nombre</label>
+                        <input type="text" name="contratacion-nombre" id="contratacion-nombre">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-apellido">Apellido </label>
+                        <input type="text" name="contratacion-apellido" id="contratacion-apellido">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-telefono">Telefono </label>
+                        <input type="text" name="contratacion-telefono" id="contratacion-telefono">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-domicilio">Domicilio </label>
+                        <input type="text" name="contratacion-domicilio" id="contratacion-telefono">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-provincia">Provincia </label>
+                        <input type="text" name="contratacion-provincia" id="contratacion-provincia">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-email">Email </label>
+                        <input type="text" name="contratacion-email" id="contratacion-email">
+                    </div>
+                    <div class="opcont-informacion-single">
+
+                        <p>Razon de contratacion</p>
+                            <select name="contratacion-informacion">
+                                <option></option>
+                                <option value="pasatiempo">Pasatiempo</option>
+                                <option value="quiere">Quiero trabajar en este sitio</option>
+                                <option value="desempleado">Estoy desempleado</option>
+                                <option value="buscaTrabajo">Busco trabajo</option>
+                                <option value="sirveParaEsto">Sirvo para esto</option>
+                            </select>
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="file-informacion-contratacion">Subir archivo</label>
+                        <br>
+                        <input type="file" name="file-informacion-contratacion" id="file-informacion-contratacion" accept=".jpg , .png">
+                    </div> 
+                    <div class="opcont-informacion-single">
+                        <label for="checkbox-contratacion-mensaje">Dejar un mensaje</label>
+                        <input type="checkbox" id="checkbox-contratacion-mensaje" name="checkbox-contratacion-mensaje">
+                        <textarea name="comentario-contratacion" id="checkbox-contratacion-mensaje">Escribe tu mensaje</textarea>
+                    </div>
+                </div>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="seccion-footer">
+
+            <article class="bars-button">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </article>
+
+            <article class="footer-redes">
+                <a class="footer-redes-gmail" href=""><img src=""></a>
+                <a class="footer-redes-instagram" href=""><img src=""></a>
+                <a class="footer-redes-facebook" href=""><img src=""></a>
+                <a class="footer-redes-twitter" href=""><img src=""></a>
+            </article>
+
+            <section class="seccion-footer-listados">
+                <article>
+                    <ul class="listado-izquierdo">
+                        <a class="footer-cambios-devoluciones" href="/cambiosydevoluciones">Cambios y devoluciones</a>
+                        <a class="footer-politicas" href="/politicasdeprivacidad">Politica de privacidad</a>
+                        <a class="footer-arrepentimiento" href="/arrepentimientodeactividades">Arrepentimiento de actividades</a>
+                        <a class="footer-preguntas" href="/preguntasfrecuentes">Preguntas frecuentes</a>
+                        <a class="" href="/preguntasblog">Preguntas, blog de usuarios</a>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="listado-derecho">
+                        <a href="/contacto">Contacto</a>
+                        <a href="/contratacion">Contratacion</a>
+                        <a href="/terminosycondiciones">Terminos y condiciones</a>
+                        <a href="/transporte">Transporte</a>
+                    </ul>
+                </article>
+            </section>
+            <article class="footer-end">
+                <a><img class="logo-footer" src="/images/El-Bartero.png" alt="Imagen"></a>
+                <p class="copyright">Copyright ©</p>
+            </article>
+
+        </section>
+
+    </footer>
+</body>
+
+
+</html>

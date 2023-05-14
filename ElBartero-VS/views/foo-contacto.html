@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-       
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,35 +16,35 @@
     <header class="header">
 
         <div>
-            <a><img class="logo-ElBartero" src="/images/El-Bartero.png" alt="Imagen"></a>
+            <a href="/home"><img class="logo-ElBartero" src="/images/El-Bartero.png" alt="Imagen"></a>
         </div>
 
         <div><a><img class="balanza-icono" src="/images/Balanza-icono.png"></a></div>
 
         <section class="seccion-user">
-                <div class="user-option">
+            <div class="user-option">
                 <a><i class="fa-solid fa-user"></i></a>
                 <a class="descripcion-user">User</a>
-                </div>
-                <div class="sign-out-option">
-                    <a><img class="sign-out-icon" src="/images/Sign-in-blue.png"></a>
-                    <p class="descripcion-sign-out">Sign out</p>
-                </div>
-                <div class="sign-up-option">
-                    <a><i class="fa-solid fa-user-plus"></i></a>
-                    <p class="descripcion-sign-up">Sing up</p>
-                </div>
+            </div>
+            <div class="sign-out-option">
+                <a><img class="sign-out-icon" src="/images/Sign-in-blue.png"></a>
+                <p class="descripcion-sign-out">Sign out</p>
+            </div>
+            <div class="sign-up-option">
+                <a><i class="fa-solid fa-user-plus"></i></a>
+                <p class="descripcion-sign-up">Sing up</p>
+            </div>
 
         </section>
 
         <section class="seccion-viñetas">
 
-                <a class="instructivo" href="">Instructivo</a>
-                <a class="redirige-mercados">Ir al mercado</a>
-                <a class="redirige-balanza" href="">Ir a la Balanza</a>
-                <a class="redirige-subasta" href="">Ir a la Subasta</a>
-                <a class="redirige-valoracion" href="">Ir a la Valoracion</a>
-                <a class="redirige-canasta" href="">Ir a la Canasta</a>
+            <a class="instructivo" href="">Instructivo</a>
+            <a class="redirige-mercados">Ir al mercado</a>
+            <a class="redirige-balanza" href="">Ir a la Balanza</a>
+            <a class="redirige-subasta" href="">Ir a la Subasta</a>
+            <a class="redirige-valoracion" href="">Ir a la Valoracion</a>
+            <a class="redirige-canasta" href="">Ir a la Canasta</a>
 
         </section>
 
@@ -53,20 +52,81 @@
 
     <main class="main">
 
-        <section class="seccion-uno">
-            
+        <section class="seccion-uno-contacto">
+
+            <article class="opc-contacto-info">
+                <h4 class="opc-titular">Contacto</h4>
+                <div class="opc-contacto-telefono">
+                    <p>telefono</p>
+                </div>
+                <div class="opc-contacto-mail">
+                    <p>mail</p>
+                </div>
+                <div class="opc-contacto-direccion">
+                    <p>direccion</p>
+                </div>
+                <div class="opc-contacto-opciones">
+                    <p>opciones</p>
+                </div>
+            </article>
         </section>
 
-        <section class="seccion-dos">
-            
+        <section class="seccion-dos-contacto">
+
+            <article class="opc-contacto-mensaje-datos">
+
+                <h4 class="opc-titular">Enviar un mensaje</h4>
+                <div class="opc-datos-usuario-mensaje">
+                    <label for="usar-datos-usuario">Usar datos del usuario</label>
+                    <input type="checkbox" id="usar-datos-usuario" name="usar-datos-usuario">
+                </div>
+                <div class="opc-mensaje-informacion">
+                    <form action="/contacto" method="get">
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-nombre">Nombre </label>
+                            <input type="text" name="contacto-mensaje-nombre" id="contacto-mensaje-nombre">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-apellido">Apellido </label>
+                            <input type="text" name="contacto-mensaje-apellido" id="contacto-mensaje-apellido">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-telefono">Telefono </label>
+                            <input type="text" name="contacto-mensaje-telefono" id="contacto-mensaje-telefono">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-domicilio">Domicilio </label>
+                            <input type="text" name="contacto-mensaje-domicilio" id="contacto-mensaje-domicilio">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-provincia">Provincia </label>
+                            <input type="text" name="contacto-mensaje-provincia" id="contacto-mensaje-provincia">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-email">Email </label>
+                            <input type="text" name="contacto-mensaje-email" id="contacto-mensaje-email">
+                        </div>
+                        <div class="opc-informacion-mensaje-sigle">
+                            <p>Motivo</p>
+                            <select name="contacto-mensaje-motivo">
+                                <option></option>
+                                <option value="solicitud">Solicitud</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </article>
+            <article class="opc-contacto-mensaje-texto">
+                <div class="opc-mensaje">
+                    <p>Mensaje</p>
+                    <textarea class="opc-mensaje-configuracion" name="contacto-mensaje" id="contacto-mensaje"
+                        maxlength="200" required></textarea>
+                    <button class="opc-mensaje-button" type="submit">Enviar</button>
+                </div>
+            </article>
         </section>
 
-        <section class="seccion-tres">
-
-        </section>
-        <section class="seccion-cuatro">
-            
-        </section>
     </main>
 
     <footer>
@@ -75,7 +135,7 @@
             <article class="bars-button">
                 <a href=""><i class="fa-solid fa-bars"></i></a>
             </article>
-            
+
             <article class="footer-redes">
                 <a class="footer-redes-gmail" href=""><img src=""></a>
                 <a class="footer-redes-instagram" href=""><img src=""></a>
@@ -83,24 +143,25 @@
                 <a class="footer-redes-twitter" href=""><img src=""></a>
             </article>
 
-           <section class="seccion-footer-listados"> 
-            <article>
-                <ul class="listado-izquierdo">
-                    <p class="footer-cambios-devoluciones" href="">Cambios y devoluciones</p>
-                    <p class="footer-politicas" href="">Politica de privacidad</p>
-                    <p class="footer-arrepentimiento" href="">Arrepentimiento de actividades</p>
-                    <p class="footer-preguntas" href="">Preguntas frecuentes</p>
-                </ul>
-            </article>
-            <article>
-                <ul class="listado-derecho">
-                    <p href="">Contacto</p>
-                    <p href="">Contratacion</p>
-                    <p href="">Terminos y condiciones</p>
-                    <p href="">Transporte</p>
-                </ul>
-            </article>
-           </section>
+            <section class="seccion-footer-listados">
+                <article>
+                    <ul class="listado-izquierdo">
+                        <a class="footer-cambios-devoluciones" href="/cambiosydevoluciones">Cambios y devoluciones</a>
+                        <a class="footer-politicas" href="/politicasdeprivacidad">Politica de privacidad</a>
+                        <a class="footer-arrepentimiento" href="/arrepentimientodeactividades">Arrepentimiento de actividades</a>
+                        <a class="footer-preguntas" href="/preguntasfrecuentes">Preguntas frecuentes</a>
+                        <a class="" href="/preguntasblog">Preguntas, blog de usuarios</a>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="listado-derecho">
+                        <a href="/contacto">Contacto</a>
+                        <a href="/contratacion">Contratacion</a>
+                        <a href="/terminosycondiciones">Terminos y condiciones</a>
+                        <a href="/transporte">Transporte</a>
+                    </ul>
+                </article>
+            </section>
             <article class="footer-end">
                 <a><img class="logo-footer" src="/images/El-Bartero.png" alt="Imagen"></a>
                 <p class="copyright">Copyright ©</p>
@@ -110,4 +171,5 @@
 
     </footer>
 </body>
+
 </html>
