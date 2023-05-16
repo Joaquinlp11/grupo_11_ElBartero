@@ -24,10 +24,10 @@
         <section class="seccion-user">
             <div class="user-option">
                 <a><i class="fa-solid fa-user"></i></a>
-                <a class="descripcion-user">User</a>
+                <a class="descripcion-user" href="/cuentadeusuario">User</a>
             </div>
             <div class="sign-out-option">
-                <a><img class="sign-out-icon" src="/images/Sign-in-blue.png"></a>
+                <a><img class="sign-out-icon" src="/images/Sign-in-white.png"></a>
                 <p class="descripcion-sign-out">Sign out</p>
             </div>
             <div class="sign-up-option">
@@ -68,11 +68,15 @@
                     <p>Nombre de la balanza</p>
                     <p>info</p>
                 </div>
+
                 <div class="opb-balanza-invitacion">
 
                 </div>
 
             </article>
+        </section>
+
+        <section class="seccion-dos-balanza">
 
             <article class="opb-balanza">
 
@@ -95,13 +99,15 @@
                     <div class="opb-canasta-representada">
                         <div class="opb-oferta-canasta-uno"></div>
                     </div>
-                    
+
                     <div class="opb-icono-bartero-flechas">
-                        <img class="imagen-logo-sinNombre" src="/images/Logo-sinNombre-06.png" >
+                        <i class="fa-solid fa-left-long"></i>
+                        <img class="imagen-logo-sinNombre" src="/images/Logo-sinNombre-06.png">
+                        <i class="fa-solid fa-left-long fa-rotate-180"></i>
                     </div>
                     <div class="opb-canasta-representada">
                         <div class="opb-oferta-canasta-dos"></div>
-                        
+
                     </div>
 
                 </div>
@@ -109,39 +115,178 @@
                 <div class="opb-negociacion">
 
                     <div class="opb-negociacion-consulta">
-
+                        <div class="opb-negociacion-porcentaje">
+                            <p>%</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº1</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº2</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº3</p>
+                        </div>
                     </div>
+
                     <div class="opb-negociacion-tablero">
+                        <p class="opb-negociacion-titular">Tablero de negociacion</p>
+
+                        <div class="opb-negociacion-oferta-single">
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">O1.</p>
+                            </div>
+                            <div class="opb-n-t-s-barra"></div>
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">CO1.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="opb-negociacion-oferta-single">
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">CO1.</p>
+                            </div>
+                            <div class="opb-n-t-s-barra"></div>
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">O1.</p>
+                            </div>
+                        </div>
+
+                        <div class="opb-negociacion-oferta-single">
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">O1.</p>
+                            </div>
+                            <div class="opb-n-t-s-barra"></div>
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">CO1.</p>
+                            </div>
+                        </div>
 
                     </div>
+
                     <div class="opb-negociacion-oferta">
+                        <div class="opb-negociacion-porcentaje">
+                            <p>%</p>
+                        </div>
+
+
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº1</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº2</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº3</p>
+                        </div>
 
                     </div>
 
-                </div>
-
-                <div class="opb-negociacion-usuarios">
-
-                    <div class="opb-negociacion-usuario-consulta"></div>
-                    <div class="opb-negociacion-usuario-chat">
-                        <div class="opb-chat-comentarios-destacados"></div>
-                        <div class="opb-chat-privado-publico"></div>
+                    <div class="opb-negociacion-desplegar">
+                        <p class="opb-negociacion-desplegar-texto">desplegar tablero de negociacion</p>
                     </div>
-                    <div class="opb-negociacion-usuario-oferta"></div>
-
-                </div>
-                <div class="opb-negociacion-cronologia">
-
                 </div>
 
             </article>
 
-            <article class="opb-usuarios">
+            <article class="opb-negociacion-usuarios">
+
+                <div class="opb-negociacion-usuario-chat">
+
+                    <div class="opb-chat-comentarios-destacados">
+                        <p class="opb-chat-c-texto">Ver comentarios destacados</p>
+                    </div>
+
+                    <div class="opb-chat-publico-o-privado">
+                        <p>Chat</p>
+                        <label>publico</label>
+                        <input type="radio" name="balanza-chat" value="publico">
+                        <label>privado</label>
+                        <input type="radio" name="balanza-chat" value="privado">
+                    </div>
+
+                    <div class="opb-chat-privado-publico"></div>
+                    <textarea class="opb-chat"></textarea>
+                </div>
+
+                <div class="opb-negociacion-usuario-consulta">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Nombre</p>
+                </div>
+                
+                <div class="opb-negociacion-usuario-oferta">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Nombre</p>
+                </div>
+
 
             </article>
 
         </section>
 
+        <section class="seccion-tres-balanza">
+
+            <article class="opb-informacion">
+
+                <div class="opb-negociacion-cronologia">
+                    <div>
+                        Historia de la negociacion
+                    </div>
+                    <div>
+                        Informacion de la negociacion
+                    </div>
+                    <div class="opb-negociacion-desplegar">
+                        desplegar informacion de la negociacion
+                    </div>
+                </div>
+
+                <div class="opb-usuarios-votacion">
+                    <div class="opb-usuarios-resultados-calificacion">Ver calificacion de la negociacion</div>
+                    <div class="opb-usuarios-resultados-votacion">
+                    <p class="opb-usuarios-resultados-texto">Ver votacion segun:</p>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="seccion-cuatro-balanza">
+
+            <article class="opb-usuarios-votan">
+
+                <div class="opb-usuarios-calificar">
+                    Calificar la negociacion
+                </div>
+                <div class="opb-usuarios-calificar">Votar canastas</div>
+                <div class="opb-usuarios-calificar">Votar balanza</div>
+                
+            </article>
+            
+        </section>
+        <section class="seccion-cinco-balanza">
+
+            <article class="opb-usuarios-otros">
+        <div class="opb-usuarios-comentarios"> 
+            <div class="opb-usuarios-comentarios-foto-ejemplo">Foto</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, optio?</p>
+        </div>
+        <div class="opb-usuarios-comentarios"> 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, optio?</p>
+        </div>
+        <div class="opb-usuarios-comentarios">
+            <textarea ></textarea>
+        </div>
+
+            </article>
+
+        </section>
 
     </main>
 
@@ -164,7 +309,8 @@
                     <ul class="listado-izquierdo">
                         <a class="footer-cambios-devoluciones" href="/cambiosydevoluciones">Cambios y devoluciones</a>
                         <a class="footer-politicas" href="/politicasdeprivacidad">Politica de privacidad</a>
-                        <a class="footer-arrepentimiento" href="/arrepentimientodeactividades">Arrepentimiento de actividades</a>
+                        <a class="footer-arrepentimiento" href="/arrepentimientodeactividades">Arrepentimiento de
+                            actividades</a>
                         <a class="footer-preguntas" href="/preguntasfrecuentes">Preguntas frecuentes</a>
                         <a class="" href="/preguntasblog">Preguntas, blog de usuarios</a>
                     </ul>

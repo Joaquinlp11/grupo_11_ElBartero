@@ -1,26 +1,27 @@
 
 const express = require ( 'express' );
 const app = express();
+
 const path = require ('path');
 
+/* 
+const rutaHome = require ('./routes/mainRoutes.js')
+ */
 
 const publicPath = path.join (__dirname, './public');
+
+
+/* app.use( rutaHome); */
+
 
 app.use ( express.static ( publicPath));
 
 
-app.listen ( 3002 , ()=>{
-    
-    console.log ( 'Servidor corriendo');
-});
 
-
-
-
-app.get ('/home' , ( req , res )=>{
+app.get ('/home' ,( req , res )=>{
 
     res.sendFile ( path.join ( __dirname , '/views/index.html'));
-});
+}, );
 
 
 /*  Registrarse e inicio de sesion Abre */
@@ -82,7 +83,7 @@ app.get ( '/mercaderiausuarios' , ( req , res ) =>{
 /*  Balanza - Subasta - valoracion - Canasta  Abre */
 
 app.get ( '/balanza' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/balanza.html'));
 
 });
@@ -94,7 +95,7 @@ app.get ( '/subasta' , ( req , res ) =>{
 });
 
 app.get ( '/valoracion' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/valoracion.html'));
     
 });
@@ -110,51 +111,51 @@ app.get ( '/canasta' , ( req , res ) =>{
 /* Footer */
 
 app.get ( '/arrepentimientodeactividades' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/foo-arrepentimiento.html'));
-
+    
 });
 
 app.get ( '/contacto' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/foo-contacto.html'));
 
 });
 
 app.get ( '/cambiosydevoluciones' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/cambiosDevoluciones.html'));
 
 });
 
 app.get ( '/politicasdeprivacidad' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/politicasPrivacidad.html'));
-
+    
 });
 
 app.get ( '/terminosycondiciones' , ( req , res ) =>{
 
     res.sendFile ( path.join (__dirname , 'views/terminosCondiciones.html'));
-
+    
 });
 
 
 app.get ( '/preguntasfrecuentes' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/preguntasFrecuentes.html'));
 
 });
 
 app.get ( '/preguntasblog' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/preguntasBlog.html'));
 
 });
 
 
 app.get ( '/transporte' , ( req , res ) =>{
-
+    
     res.sendFile ( path.join (__dirname , 'views/transporte.html'));
 
 });
@@ -167,4 +168,10 @@ app.get ( '/contratacion' , ( req , res ) =>{
 
 
 
+
+
+app.listen ( 3002 , ()=>{
+    
+    console.log ( 'Servidor corriendo');
+});
 

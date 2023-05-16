@@ -20,3 +20,7 @@ Otros html. por hacer o considerar como necesarios para el funcionamiento del si
 
 
 10/05 : Actualizamos el indice con caracteristicas en seccion dos, Categoria de mercado.
+
+11/05: Se crearon los temas y redirecciones del footer.
+
+15/05 : Empezamos sprint tres, orden de carpetas
