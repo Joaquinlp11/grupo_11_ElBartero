@@ -1,0 +1,26 @@
+
+Usamos esta guia, para avisar de los trabajos que fueron realizados.
+Se busca conceptualizar los pasos relizados, tanto como bloques nuevos de secciones o articulos.
+Tambien podemos nombrar selectores.
+
+Antes:
+Iniciamos el trabajo html, css, el Bartero.
+Creamos la carpeta con archivos, Node.js +Express.
+Creamos archivos html, con nombre de sus respectivas paginas.
+Creamos archivo styles. Este es el que abastece a todo el sitio.
+
+Comenzamos a hacer el indice/home.
+Comenzamos a hacer el mercado de comercios.
+Comenzamos a hacer el mercado de usuarios.
+Comenzamos a hacer la cuenta de Usuario. Carrito/Almacen/deposito/galpon.etc.
+Comenzamos a hacer la pagina La balanza.
+Comenzamos a hacer una pagina a donde redirige para ver el producto. detalle. Y poder comprarlo.
+
+Otros html. por hacer o considerar como necesarios para el funcionamiento del sitio.
+
+
+10/05 : Actualizamos el indice con caracteristicas en seccion dos, Categoria de mercado.
+
+11/05: Se crearon los temas y redirecciones del footer.
+
+15/05 : Empezamos sprint tres, orden de carpetas
