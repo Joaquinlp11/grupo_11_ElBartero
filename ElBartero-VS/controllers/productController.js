@@ -27,6 +27,14 @@ const productController = {
         
     },
 
+    getMercaderiaExhibidaId : (req,res)=>{
+
+       let idProducto = req.params.id;
+
+       res.render ()
+    
+    }
+
 
 }
 

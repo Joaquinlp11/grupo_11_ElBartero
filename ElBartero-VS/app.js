@@ -18,6 +18,8 @@ app.use (productRoutes);
 app.use ( userRoutes);
 app.use ( footerRoutes);
 
+
+
 app.set('view engine' , 'ejs');
 
 

@@ -9,7 +9,6 @@ const controlador= {
         res.render ( 'index');
     },
 
-
     getBalanza : ( req , res ) =>{
     
         res.render ('balanza');
