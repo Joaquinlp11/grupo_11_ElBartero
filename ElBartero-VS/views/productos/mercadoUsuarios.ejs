@@ -20,20 +20,43 @@
             <article class="on-page-mercado-usuarios">
                 <h4 class="opmu-titulo-primero">Mercado de Usuarios</h4>
                 <div class="opmu-cateogrias">
-                    <div class="opmu-categoria-oro">
-                        <h5>Oro</h5>
-                    </div>
-                    <div class="opmu-categoria-plata">
-                        <h5>Plata</h5>
-                    </div>
-                    <div class="opmu-categoria-bronce">
-                        <h5>Bronce</h5>
-                    </div>
+                    <a class="opmu-categoria-oro" href="/mercadousuariosoro">
+                        <p>Oro</p>
+                    </a>
+                    <a class="opmu-categoria-plata" href="/mercadousuariosplata">
+                        <p>Plata</p>
+                    </a>
+                    <a class="opmu-categoria-bronce" href="/mercadousuariosbronce">
+                        <p>Bronce</p>
+                    </a>
                 </div>
-                <div class="opmu-input-label">
-                    <label for="mercado-usuarios">Buscar en el mercado de usuarios</label>
-                    <input class="input-search-mercado-usuarios" type="search" name="mercado-usuarios">
-                </div>
+
+                <div class="ompu-buscador">
+                    <div class="ompu-categorias-filtro-buscador">
+                        <p class="opmu-titulo-primero">Filtro</p>
+                        <div class="opmu-categorias-filtro-opciones">
+                            <div class="opmu-categoria-filtro-opciones-oro">
+                                <label for="mercado-usuarios-oro">Oro</label>
+                                <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-oro">
+                            </div>
+                            <div class="opmu-categoria-filtro-opciones-plata">
+                                <label for="mercado-usuarios-plata">Plata</label>
+                                <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-plata">
+                            </div>    
+                                <div class="opmu-categoria-filtro-opciones-bronce">
+                                    <label for="mercado-usuarios-bonce">Bronce</label>
+                                    <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-bronce">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="opmu-input-label">
+                            <label for="mercado-usuarios">Buscar en el mercado de usuarios</label>
+                            <input class="input-search-mercado-usuarios" type="search" name="mercado-usuarios">
+                        </div>
+
+                    </div>
+
             </article>
 
         </section>
@@ -58,7 +81,7 @@
 
             <article class="on-page-usuarios-ofertas">
                 <h4 class="opmu-titulares-article">Ofertas del dia</h4>
-                
+
                 <div class="opmu-muestra-mercaderia-f1-c1">
 
                     <p class="opmu-muestra-titulo">Descripcion del producto</p>
@@ -69,7 +92,8 @@
 
                     <div class="opmu-muestra-mercaderia-choosewindow">
 
-                        <button class="opmu-boton-ver" type="button" onclick="location.href='/mercaderiausuarios';">Ver</button>
+                        <button class="opmu-boton-ver" type="button"
+                            onclick="location.href='/mercaderiausuarios';">Ver</button>
                         <button type="button">Valorar</button>
                         <button class="opmu-boton-al-almacen" type="button">Cargar al almacen</button>
                         <button type="button">Iniciar negociacion</button>

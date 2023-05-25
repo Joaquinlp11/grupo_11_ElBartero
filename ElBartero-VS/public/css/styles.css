@@ -89,24 +89,74 @@ body{
 
 .balanza-icono{
 
-    display: flex;
-    flex-wrap: wrap;
     box-sizing: border-box;
     background-color: orange;
-    width: 25vw;
-    max-width: 100px;
-    min-width: 80px;
+    width: 80px;
+
     border: solid 5px black;
-    margin: 20px;
     border-radius: 10%;
-    align-self: center;
-    justify-content: center;
-    position: absolute;
-    top: 8vh;
-    left: 10vw;
+
+    position: relative;
+    top: 10vh;
+    right: 60vw;
     order: 0;
     flex-grow: 1;
 }
+
+/* menu desplegable, se desprende del icono balanza para mobile y tablet */
+
+
+.balanza-icono{
+
+    color: white;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.balanza-icono-contenido-despelgable{
+    display: inline-block;
+    position: relative;
+
+}
+
+.contenido-desplegable{
+
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 8;
+    text-align: center;
+    top: 120px;
+    right: 60vw;
+}
+
+.comnteido-desplegable a{
+
+    display: block;
+    padding: 12px 16px;
+
+}
+
+.contenido-desplegable a :hover {
+
+    margin-top: 50px;
+    background-color: orange;
+}
+
+.balanza-icono-contenido-despelgable:hover .contenido-desplegable{
+
+    display: block;
+}
+
+.opb-iconos-desplegables{
+
+    width: 60px;
+}
+
+/* cierra menu desplegable icono balanza */
+
 
 .seccion-user{
 
@@ -231,7 +281,8 @@ body{
     flex-wrap: wrap;
     background-color: orange;
     width: 100vw;
-    height: 30vh;
+    height: 60vh;
+    min-height: 800px;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
@@ -249,7 +300,7 @@ body{
     box-sizing: border-box;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     padding: 2%;
     position: relative;
 
@@ -453,11 +504,12 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     height: 90%;
     width: 100%;
     position: relative;
+
 
 }
 
@@ -466,7 +518,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 20%;
+    height: 10%;
     width: 100%;
     flex-grow: .3;
     font-size: 28px;
@@ -481,12 +533,39 @@ h4 {
     box-sizing: border-box;
     height: 30%;
     width: 90%;
-    border: solid 2px black;
+    border: solid 2px gray;
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
     background-color: whitesmoke;
 }
+
+
+.ompu-buscador{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 30%;
+
+}
+
+.ompu-categorias-filtro-buscador{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    border: solid 2px gray;
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+
+/*  */
 
 .opmu-categoria-oro{
 
@@ -499,10 +578,11 @@ h4 {
     flex-grow: .30;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
     border-radius: 10px;
     background-color: gold;
-
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .opmu-categoria-plata{
@@ -516,10 +596,11 @@ h4 {
     flex-grow: .30;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
     border-radius: 10px;
     background-color: silver;
-
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .opmu-categoria-bronce{
@@ -533,10 +614,11 @@ h4 {
     flex-grow: .30;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
     border-radius: 10px;
-    background-color:darkgoldenrod;
-
+    background-color:darkorange;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .opmu-input-label{
@@ -544,7 +626,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     height: 50%;
     justify-content: center;
     align-items: center;
@@ -552,6 +634,29 @@ h4 {
     padding: 20px;
 
 }
+
+.opmu-categoria-filtro-opciones-oro , .opmu-categoria-filtro-opciones-plata , .opmu-categoria-filtro-opciones-bronce{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 30%;
+    height: 50%;
+    background-color: gold;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opmu-categoria-filtro-opciones-plata{
+    
+    background-color: silver;
+}
+
+.opmu-categoria-filtro-opciones-bronce{
+    
+    background-color: darkorange;
+}
+
     
 .input-search-mercado-usuarios{
 
@@ -567,6 +672,18 @@ h4 {
     position: relative;
     left: 10px;
 
+}
+
+.opmu-categorias-filtro-opciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 
@@ -1010,6 +1127,25 @@ h4 {
 
 /* On page: Cuenta de usuario : Abre Body */
 
+.seccion-uno-cuenta-usuario{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 40vh;
+    min-height: 300px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+
+
+}
+
+
 .on-page-cuenta-usuario-cuadro{
 
     display: flex;
@@ -1173,7 +1309,54 @@ h4 {
     margin: 12px;
 
 }
+/* On page cuenta de usuario Contenido desplegable */
 
+
+.opcu-balanza-icono-contenido-despelgable{
+    display: inline-block;
+    position: relative;
+
+}
+
+.opcu-contenido-desplegable{
+
+    display: none;
+    position: absolute;
+    background-color: blue;
+    width: 80px;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 8;
+    text-align: center;
+
+}
+
+.opcu-contenido-desplegable a{
+
+    display: block;
+    padding: 12px 16px;
+
+}
+
+.opcu-contenido-desplegable a :hover {
+
+    margin-top: 50px;
+    background-color: orange;
+}
+
+.opcu-balanza-icono-contenido-despelgable:hover .opcu-contenido-desplegable{
+
+    display: block;
+}
+
+.opcu-iconos-desplegables{
+
+    width: 50px;
+}
+
+
+
+/* Cierra contenido desplegable para cuenta de usuario */
 
 .iconos-negociaciones-Balanza-color{
 
@@ -3286,7 +3469,6 @@ h4 {
 /* on page canasta caracteristicas internas */
 
 
-
 .imagen-logo-sinNombre{
 
     display: flex;
@@ -5126,6 +5308,13 @@ height: 100vh;
     /*      HEADER  769     */
 
 
+.balanza-icono-contenido-despelgable{
+    
+    display: none;
+}
+
+
+
 .seccion-user{
 
     background-color: inherit;
@@ -5426,7 +5615,6 @@ height: 100vh;
 
 
 /* cierra header 769 */
-
 
 
 

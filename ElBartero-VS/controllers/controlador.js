@@ -9,6 +9,12 @@ const controlador= {
         res.render ( 'index');
     },
 
+    getInstructivo : ( req , res ) =>{
+    
+        res.render ('instructivo');
+    
+    },
+
     getBalanza : ( req , res ) =>{
     
         res.render ('balanza');

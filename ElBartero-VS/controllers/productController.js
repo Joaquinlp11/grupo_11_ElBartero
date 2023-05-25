@@ -33,7 +33,23 @@ const productController = {
 
        res.render ()
     
+    },
+
+    getMercadoUsuariosOro : ( req,res)=>{
+
+        res.render ('mercadoUsuariosOro');
+    },
+
+    getMercadoUsuariosPlata : ( req,res)=>{
+
+        res.render ('mercadoUsuariosPlata');
+    },
+
+    getMercadoUsuariosBronce : ( req,res)=>{
+
+        res.render ('mercadoUsuariosBronce');
     }
+
 
 
 }

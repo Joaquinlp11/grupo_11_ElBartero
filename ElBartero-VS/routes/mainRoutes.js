@@ -10,6 +10,8 @@ const router = express.Router();
 router.get ( '/home' , controlador.getIndex );
 
 
+router.get ( '/instructivo' , controlador.getInstructivo );
+
 router.get ( '/balanza' , controlador.getBalanza );
 
 
