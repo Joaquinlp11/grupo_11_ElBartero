@@ -6,36 +6,36 @@ const controlador= {
 
     getIndex: ( req , res )=>{
 
-        res.render ( 'index');
+        res.render ( 'index' , { title : 'El Bartero'});
     },
 
     getInstructivo : ( req , res ) =>{
     
-        res.render ('instructivo');
+        res.render ('instructivo' , { title : 'Instrutivo'});
     
     },
 
     getBalanza : ( req , res ) =>{
     
-        res.render ('balanza');
+        res.render ('balanza' , { title : 'Balanza'});
     
     },
 
     getSubasta : ( req , res ) =>{
     
-        res.render ('subasta');
+        res.render ('subasta' , { title : 'Subasta'});
         
     },
 
     getValoracion : ( req , res ) =>{
     
-        res.render ( 'valoracion');
+        res.render ( 'valoracion' , { title : 'Valoracion'});
         
     },
 
     getCanasta : ( req , res ) =>{
 
-        res.render ( 'canasta');
+        res.render ( 'canasta' , { title : 'Canasta'});
         
     },
 

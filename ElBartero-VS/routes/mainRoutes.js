@@ -15,7 +15,7 @@ router.get ( '/instructivo' , controlador.getInstructivo );
 router.get ( '/balanza' , controlador.getBalanza );
 
 
-router.get ( '/subasta' , controlador.getBalanza );
+router.get ( '/subasta' , controlador.getSubasta );
 
 
 router.get ( '/valoracion' , controlador.getValoracion );

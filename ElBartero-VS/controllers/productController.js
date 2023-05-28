@@ -5,49 +5,47 @@ const productController = {
 
     getMercadoComercial :( req , res ) =>{
     
-        res.render ( 'mercadoComercial');
+        res.render ( 'mercadoComercial' , { title : 'Mercado comercial'});
         
     },
 
     getMercadoUsuarios : ( req , res ) =>{
     
-        res.render ( 'mercadoUsuarios');
+        res.render ( 'mercadoUsuarios' , { title : 'Mercado de Usuarios'});
         
     },
 
     getMercaderiaExhibida : ( req , res ) =>{
     
-        res.render ( 'mercaderiaExhibida');
+        res.render ( 'mercaderiaExhibida' , { title : 'Mercaderia Exhibida'});
         
     },
 
     getMercaderiaUsuarios : ( req , res ) =>{
     
-        res.render ( 'mercaderiaUsuarios');
+        res.render ( 'mercaderiaUsuarios' , { title : 'Mercaderia de usuarios'});
         
     },
 
-    getMercaderiaExhibidaId : (req,res)=>{
-
-       let idProducto = req.params.id;
-
-       res.render ()
-    
-    },
 
     getMercadoUsuariosOro : ( req,res)=>{
 
-        res.render ('mercadoUsuariosOro');
+        res.render ('mercadoUsuariosOro' , { title : 'Mercado de oro'});
     },
 
     getMercadoUsuariosPlata : ( req,res)=>{
 
-        res.render ('mercadoUsuariosPlata');
+        res.render ('mercadoUsuariosPlata' , { title : 'Mercado de plata'});
     },
 
     getMercadoUsuariosBronce : ( req,res)=>{
 
-        res.render ('mercadoUsuariosBronce');
+        res.render ('mercadoUsuariosBronce' , { title : 'Mercado de bronce'});
+    },
+
+    getComprarMercaderia : ( req,res)=>{
+
+        res.render ('comprarMercaderia' , { title : 'Compra'});
     }
 
 

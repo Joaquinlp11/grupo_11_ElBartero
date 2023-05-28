@@ -4902,6 +4902,255 @@ h4 {
 /* on page - blog de usuarios Cierra body */
 
 
+/* on page  comprar mercaderia  abre body*/
+
+.seccion-uno-comprar-mercaderia{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    min-height: 1400px;
+    padding: 5%;
+    background-color: orange;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.on-page-comprar-mercaderia{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    background-color: gainsboro;
+    padding: 2%;
+    border: solid 2px gray;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opcompmerc-mercaderia {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    padding: 2%;
+    border: solid 2px gray;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opcompmerc-informacion{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    border: solid 2px gray;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.opcompmerc-boton-compra{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5%;
+    min-height: 100px;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+
+/* Caracteristicas internas , on page comprar mercaderia*/
+
+.opcompmerc-subtotal{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5%;
+    padding: 2%;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+
+.opcompmerc-subtotal-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 50%;
+    font-size: 24px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcompmerc-subtotal-numero{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 50%;
+    background-color: white;
+    color: green;
+}
+
+.opcompmerc-condiciones-compra-venta{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2%;
+}
+
+.opcompmerc-datos-usuario {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+    padding: 2%;
+    font-size: 14px;
+    border: solid 2px gray;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opcompmerc-datos-transporte{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    font-size: 14px;
+    border: solid 2px gray;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.opcompmerc-transporte-independiente{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    padding: 2%;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+
+.opcompmerc-datos-tarjeta{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35%;
+    padding: 2%;
+    border: solid 2px gray;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcompmerc-datos-tarjeta-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opcompmerc-datos-tarjetas-select{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.opcompmerc-form{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    padding: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* caracteristicas internas */
+
+.opcompmerc-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+.opcompmerc-transporte-independiente-texto{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.opcompmerc-boton{
+
+    width: 100%;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.opcompmerc-boton:hover{
+
+    background-color: rgb(48, 48, 241);
+}
+
+
+/* on page  comprar mercaderia  cierra body*/
+
+
+
+
 
 
 /*          FOOTER      0     */
@@ -4930,7 +5179,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    background-color: orange;
+    background-color: rgb(255, 123, 0);
     width: 100vw;
     height: 250px;
     padding: 20px;
@@ -5273,6 +5522,11 @@ height: 100vh;
 
 
 /*  Cierra body : cuadro del almacen, cuadro dos. iconos y disponibilidad. Cierra*/
+
+
+
+
+
 
 
     /* FOOTER  480      */
@@ -5775,8 +6029,6 @@ height: 100vh;
 
 
 /* On page, mercaderia exhibida USUARIOS, cierra body*/
-
-
 
 
     /*      FOOTER  769     */
