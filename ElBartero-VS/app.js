@@ -21,11 +21,15 @@ app.set ('views' , [
     
 ]);
 
+/* Middlewares */
 app.use ( express.static ( publicPath));
+app.use ( express.urlencoded({ extended: true }));
+app.use ( express.json());
 
 
 
-/* Deben ir despues de los app.use */
+/* Routers */
+/* Deben ir despues de los middlewares */
 
 app.use ( mainRoutes);
 app.use (productRoutes);
@@ -34,6 +38,6 @@ app.use ( footerRoutes);
 
 
 app.listen ( 3002 , ()=>{   
-    console.log ( 'Servidor corriendo');
+    console.log ( 'Servidor corriendo , http://localhost:3002');
 });
 

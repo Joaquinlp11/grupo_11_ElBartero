@@ -19,6 +19,12 @@ userController={
         res.render ( 'userAcount', { title : 'Usuarios'});
         
     },
+    
+    getUserAcountMarcas : ( req , res ) =>{
+    
+        res.render ( 'usersAcountMarcas', { title : 'Marcas'});
+        
+    },
 
 
 }

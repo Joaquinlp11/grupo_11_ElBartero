@@ -526,6 +526,34 @@ h4 {
 
 }
 
+.opmu-acceder-mercado{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 80px;
+    border-bottom: solid 5px gray;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.opmu-titulo-segundo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100px;
+    height: 50%;
+    flex-grow: .3;
+    font-size: 28px;
+    text-decoration: none;
+    justify-content: center;
+
+}
+
 .opmu-cateogrias{
 
     display: flex;
@@ -759,57 +787,82 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    max-width: 250px;
-    width: 45%;
-    height: 40%;
+    width: 400px;
+    height: 80%;
     font-size: 12px;
     padding: 10px;
     background-color: gainsboro;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     border: solid 2px gray;
     border-radius: 10px;
-    opacity: .8;
+
 
 }
 
-
-.opmu-muestra-titulo{
+.opmu-muestra-foto{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 80%;
-    height: 10%;
-    font-size: 100%;
+    width: 50%;
+    height: 100%;
+    border: solid 1px gray;
+    border-radius: 10px;
+    background-color: white;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    font-weight: bold;
-    position: absolute;
-    z-index: 10;
+    position: relative;
 }
+.opmu-muestra-datos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    padding: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 95, 2);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0px;
+
+}
+
 
 .opmu-muestra-mercaderia-foto{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 80%;
-    height: 60%;
-    border: solid 1px gray;
-    border-radius: 10px;
-
+    width: 100%;
+    height: 80%;
+    padding: 2%;
+    order: 0;
 }
+
+.opmu-muestra-titulo , .opmu-muestra-precio{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 
 .opmu-muestra-mercaderia-choosewindow{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 80%;
-    height: 30%;
+    width: 40%;
+    height: 100%;
     border: solid 1px gray;
     border-radius: 10px;
     padding: 1%;
@@ -819,7 +872,26 @@ h4 {
 }
 
 
-/*  */
+/* Botones choosewindow */
+
+.opmu-boton-ver, .opmu-boton-a-valoracion , .opmu-boton-al-almacen, .opmu-boton-a-negociacion, .opmu-boton-compra{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15%;
+    border: solid 2px orange;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+}
+
+
 
 
 /* Mercado de Usuarios : Cierra body */
@@ -846,13 +918,26 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 30%;
+    height: 20%;
     width: 100%;
     flex-grow: .3;
-    font-size: 20px;
+    font-size: 25px;
     justify-content: center;
 }
 
+.opmc-titulo-segundo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    flex-grow: .3;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    text-decoration: none;
+}
 
 .input-search-comercios{
 
@@ -1121,9 +1206,130 @@ h4 {
     border-radius: 5px;
 }
 
-
-
 /* cierra body mercado de comercios */
+
+
+
+/* on page : cuneta marcas : Abre Body */
+
+.seccion-uno-cuenta-marcas{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 40vh;
+    min-height: 300px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+}
+
+.on-page-cuenta-marcas-cuadro{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: row;
+    height: 100%;
+    width: 95%;
+    border: solid 2px black;
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+.opcu-cuadro-marcas-uno{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 30%;
+    height: 90%;
+    background-color: rgb(124, 124, 218);
+    padding: 2%;
+    margin-bottom: 5px;
+    border: solid 2px rgb(89, 89, 221);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.opcu-marca-nombre{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 20%;
+    font-size: 12px;
+    background-color: antiquewhite;
+}
+
+.opcu-marca-imagen{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    height: 50%;
+    background-color: wheat;
+}
+
+.opcu-marca-comentario{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.opcu-cuadro-marcas-dos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 30%;
+    height: 90%;
+    background-color: rgb(124, 124, 218);
+    padding: 2%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: solid 2px rgb(89, 89, 221);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;    
+    position: relative;
+}
+
+.opcu-cuadro-marcas-tres{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 30%;
+    height: 90%;
+    background-color: rgb(124, 124, 218);
+    padding: 2%;
+    border: solid 2px rgb(89, 89, 221);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+/* on page : cuenta marcas : Cierra Body */
+
 
 /* On page: Cuenta de usuario : Abre Body */
 
@@ -1144,7 +1350,6 @@ h4 {
 
 
 }
-
 
 .on-page-cuenta-usuario-cuadro{
 
@@ -1961,12 +2166,12 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 50px;
+    height: 30px;
     width: 95%;
     background-color: beige;
     margin: 2px;
     padding: 2px;
-    margin-top: 20px;
+    margin-top: 5px;
     border: solid 1px gray;
     border-radius: 10px;
 
@@ -2189,7 +2394,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    min-height: 1600px;
+    min-height: 1800px;
     width: 100vw;
     height: 100vh;
     flex-direction: column;
@@ -2262,12 +2467,22 @@ h4 {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 90%;
-    height: 30%;
+    height: 20%;
     font-size: 18px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
+}
+
+.opmeu-opciones-edicion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:90%;
+    height: 20%;
+    font-size: 18px;
 }
 
 
@@ -6083,13 +6298,13 @@ height: 100vh;
     box-sizing: border-box;
     font-weight: bold;
     background-color: rgb(240, 12, 12, 50%);
-    width: 250px;
-    height: 100px;
+    width: 300px;
+    height: 120px;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     order: 1;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     color: blue;
     flex-grow: .5;

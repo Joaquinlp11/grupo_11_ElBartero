@@ -3,7 +3,9 @@
 
 <head>
     <%- include ( '../partials/head' ) %>
-    <title> <%= title %></title>
+        <title>
+            <%= title %>
+        </title>
 </head>
 
 <body>
@@ -19,6 +21,10 @@
 
             <article class="on-page-mercado-usuarios">
                 <h4 class="opmu-titulo-primero">Mercado de Usuarios</h4>
+                <div class="opmu-acceder-mercado">
+                <a class="opmu-titulo-segundo" href="/mercadousuariosmercaderias">Acceder al mercado</a>
+                <a href="/mercadousuariosmercaderias"><i class="fa-solid fa-right-long"></i></a>
+                </div>
                 <div class="opmu-cateogrias">
                     <a class="opmu-categoria-oro" href="/mercadousuariosoro">
                         <p>Oro</p>
@@ -42,20 +48,20 @@
                             <div class="opmu-categoria-filtro-opciones-plata">
                                 <label for="mercado-usuarios-plata">Plata</label>
                                 <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-plata">
-                            </div>    
-                                <div class="opmu-categoria-filtro-opciones-bronce">
-                                    <label for="mercado-usuarios-bonce">Bronce</label>
-                                    <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-bronce">
-                                </div>
+                            </div>
+                            <div class="opmu-categoria-filtro-opciones-bronce">
+                                <label for="mercado-usuarios-bonce">Bronce</label>
+                                <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-bronce">
                             </div>
                         </div>
-
-                        <div class="opmu-input-label">
-                            <label for="mercado-usuarios">Buscar en el mercado de usuarios</label>
-                            <input class="input-search-mercado-usuarios" type="search" name="mercado-usuarios">
-                        </div>
-
                     </div>
+
+                    <div class="opmu-input-label">
+                        <label for="mercado-usuarios">Buscar en el mercado de usuarios</label>
+                        <input class="input-search-mercado-usuarios" type="search" name="mercado-usuarios">
+                    </div>
+
+                </div>
 
             </article>
 
@@ -84,25 +90,37 @@
 
                 <div class="opmu-muestra-mercaderia-f1-c1">
 
-                    <p class="opmu-muestra-titulo">Descripcion del producto</p>
+                    <%mercaderia.forEach( elemento=>{ %>
 
-                    <div class="opmu-muestra-mercaderia-foto">
+                        <% if(elemento.id===1){%>
 
-                    </div>
+                            <div class="opmu-muestra-foto">
+                                <img class="opmu-muestra-mercaderia-foto" src="<%=  elemento.img  %>" alt="">
+                                <div class="opmu-muestra-datos">
+                                    <p class="opmu-muestra-titulo">
+                                        <%= elemento.title %>
+                                    </p>
+                                    <p class="opmu-muestra-precio">
+                                        <%= elemento.price %>
+                                    </p>
+                                    <%}%>
+                                    <% })%>
+                                </div>    
+                            </div>
+                            <div class="opmu-muestra-mercaderia-choosewindow">
 
-                    <div class="opmu-muestra-mercaderia-choosewindow">
+                                <button class="opmu-boton-ver" type="button"
+                                    onclick="location.href='/mercaderiausuariosdetalle';">Ver</button>
 
-                        <button class="opmu-boton-ver" type="button"
-                            onclick="location.href='/mercaderiausuarios';">Ver</button>
-                        <button type="button">Valorar</button>
-                        <button class="opmu-boton-al-almacen" type="button">Cargar al almacen</button>
-                        <button type="button">Iniciar negociacion</button>
-                        <button class="opmu-boton-compra" type="button" type="button" onclick="location.href='/comprarmercaderia';">Comprar</button>
+                                <button class="opmu-boton-a-valoracion" type="button">Valorar</button>
+                                <button class="opmu-boton-al-almacen" type="button">Cargar al almacen</button>
+                                <button class="opmu-boton-a-negociacion" type="button">Iniciar negociacion</button>
+                                <button class="opmu-boton-compra" type="button" type="button"
+                                    onclick="location.href='/comprarmercaderia';">Comprar</button>
 
-                    </div>
-
-
+                            </div>
                 </div>
+
                 <div class="opmu-productos-en-muestra-primera-fila"></div>
                 <div class="opmu-productos-en-muestra-segunda-fila"></div>
                 <div class="opmu-productos-en-muestra-segunda-fila"></div>

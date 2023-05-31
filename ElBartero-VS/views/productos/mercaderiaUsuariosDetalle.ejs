@@ -10,7 +10,7 @@
     <header>
 
         <%- include( '../partials/header' ) %>
-
+ 
     </header>
 
     <main class="main">
@@ -20,18 +20,22 @@
             <article class="opmeu-caracteristicas-article">
 
                 <div class="opmeu-caracteristicas-nombre">
-                    <p>Nombre de la mercaderia</p>
+                    <p>
+                        <%= mercaderia.title %>
+                </p>
                 </div>
                 <div class="opmeu-caracteristicas-fotos">
                     <h4 class="opmeu-caracteristicas-fotos-titular">Fotos</h4>
                 </div>
 
                 <div class="opmeu-caracteristicas-info">
-                    <h4 class="opmeu-caracteristicas-info-titular">Informacion</h4>
+                    <h4 class="opmeu-caracteristicas-info-titular">
+                        Descripcion
+                    </h4>
                 </div>
 
                 <div class="opmeu-caracteristicas-opciones">
-
+                    
                     <button class="opmeu-boton-de-valoracion" type="button">Valorar</button>
                     <button class="opmeu-boton-interes" type="button">Cargar en el almacen</button>
 
@@ -39,7 +43,10 @@
 
                     <button class="opmeu-boton-de-compra" type="button">Comprar</button>
                 </div>
-
+                <div class="opmeu-opciones-edicion">
+                    <button class="opmeu-boton-eliminar">Eliminar esta mercaderia</button>
+                    <button class="opmeu-boton-editar">Editar esta mercaderia</button>
+                </div>
 
             </article>
 
