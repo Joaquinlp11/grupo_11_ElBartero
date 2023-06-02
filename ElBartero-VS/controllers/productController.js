@@ -79,6 +79,13 @@ const productController = {
     },
 
 
+    //************* 
+    
+    /* Se diferencian los mercados de usuarios y comercial */
+    
+    //************* 
+
+
 
     /* Mercado de usuarios */
     getMercadoUsuarios : ( req , res ) =>{
@@ -92,8 +99,10 @@ const productController = {
 
         
         res.render ( 'mercadoUsuariosUno' , { title : 'Mercado de Usuarios' , mercaderia });
-            
+        
     },
+    
+   
 
     /* Donde estaran las mercaderias de los usuarios */
     /* Mercado de usuarios Merado de oro */
@@ -113,6 +122,7 @@ const productController = {
 
         res.render ('mercadoUsuariosBronce' , { title : 'Mercado de bronce'});
     },
+
 
 
     /* Detalle de mercaderia en mercado de usuarios */
@@ -135,6 +145,58 @@ const productController = {
         res.render ( 'mercaderiaUsuariosDetalle' , { title : 'Mercaderia de usuarios' , mercaderia : mercaderiaAMostrar });
         
     },
+
+    deleteMercaderiaUsuariosDetalle: ( req,res )=>{
+
+        const id = Number(req.params.id);
+        /* Se explica como matchear el id que sea diferente al seleccionado */
+        /* El id que coincida se descarta */
+        mercaderiasAcualizadas = mercaderia.filter(elemento =>elemento.id !== id);
+
+        mercaderia = mercaderiasAcualizadas;
+
+        res.redirect ( '/mercadousuariosmercaderias');
+    },
+
+
+     /* Edicion de mercaderia */
+     getUpdateMercaderiaUsuariosDetalle: (req,res)=>{
+        
+        const id = Number(req.params.id);
+
+        const mercaderiaAEditar = mercaderia.find ( elemento => elemento.id === id);
+
+        if(!mercaderiaAEditar){
+
+            return res.send('La mercaderia no fue identificada');
+        };
+
+        res.render ( 'updateMercaderia' , { title:'Update Mercaderia', mercaderia: mercaderiaAEditar });
+
+    },
+
+    updateMercaderiaUsuariosDetalle: (req,res)=>{
+
+        const id=Number(req.params.id);
+        const datosEditados = req.body;
+
+        const mercaderiaAEditar = mercaderia.find(elemento=> elemento.id === id);
+
+        //buscamos el indice de la mercaderia para modificarla
+        //en este ejemplo usamos indexof
+
+        const indice = mercaderia.indexOf(mercaderiaAEditar);
+        /* encontramos el indice y lo guardamos en la variable */
+        /* de esta manera asignamos el indice del objeto y utilizamos las asignaciones para modificar */
+
+        mercaderia[indice].title = datosEditados.title;
+        mercaderia[indice].price = datosEditados.price;
+        
+
+        res.redirect( '/mercadousuariosmercaderias');
+
+    },
+
     
     /* Creacion desde la cuenta usuarios */
     /* Envia a mercado de usuarios, formulario */

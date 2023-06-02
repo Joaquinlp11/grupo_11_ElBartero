@@ -5,12 +5,12 @@ userController={
 
     getSignIn : ( req , res ) =>{
     
-        res.render ( 'signIn' , );
+        res.render ( 'signIn' , {title : 'Iniciar Sesion'} );
     },
 
     getSignUp : ( req , res ) =>{
     
-        res.render ('signUp');
+        res.render ('signUp' , {title: 'Registracion'});
 
     },
 
@@ -19,7 +19,7 @@ userController={
         res.render ( 'userAcount', { title : 'Usuarios'});
         
     },
-    
+
     getUserAcountMarcas : ( req , res ) =>{
     
         res.render ( 'usersAcountMarcas', { title : 'Marcas'});
