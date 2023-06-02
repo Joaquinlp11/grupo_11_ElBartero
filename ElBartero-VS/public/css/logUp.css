@@ -1,8 +1,8 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+  } */
   h1 {
     color: #ebe9e5;
     text-shadow: 1px 1px 1px#11100f;
@@ -11,9 +11,9 @@
     background-color: transparent;
     border: none;
   }
-  .logo-bartero {
+  /* .logo-bartero {
     height: 10vw;
-  }
+  } */
   .signup-botons {
     display: none;
   }
@@ -38,7 +38,7 @@
       #ffb700,
       #ffa500
     );
-    width: 90%;
+    
     margin: auto;
   }
   .finance {
@@ -163,11 +163,11 @@
     margin-top: 5px;
   }
   
-  .main-header {
+  /* .main-header {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
   .s-search {
     text-align: center;
@@ -196,7 +196,6 @@
   
   .registration-form {
     border-top: solid 2px #f29100;
-    margin-top: 10px;
     border-bottom: solid 2px #f29100;
     display: flex;
     flex-direction: column;
@@ -243,6 +242,7 @@
   }
   /* MEDIA QUERIES mobil 360PX */
   @media (min-width: 360px) {
+
   }
   
   /* -------MEDIA QUERIES TABLET 768PX ---------------*/

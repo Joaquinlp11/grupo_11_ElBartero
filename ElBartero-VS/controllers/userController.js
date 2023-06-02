@@ -5,7 +5,7 @@ userController={
 
     getSignIn : ( req , res ) =>{
     
-        res.render ( 'signIn' , );
+        res.render ( 'signIn' ,{title: 'Ingresa'} );
     },
 
     getSignUp : ( req , res ) =>{
