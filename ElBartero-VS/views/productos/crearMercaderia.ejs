@@ -11,7 +11,7 @@
     <main class="main">
         <section class="seccion-uno">
             <h2>Creacion de mercaderia</h2>
-        <form action="/mercadousuariosmercaderias" method="post">
+        <form action="/mercadousuariosmercaderias" method="post" enctype="multipart/form-data">
             <label for="">Nombre</label>
             <input type="text" name="title" id="">
             <br>
@@ -60,8 +60,8 @@
                 <option value="malo">Malo</option>
             </select>
             <br>
-            <label for="">Subir Foto</label>
-            <input type="file" name="Foto" id="">
+            <label for="img">Subir Foto</label>
+            <input type="file" name="img" id="img">
             <br>
             <textarea name="Comentariomercaderia" id="" cols="30" rows="4" maxlength="150">Escribir un comentario</textarea>
             <br>

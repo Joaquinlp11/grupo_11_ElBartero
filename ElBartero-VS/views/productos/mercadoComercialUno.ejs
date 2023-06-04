@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <%- include('../partials/head') %>
-    <title> <%= title %></title>
+        <title>
+            <%= title %>
+        </title>
 </head>
+
 <body>
     <header>
         <%- include ('../partials/header')%>
@@ -11,6 +15,15 @@
     <main>
         <section class="seccion-uno">
             <article>
+                <h2>Productos</h2>
+
+                <%mercaderiaMarcas.forEach(elemento=> {%>
+
+                    <%=elemento.title %>
+                    <%=elemento.price %>
+                    <a href="/<%= elemento.id%>/mercaderiaenexhibiciondetalle"><button>Ver detalles de la mercaderia</button></a>
+
+                    <% }); %>
 
             </article>
         </section>
@@ -25,4 +38,5 @@
         <%- include ('../partials/footer')%>
     </footer>
 </body>
+
 </html>

@@ -15,7 +15,17 @@
 
             <form action="/mercadocomercialmercaderias" method="post">
                 <label for="">Nombre</label>
-                <input type="text">
+                <input type="text" name="title">
+                <label for="">Precio</label>
+                <input type="number" name="price">
+                <label for="">Descripcion</label>
+                <input type="text" name="description">
+                <label for="">Año aproximado</label>
+                <input type="number" name="year" id="" min="1900" max="2099" placeholder="2023">
+                <label for="img">Subir Foto</label>
+                <input type="file" name="img" id="img">
+                <textarea name="" id="" cols="20" rows="4"></textarea>
+                
 
                 <input type="submit">
             </form>

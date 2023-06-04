@@ -2,9 +2,22 @@
 const express = require ('express');
 
 const router = express.Router();
+const multer = require('multer');
 
 const productController = require ('../controllers/productController.js');
 
+
+const storage = multer.diskStorage({
+
+    destination:(req,file,cb)=>{
+        cb(null,'../public/uploadImges/imagenesmercaderias')
+    },
+    filename:(req,file,cb)=>{
+        cb(null,file.fieldname + '-' + Date.now());
+    }
+});
+
+const upload = multer({storage});
 
 
 // @get /mercadocomercial
@@ -13,17 +26,26 @@ router.get ( '/mercadocomercial' , productController.getMercadoComercial );
 //@get /mercadocomercialmercaderias
 router.get ( '/mercadocomercialmercaderias' , productController.getMercadoComercialMercaderias );
 
-// @get /mercadocomercial/mercadocomercialmercaderias/mercaderiaenexhibicion
-router.get ( '/mercaderiaenexhibiciondetalle' , productController.getMercaderiaExhibidaDetalle );
+// @post /mercadocomercial/mercadocomercialmercadrias 
+router.post ('/mercadocomercialmercaderias', upload.single('img') , productController.postMercadoComercialMercaderias);
 
 
 /* lAs mercaderias son creadas desde la cuenta de marcas */
-//@get /mercadocomercial/mercaderiaenexhibicon/creaciondemercaderia
 
+//@get /useracountmarcas/crearmercaderiamarcas
 router.get ( '/crearmercaderiamarcas' , productController.getCrearMercaderiaMarcas );
 
-router.post ('/mercadocomercialmercaderias' , productController.postMercadoComercial);
+// @get /mercadocomercial/mercadocomercialmercaderias/mercaderiaenexhibicion
+router.get ( '/:id/mercaderiaenexhibiciondetalle' , productController.getMercaderiaExhibidaDetalle );
 
+// @get /mercadocomercial/mercadocomercialmercaderias/mercaderiaenexhibicion
+router.delete ( '/mercaderiaenexhibiciondetalle/:id/delete' , productController.deleteMercaderiaExhibidaDetalle );
+
+// @get /mercadocomercial/mercadocomercialmercaderias/mercaderiaenexhibiciondetalle
+router.get ( '/mercaderiaenexhibiciondetalle/:id/update' , productController.getUpdateMercaderiaExhibidaDetalle );
+
+// @put /mercadocomercial/mercadocomercialmercaderias/mercaderiaenexhibiciondetalle
+router.put ( '/mercaderiaenexhibiciondetalle/:id/update' , productController.updateMercaderiaExhibidaDetalle );
 
 
 
@@ -38,6 +60,8 @@ router.get ( '/mercadousuariosmercaderias' , productController.getMercadoUsuario
 //@post /mercadousuarios/mercaderiausuarios 
 router.post ( '/mercadousuariosmercaderias' , productController.postMercaderiaUsuariosMercaderias );
 
+
+
 /* las mercaderias son creadas desde la cuenta de usuarios */
 // @get /useracount/crearmercaderia
 router.get ( '/crearmercaderia' , productController.getCrearMercaderia );
@@ -45,7 +69,8 @@ router.get ( '/crearmercaderia' , productController.getCrearMercaderia );
 // @get /mercadousuarios/:id/mercaderiausuariosdetalle
 router.get ( '/:id/mercaderiausuariosdetalle' , productController.getMercaderiaUsuariosDetalle );
 
-// @delete /mercadousuarios/:id/mercaderiausuarios => /mercadousuarios/delete
+
+// @delete /mercadousuarios/:id/mercaderiausuariosdetalle => /mercadousuarios/delete
 router.delete ( '/mercaderiausuariosdetalle/:id/delete' , productController.deleteMercaderiaUsuariosDetalle );
 
 
@@ -78,7 +103,6 @@ router.get ( '/mercadousuariosbronce' , productController.getMercadoUsuariosBron
 // @get /mercadousuarios /  * mercadousuariosoro , * mercadousuariosplata , * mercadousuariosbronce / comprarmercaderia
 
 router.get ( '/comprarmercaderia' , productController.getComprarMercaderia );
-
 
 
 
