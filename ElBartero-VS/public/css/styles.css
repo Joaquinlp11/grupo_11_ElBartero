@@ -5541,14 +5541,14 @@ body {
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
-        background-color: rgb(255, 123, 0);
+        background-color: #fdbc07;
         width: 100vw;
         height: 250px;
         padding: 20px;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: center;
         align-items: flex-start;
-        align-self: center;
+        align-self: flex-start;
         position: relative;
 
     }
@@ -5577,55 +5577,40 @@ body {
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
-        background-color: rgba(255, 0, 0, 0.239);
+        background-color: rgba(255, 0, 0, 0.144);
         width: 90vw;
         height: 10vh;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        position: absolute;
+        /*position: absolute;
         z-index: 90;
         right: 20px;
-        left: 20px;
+        left: 20px;*/
     }
 
     .footer-redes-gmail {
-
-        display: block;
         width: 30px;
         height: 30px;
-        background-color: rgba(255, 0, 0, 0.239);
-        position: absolute;
+        background-color: white;
     }
 
     .footer-redes-instagram {
-
-        display: block;
         width: 30px;
         height: 30px;
-        background-color: rgba(255, 0, 0, 0.239);
-        position: absolute;
-
+        background-color: white;
     }
 
     .footer-redes-facebook {
-
-        display: block;
         width: 30px;
         height: 30px;
-        background-color: rgba(255, 0, 0, 0.239);
-        position: absolute;
-
+        background-color: white;
     }
 
     .footer-redes-twitter {
-
-        display: block;
         width: 30px;
         height: 30px;
-        background-color: rgba(255, 0, 0, 0.239);
-        position: absolute;
-
+        background-color: white;
     }
 
     .listado-izquierdo {
@@ -5922,7 +5907,7 @@ body {
 
     .footer-redes {
 
-        width: 95vw;
+        width: 20vw;
     }
 
 
@@ -6293,7 +6278,7 @@ body {
 
     .seccion-footer {
 
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
 
@@ -6449,12 +6434,12 @@ body {
 
 
     .seccion-footer-listados {
-
+        display: flex;
         background-color: rgba(red, rgb(76, 179, 76), rgb(182, 182, 206), 50%);
         position: absolute;
-        padding: 20px;
+        /*padding: 20px;*/
         z-index: 95;
-        left: 20px;
+        /*left: 20px;*/
         right: 10px;
         width: 90vw;
     }
@@ -6471,19 +6456,19 @@ body {
         box-sizing: border-box;
         font-weight: bold;
         flex-direction: column;
-        background-color: rgb(240, 12, 12, 50%);
+        /*background-color: rgb(240, 12, 12, 50%);*/
         width: 280px;
         height: 120px;
         padding: 10px;
-        border-bottom: solid 5px orange;
+        /*border-bottom: solid 5px orange;*/
         justify-content: space-between;
         align-items: flex-start;
         order: 0;
-        position: absolute;
         color: blue;
+        /*position: absolute;
         flex-grow: .5;
         z-index: 96;
-        top: 60px;
+        top: 60px;*/
     }
 
     .listado-derecho {
@@ -6492,7 +6477,7 @@ body {
         font-size: 16px;
         box-sizing: border-box;
         font-weight: bold;
-        background-color: rgb(240, 12, 12, 50%);
+        /*background-color: rgb(240, 12, 12, 50%);*/
         width: 300px;
         height: 120px;
         flex-direction: column;
@@ -6500,11 +6485,10 @@ body {
         align-items: flex-start;
         order: 1;
         padding: 5px;
-        position: absolute;
         color: blue;
+        position: absolute;
         flex-grow: .5;
         z-index: 92;
-        top: 90px;
         left: 60vw;
     }
 
