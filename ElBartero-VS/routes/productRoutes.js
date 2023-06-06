@@ -9,15 +9,30 @@ const productController = require ('../controllers/productController.js');
 
 const storage = multer.diskStorage({
 
-    destination:(req,file,cb)=>{
-        cb(null,'../public/uploadImges/imagenesmercaderias')
+    destination:(req, file , cb)=>{
+        cb(null,'./public/uploadImages/imagenesmercaderias')
     },
-    filename:(req,file,cb)=>{
-        cb(null,file.fieldname + '-' + Date.now());
+    filename:(req , file , cb )=>{
+
+        cb(null,file.fieldname + '-' + Date.now()+ '-'+ file.originalname);
     }
 });
 
+const storageMarcas = multer.diskStorage({
+
+    destination:(req, file , cb)=>{
+        cb(null,'./public/uploadImages/imagenesmercaderiasmarcas')
+    },
+    filename:(req , file , cb )=>{
+
+        cb(null,file.fieldname + '-' + Date.now()+ '-'+ file.originalname);
+    }
+});
+
+
+
 const upload = multer({storage});
+const uploadMarcas = multer({storageMarcas});
 
 
 // @get /mercadocomercial
@@ -27,7 +42,8 @@ router.get ( '/mercadocomercial' , productController.getMercadoComercial );
 router.get ( '/mercadocomercialmercaderias' , productController.getMercadoComercialMercaderias );
 
 // @post /mercadocomercial/mercadocomercialmercadrias 
-router.post ('/mercadocomercialmercaderias', upload.single('img') , productController.postMercadoComercialMercaderias);
+router.post ('/mercadocomercialmercaderias', uploadMarcas.single('img') , productController.postMercadoComercialMercaderias);
+
 
 
 /* lAs mercaderias son creadas desde la cuenta de marcas */
@@ -51,6 +67,7 @@ router.put ( '/mercaderiaenexhibiciondetalle/:id/update' , productController.upd
 
 
 
+
 // @get /mercadousuarios => Buscador de mercaderias principal
 router.get ( '/mercadousuarios' , productController.getMercadoUsuarios );
 
@@ -58,7 +75,7 @@ router.get ( '/mercadousuarios' , productController.getMercadoUsuarios );
 router.get ( '/mercadousuariosmercaderias' , productController.getMercadoUsuariosMercaderias );
 
 //@post /mercadousuarios/mercaderiausuarios 
-router.post ( '/mercadousuariosmercaderias' , productController.postMercaderiaUsuariosMercaderias );
+router.post ( '/mercadousuariosmercaderias' , upload.single('img') , productController.postMercaderiaUsuariosMercaderias );
 
 
 

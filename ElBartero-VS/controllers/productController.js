@@ -1,7 +1,13 @@
 
 const path = require( 'path');
+const fs = require ('fs')
 
 const mercaderiasModel = require ('../models/mercaderia');
+
+const mercaderiasJSON = fs.readFileSync( path.join(__dirname, '../data/mercaderias.json'),'utf-8');
+const mercaderia = JSON.parse(mercaderiasJSON);
+
+console.log
 
 /* 
 let mercaderia=[
@@ -17,7 +23,8 @@ let mercaderiaMarcas=[
     {
         id: 1,
         title: 'Tostadora',
-        price:1000
+        price:1000,
+
     }
 ]
 
@@ -69,10 +76,12 @@ const productController = {
 
         const datosMarcas = req.body;
         
+        datosMarcas.id = mercaderiaMarcas.length +1;
+        datosMarcas.price = Number(datosMarcas.price);
+        datosMarcas.img = '/uploadImages/imagenesmercaderiasmarcas' + req.file.filename;
+        
         mercaderiaMarcas.push(datosMarcas);
         
-        datosMarcas.id = mercaderiaMarcas.length +1;
-    
         res.redirect('/mercadocomercialmercaderias');
     },
 
@@ -227,7 +236,7 @@ const productController = {
 
     updateMercaderiaUsuariosDetalle: (req,res)=>{
 
-        const id=Number(req.params.id);
+        const id = Number(req.params.id);
         const datosEditados = req.body;
 
         mercaderiasModel.updateById(id, datosEditados);
@@ -250,6 +259,9 @@ const productController = {
     postMercaderiaUsuariosMercaderias: (req,res)=>{
         
         const newMercaderia = req.body;
+
+        newMercaderia.price = Number(newMercaderia.price);
+/*         newMercaderia.img = '/uploadImages/imagenesmercaderias' + req.file.filename; */
         
         mercaderiasModel.createOne(newMercaderia);
 
@@ -266,7 +278,6 @@ const productController = {
         res.render ('crearMercaderia' , {title:'Crear mercaderia'});
 
     },
-
 
 
 

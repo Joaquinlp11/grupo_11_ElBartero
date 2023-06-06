@@ -1,6 +1,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { title } = require('process');
 
 const model={
 
@@ -27,7 +28,8 @@ const model={
     
         let mercaderias = this.findAll();
 
-        let searched = mercaderias.find(elemento=>elemento.id === id);
+
+        let searched = mercaderias.find(elemento=>elemento.id===id);
 
         if(!searched){
 
@@ -85,7 +87,7 @@ const model={
 
         let mercaderias = this.findAll();
         
-        newMercaderia.id = mercaderias[mercaderias.lenght -1].id +1;
+        newMercaderia.id = mercaderias[mercaderias.lenght].id;
         
         mercaderias.push(newMercaderia); 
 
@@ -96,7 +98,6 @@ const model={
     }
 }
 
-console.log(findById(1));
-
+console.log(model.createOne({title:'Cafetera' , price:80000}));
 
 module.exports=model;
