@@ -8,13 +8,13 @@
 </head>
 <body>  
 
-        <form action="/mercaderiaenexhibiciondetalle/<%=mercaderiaMarcas.id%>/update?_method=put" method="post">
+        <form action="/mercaderiaenexhibiciondetalle/<%=mercaderiasMarcas.id%>/update?_method=put" method="post">
             <label for="">Nombre</label>
-            <input type="text" name="title" value="<%=mercaderiaMarcas.title%>">
+            <input type="text" name="title" value="<%=mercaderiasMarcas.title%>">
             <label for="">Precio</label>
-            <input type="number" name="price" value="<%=mercaderiaMarcas.price%>">
+            <input type="number" name="price" value="<%=mercaderiasMarcas.price%>">
             <label for="img">Imagen</label>
-            <input type="file" name="img" id="img" value="<%=mercaderiaMarcas.img%>">
+            <input type="file" name="img" id="img" value="<%=mercaderiasMarcas.img%>">
 
             <input type="submit" value="Guardar cambios">
         </form>

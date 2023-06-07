@@ -1,1 +1,48 @@
-[{"id":1,"title":"Plancha","price":"25000"},{"id":2,"title":"Heladera","price":200000}]
+[
+    {
+        "id": 1,
+        "title": "Plancha",
+        "price": "25000"
+    },
+    {
+        "id": 2,
+        "title": "Heladera",
+        "price": 200000
+    },
+    {
+        "title": "Cafetera",
+        "price": 80000,
+        "id": 3
+    },
+    {
+        "title": "Cafetera",
+        "price": 80000,
+        "id": 4
+    },
+    {
+        "title": "Cafetera",
+        "price": 80000,
+        "id": 5
+    },
+    {
+        "id": 8,
+        "title": "Plancha",
+        "price": "130000"
+    },
+    {
+        "title": "Plancha",
+        "price": 100000,
+        "id": 9
+    },
+    {
+        "title": "Tostadora",
+        "description": "Super teconologica",
+        "categoria de mercado": "oro",
+        "price": 120000,
+        "actividadescomercialesadmitidas": "Todas las opciones",
+        "estadodelamercaderia": "nuevo",
+        "Comentariomercaderia": "Escribir un comentario",
+        "Cargarmercaderiaalmercadodeusuarios": "on",
+        "id": 10
+    }
+]

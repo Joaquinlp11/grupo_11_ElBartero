@@ -1,27 +1,33 @@
-
-{
-
-    "mercaderiaMarcas":[
-
+[
     {
-        "id":1,
-        "title": "Plancha",
-        "price": 80000
-
-    },
-    {
-        "id":2,
-        "title": "Tostadora",
-        "price": 50000
-
-    },
-    {
-        "id":3,
+        "id": 2,
         "title": "Heladera",
-        "price": 150000
-
+        "price": 425100
+    },
+    {
+        "id": 3,
+        "title": "Licuadora",
+        "price": 171300
+    },
+    {
+        "id": 4,
+        "title": "Cafetera",
+        "price": 225100
+    },
+    {
+        "title": "Heladera",
+        "price": 425000,
+        "description": "Super teconologica",
+        "year": "",
+        "img": "",
+        "id": 4
+    },
+    {
+        "title": "Secarropas",
+        "price": 450000,
+        "description": "Hogareña 3000",
+        "year": "2020",
+        "img": "",
+        "id": 5
     }
-
 ]
-
-}

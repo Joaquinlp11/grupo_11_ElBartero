@@ -86,18 +86,19 @@ const model={
     createOne: function(newMercaderia){
 
         let mercaderias = this.findAll();
-        
-        newMercaderia.id = mercaderias[mercaderias.lenght].id;
+
+        newMercaderia.id = mercaderias.length +1;
         
         mercaderias.push(newMercaderia); 
 
         const mercaderiasJSON = JSON.stringify(mercaderias);
 
         fs.writeFileSync(path.join(__dirname, this.route), mercaderiasJSON);
+        
+        return newMercaderia;
 
     }
 }
 
-console.log(model.createOne({title:'Cafetera' , price:80000}));
 
 module.exports=model;

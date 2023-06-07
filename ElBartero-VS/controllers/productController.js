@@ -3,30 +3,8 @@ const path = require( 'path');
 const fs = require ('fs')
 
 const mercaderiasModel = require ('../models/mercaderia');
+const mercaderiasMarcasModel = require('../models/mercaderiaMarcas');
 
-const mercaderiasJSON = fs.readFileSync( path.join(__dirname, '../data/mercaderias.json'),'utf-8');
-const mercaderia = JSON.parse(mercaderiasJSON);
-
-console.log
-
-/* 
-let mercaderia=[
-
-    {
-        id: 1,
-        title: 'Tostadora',
-        price:1000
-    }
-] */
-
-let mercaderiaMarcas=[
-    {
-        id: 1,
-        title: 'Tostadora',
-        price:1000,
-
-    }
-]
 
 
 const productController = {
@@ -34,41 +12,43 @@ const productController = {
     /* Mercado comercial */
     getMercadoComercial :( req , res ) =>{
 
+        const mercaderiasMarcas = mercaderiasMarcasModel.findAll();
     
-        res.render ( 'mercadoComercial' , { title : 'Mercado comercial' , mercaderiaMarcas});
+        res.render ( 'mercadoComercial' , { title : 'Mercado comercial' , mercaderiasMarcas});
         
     },
 
     /* Mercado comercial Mercaderias */
     getMercadoComercialMercaderias : (req,res)=>{
 
+        const mercaderiasMarcas = mercaderiasMarcasModel.findAll();
 
-        res.render ('mercadoComercialUno', {title : 'Mercado comercial' , mercaderiaMarcas})
+        res.render ('mercadoComercialUno', {title : 'Mercado comercial' , mercaderiasMarcas})
+
     },
     
-
 
     /* Detalle de mercaderia en mercado comercial */
     getMercaderiaExhibidaDetalle : ( req , res ) =>{
         
         const id = Number(req.params.id);
 
-        const mercaderiaMarcasAMostrar = mercaderiaMarcas.find(elemento=> elemento.id ===id);
+        const mercaderiaMarcaAMostrar = mercaderiasMarcasModel.findById(id);
 
-        if(!mercaderiaMarcasAMostrar){
+        if(!mercaderiaMarcaAMostrar){
 
             return res.send ('El id de la mercaderia no es valido');
         }
 
-        res.render ('mercaderiaExhibidaDetalle' , { title:'Mercaderia' , mercaderiaMarcas:mercaderiaMarcasAMostrar});
+        res.render ('mercaderiaExhibidaDetalle' , { title:'Mercaderia' , mercaderiasMarcas:mercaderiaMarcaAMostrar});
 
     },
 
-    
     /* Creamos la pagina de crear mercaderia, marcas , desde usuario marcas*/
     getCrearMercaderiaMarcas : (req,res)=>{
 
         res.render ( 'crearMercaderiaMarcas' ,{title:'Crear mercaderia marcas'})
+
     },
 
     /* Envia a mercado cmercial, formulario */
@@ -76,22 +56,20 @@ const productController = {
 
         const datosMarcas = req.body;
         
-        datosMarcas.id = mercaderiaMarcas.length +1;
         datosMarcas.price = Number(datosMarcas.price);
-        datosMarcas.img = '/uploadImages/imagenesmercaderiasmarcas' + req.file.filename;
+      /*   datosMarcas.img = '/uploadImages/imagenesmercaderiasmarcas' + req.file.filename; */
         
-        mercaderiaMarcas.push(datosMarcas);
+        mercaderiasMarcasModel.createOne(datosMarcas);
         
         res.redirect('/mercadocomercialmercaderias');
+
     },
 
     deleteMercaderiaExhibidaDetalle: (req,res)=>{
 
         const id = Number(req.params.id);
 
-        const mercaderiaMarcasActualizadas = mercaderiaMarcas.filter(elemento=>elemento.id !== id);
-
-        mercaderiaMarcas = mercaderiaMarcasActualizadas;
+        mercaderiasMarcasModel.deleteById(id);
 
         res.redirect('/mercadocomercialmercaderias')
 
@@ -101,14 +79,14 @@ const productController = {
 
         const id = Number(req.params.id);
 
-        const mercaderiaMarcasAModificar = mercaderiaMarcas.find(elemento=> elemento.id ===id);
+        const mercaderiaMarcaAModificar = mercaderiasMarcasModel.findById(id);
 
-        if(!mercaderiaMarcasAModificar){
+        if(!mercaderiaMarcaAModificar){
 
             return res.send('El id de la mercaderia no es valido');
         };
 
-        res.render ( 'updateMercaderiaMarcas' , {title : 'Editar Mercaderia', mercaderiaMarcas : mercaderiaMarcasAModificar})
+        res.render ( 'updateMercaderiaMarcas' , {title : 'Editar Mercaderia', mercaderiasMarcas : mercaderiaMarcaAModificar})
 
     },
 
@@ -117,13 +95,7 @@ const productController = {
         const id = Number(req.params.id);
         const datosEditadosMarcas = req.body;
 
-        const mercaderiaMarcasAEditar = mercaderiaMarcas.find(elemento=> elemento.id === id);
-
-        const indice = mercaderiaMarcas.indexOf(mercaderiaMarcasAEditar);
-
-        mercaderiaMarcas[indice].title = datosEditadosMarcas.title;
-        mercaderiaMarcas[indice].price = datosEditadosMarcas.price;
-        mercaderiaMarcas[indice].description = datosEditadosMarcas.description;
+        mercaderiasMarcasModel.updateById(id,datosEditadosMarcas);
 
         res.redirect('/mercadocomercialmercaderias');
     },
@@ -136,7 +108,6 @@ const productController = {
     //************* 
 
 
-
     /* Mercado de usuarios */
     getMercadoUsuarios : ( req , res ) =>{
 
@@ -145,6 +116,7 @@ const productController = {
         res.render ( 'mercadoUsuarios' , { title : 'Mercado de Usuarios' , mercaderia });
             
     },
+
     /* Mercado de usuarios Mercaderias */
 
     getMercadoUsuariosMercaderias : ( req , res ) =>{
@@ -187,9 +159,6 @@ const productController = {
 
         const mercaderiaAMostrar = mercaderiasModel.findById(id);
 
-        /* Buscamos en el array de productos, igual al id por params */
-        /* const mercaderiaAMostrar = mercaderia.find(elemento=> elemento.id ===id); */
-
         /* Si es invalido muestra mensaje */
         if(!mercaderiaAMostrar){
         
@@ -208,9 +177,6 @@ const productController = {
 
         mercaderiasModel.deleteById(id);
 
-        /* mercaderiasAcualizadas = mercaderia.filter(elemento =>elemento.id !== id); 
-        mercaderia = mercaderiasAcualizadas;*/
-
         res.redirect ( '/mercadousuariosmercaderias');
     },
 
@@ -221,9 +187,6 @@ const productController = {
         const id = Number(req.params.id);
 
         const mercaderiaAEditar = mercaderiasModel.findById(id);
-
-        /* Esto es antes de hacer las funciones en el models,mercaderia */
-        /* const mercaderiaAEditar = mercaderia.find ( elemento => elemento.id === id); */
 
         if(!mercaderiaAEditar){
 
@@ -241,14 +204,6 @@ const productController = {
 
         mercaderiasModel.updateById(id, datosEditados);
 
-     /*    const mercaderiaAEditar = mercaderia.find(elemento=> elemento.id === id);
-
-        const indice = mercaderia.indexOf(mercaderiaAEditar);
-
-        mercaderia[indice].title = datosEditados.title;
-        mercaderia[indice].price = datosEditados.price;
-
- */
         res.redirect( '/mercadousuariosmercaderias');
 
     },
@@ -265,9 +220,6 @@ const productController = {
         
         mercaderiasModel.createOne(newMercaderia);
 
-        /* mercaderia.push(datos);
-        datos.id = mercaderia.length +1; */
-    
         res.redirect('/mercadousuariosmercaderias');
      
     },
@@ -278,7 +230,6 @@ const productController = {
         res.render ('crearMercaderia' , {title:'Crear mercaderia'});
 
     },
-
 
 
 

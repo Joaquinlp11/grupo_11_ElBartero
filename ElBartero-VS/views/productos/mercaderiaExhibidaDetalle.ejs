@@ -21,16 +21,16 @@
                 <article class="opme-caracteristicas-article">
 
                     <div class="opme-caracteristicas-nombre">
-                       <p><%= mercaderiaMarcas.title %> </p> 
+                       <p><%= mercaderiasMarcas.title %> </p> 
                     </div>
                     <div class="opme-caracteristicas-fotos">
                         <h4 class="opme-caracteristicas-fotos-titular">
-                            <img src="<%=mercaderiaMarcas.img%>" alt="">
+                            <img src="<%=mercaderiasMarcas.img%>" alt="">
                         </h4>
                     </div>
                     <div class="opme-caracteristicas-info">
                         <h4 class="opme-caracteristicas-info-titular">
-                            <p><%= mercaderiaMarcas.price%></p>
+                            <p><%= mercaderiasMarcas.price%></p>
                         </h4>
                     </div>
                     <div class="opme-caracteristicas-opciones">
@@ -39,10 +39,10 @@
                         <button class="opme-boton-interes" type="button">Cargar en el almacen</button>
                     </div>
                     <div>
-                        <form action="/mercaderiaenexhibiciondetalle/<%=mercaderiaMarcas.id%>/delete?_method=delete" method="post">
+                        <form action="/mercaderiaenexhibiciondetalle/<%=mercaderiasMarcas.id%>/delete?_method=delete" method="post">
                         <input type="submit" value="Eliminar esta mercaderia">
                         </form>
-                        <a href="/mercaderiaenexhibiciondetalle/<%=mercaderiaMarcas.id%>/update">
+                        <a href="/mercaderiaenexhibiciondetalle/<%=mercaderiasMarcas.id%>/update">
                         <button>Modificar mercaderia</button></a>
                     </div>
                 </article>
