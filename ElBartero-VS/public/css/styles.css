@@ -5537,103 +5537,63 @@ body {
     }
 
     .seccion-footer {
-
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
         background-color: #fdbc07;
-        width: 100vw;
-        height: 250px;
-        padding: 20px;
         flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        align-self: flex-start;
-        position: relative;
-
-    }
-
-    .bars-button {
-
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        font-size: 80px;
-        width: 100px;
-        height: 100px;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        position: absolute;
-        left: 10vw;
-        top: 15vh;
+        height: 20vw;
     }
-
 
     /* footer redes, contiene los otros bloques de redes */
 
     .footer-redes {
-
         display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        background-color: rgba(255, 0, 0, 0.144);
-        width: 90vw;
-        height: 10vh;
+        flex-wrap: wrap;        
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        /*position: absolute;
-        z-index: 90;
-        right: 20px;
-        left: 20px;*/
+        box-sizing: border-box;
+        background-color: rgba(255, 0, 0, 0.144);
+        width: 20vw;
+        height: 7vh;
     }
 
-    .footer-redes-gmail {
-        width: 30px;
-        height: 30px;
-        background-color: white;
-    }
-
-    .footer-redes-instagram {
-        width: 30px;
-        height: 30px;
-        background-color: white;
-    }
-
-    .footer-redes-facebook {
-        width: 30px;
-        height: 30px;
-        background-color: white;
-    }
-
-    .footer-redes-twitter {
-        width: 30px;
-        height: 30px;
-        background-color: white;
+    .redes {
+        font-size: small;
     }
 
     .listado-izquierdo {
-
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        width: 120px;
+        height: 70px;
+        color: blue;
     }
 
     .listado-derecho {
-
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        width: 120px;
+        height: 70px;
+        color: blue;
+    }
+    .inline {
+        display: block;
     }
 
     .footer-end {
-
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        width: 95vw;
-        max-height: 100px;
-        justify-content: flex-start;
-        align-items: center;
-        position: absolute;
-        bottom: 0px;
+        width: 96vw;
+        height: 1px;
+        font-size: xx-small;
     }
 
     .logo-footer {
@@ -5658,7 +5618,6 @@ body {
         margin: 10px;
         order: 1;
     }
-
 
 }
 
@@ -5900,18 +5859,53 @@ body {
     /* FOOTER  480      */
     /* FOOTER  480      */
 
-    .bars-button {
+    /*.bars-button {
 
         left: 20vw;
-    }
+    }*/
 
     .footer-redes {
-
-        width: 20vw;
+        height: 30px;
+        width: 15vw;
     }
 
+    .redes {
+        font-size: smaller;
+    }
 
+    .listado-izquierdo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        width: 120px;
+        height: 70px;
+        color: blue;
+    }
 
+    .listado-derecho {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        width: 120px;
+        height: 70px;
+        color: blue;
+    }
+
+    .inline {
+        display: block;
+    }
+
+    .footer-end {
+        font-size: 7px;
+    }
+
+    .logo-footer {
+        height: 14px;
+    }
 
 }
 
@@ -6278,7 +6272,7 @@ body {
 
     .seccion-footer {
 
-        min-height: 40vh;
+        min-height: 30vh;
     }
 
 
@@ -6449,70 +6443,45 @@ body {
         display: none;
     }
 
-    .listado-izquierdo {
+    .footer-redes {
+        height: 37px;
+        width: 23vw;
+    }
 
+    .redes {
+        font-size: medium;
+
+    }
+
+    .listado-izquierdo {
         display: flex;
-        font-size: 16px;
-        box-sizing: border-box;
-        font-weight: bold;
-        flex-direction: column;
-        /*background-color: rgb(240, 12, 12, 50%);*/
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
         width: 280px;
         height: 120px;
-        padding: 10px;
-        /*border-bottom: solid 5px orange;*/
-        justify-content: space-between;
-        align-items: flex-start;
-        order: 0;
         color: blue;
-        /*position: absolute;
-        flex-grow: .5;
-        z-index: 96;
-        top: 60px;*/
     }
 
     .listado-derecho {
-
         display: flex;
-        font-size: 16px;
-        box-sizing: border-box;
-        font-weight: bold;
-        /*background-color: rgb(240, 12, 12, 50%);*/
-        width: 300px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        width: 280px;
         height: 120px;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        order: 1;
-        padding: 5px;
         color: blue;
-        position: absolute;
-        flex-grow: .5;
-        z-index: 92;
-        left: 60vw;
     }
 
-
-    .footer-cambios-devoluciones {
-        display: flex;
+    .footer-end {
+        font-size: 10px;
     }
 
-    .footer-politicas {
-
-        display: flex;
+    .inline {
+        display: block;
     }
-
-    .footer-arrepentimiento {
-
-        display: flex;
-    }
-
-    .footer-preguntas {
-
-        display: flex;
-    }
-
-
 }
 
 /* MEdia querie 768. cierra */
@@ -6597,11 +6566,42 @@ body {
     /*   FOOTER  1279     */
     /*   FOOTER  1279     */
 
+    .listado-izquierdo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        width: 280px;
+        height: 120px;
+        color: blue;
+    }
 
+    .listado-derecho {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        width: 280px;
+        height: 120px;
+        color: blue;
+    }
 
+    .footer-redes {
+        height: 67px;
+        width: 25vw;
+    }
 
+    .redes {
+        font-size: x-large;
+    }
 
+    .footer-end {
+        font-size: 15px;
+    }
 }
+
 
 ;
 
