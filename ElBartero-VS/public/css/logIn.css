@@ -82,10 +82,10 @@
     box-shadow: inset 7px 7px 17px #ffc80073, inset -7px -7px 17px #ffc80073;
   }
   
-  .fa-solid,
+  /* .fa-solid,
   .fa-bars {
     color: #f29100;
-  }
+  } */
   
   .logo-bartero {
     height: 10vw;
@@ -307,9 +307,9 @@
       }
     }
   
-    .redes a {
+    /* .redes a {
       color: #f29100;
-    }
+    } */
     .items a,
     .items2 a {
       text-decoration: none;
@@ -325,14 +325,14 @@
       justify-content: space-around;
     }
   
-    .redes {
+   /*  .redes {
       width: 50px;
       height: 30px;
       justify-content: space-between;
       flex-direction: column;
       align-items: center;
       font-size: 20px;
-    }
+    } */
   }
   
   /* -------MEDIA QUERIES TABLET 768PX ---------------*/
@@ -498,15 +498,15 @@
       top: 100px;
       left: 40px;
     }
-    .redes {
+    /* .redes {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       font-size: 20px;
-    }
-    .redes a {
+    } */
+   /*  .redes a {
       margin: 5px;
-    }
+    } */
   
    /*  .main-footer {
       position: relative;
@@ -578,9 +578,9 @@
       /*width: 30%;
       top: 5px;
     }*/
-    .redes i {
+    /* .redes i {
       font-size: 25px;
-    }
+    } */
     .items li {
       position: relative;
       left: 90px;
