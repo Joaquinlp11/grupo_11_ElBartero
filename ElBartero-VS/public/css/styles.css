@@ -5551,7 +5551,6 @@ body {
 
     .footer-redes {
         display: flex;
-        flex-wrap: wrap;        
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -5563,6 +5562,7 @@ body {
 
     .redes {
         font-size: small;
+        color: rgb(0, 0, 194);
     }
 
     .listado-izquierdo {
@@ -6427,16 +6427,16 @@ body {
 
 
 
-    .seccion-footer-listados {
+    /*.seccion-footer-listados {
         display: flex;
         background-color: rgba(red, rgb(76, 179, 76), rgb(182, 182, 206), 50%);
         position: absolute;
-        /*padding: 20px;*/
+        /*padding: 20px;
         z-index: 95;
-        /*left: 20px;*/
+        /*left: 20px;
         right: 10px;
         width: 90vw;
-    }
+    }*/
 
     .bars-button {
 
@@ -6450,7 +6450,6 @@ body {
 
     .redes {
         font-size: medium;
-
     }
 
     .listado-izquierdo {
@@ -6589,8 +6588,8 @@ body {
     }
 
     .footer-redes {
-        height: 67px;
-        width: 25vw;
+        height: 57px;
+        width: 27vw;
     }
 
     .redes {
