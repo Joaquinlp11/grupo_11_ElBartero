@@ -1,9 +1,9 @@
 
 const path = require( 'path');
-const fs = require ('fs')
+const fs = require ('fs');
 
 const mercaderiasModel = require ('../models/mercaderia');
-const mercaderiasMarcasModel = require('../models/mercaderiaMarcas');
+const mercaderiasMarcasModel = require('../models/mercaderiaMarca');
 
 
 
@@ -55,9 +55,9 @@ const productController = {
     postMercadoComercialMercaderias :(req,res) =>{
 
         const datosMarcas = req.body;
-        
+
         datosMarcas.price = Number(datosMarcas.price);
-      /*   datosMarcas.img = '/uploadImages/imagenesmercaderiasmarcas' + req.file.filename; */
+        datosMarcas.img = '/uploadImages/imagenesmercaderiasmarcas/'+req.file.filename ;
         
         mercaderiasMarcasModel.createOne(datosMarcas);
         
@@ -150,7 +150,6 @@ const productController = {
 
 
 
-
     /* Detalle de mercaderia en mercado de usuarios */
     getMercaderiaUsuariosDetalle : ( req , res ) =>{
 
@@ -213,10 +212,10 @@ const productController = {
     /* Envia a mercado de usuarios, formulario */
     postMercaderiaUsuariosMercaderias: (req,res)=>{
         
-        const newMercaderia = req.body;
+        const newMercaderia = req.body; 
 
         newMercaderia.price = Number(newMercaderia.price);
-/*         newMercaderia.img = '/uploadImages/imagenesmercaderias' + req.file.filename; */
+        newMercaderia.img = '/uploadImages/imagenesmercaderias/' + req.file.filename;
         
         mercaderiasModel.createOne(newMercaderia);
 

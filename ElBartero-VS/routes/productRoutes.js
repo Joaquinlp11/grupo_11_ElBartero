@@ -13,26 +13,25 @@ const storage = multer.diskStorage({
         cb(null,'./public/uploadImages/imagenesmercaderias')
     },
     filename:(req , file , cb )=>{
-
-        cb(null,file.fieldname + '-' + Date.now()+ '-'+ file.originalname);
+        cb(null,  Date.now() + '-'+ file.originalname);
     }
 });
 
 const storageMarcas = multer.diskStorage({
 
-    destination:(req, file , cb)=>{
+    destination: (req, file , cb)=>{
         cb(null,'./public/uploadImages/imagenesmercaderiasmarcas')
     },
-    filename:(req , file , cb )=>{
-
-        cb(null,file.fieldname + '-' + Date.now()+ '-'+ file.originalname);
+    filename: (req , file , cb )=>{
+    
+        cb(null, Date.now()+ '-'+ file.originalname);
     }
 });
 
 
 
-const upload = multer({storage});
-const uploadMarcas = multer({storageMarcas});
+const upload = multer({ storage:storage });
+const uploadMarcas = multer({storageMarcas : storageMarcas});
 
 
 // @get /mercadocomercial
@@ -42,7 +41,7 @@ router.get ( '/mercadocomercial' , productController.getMercadoComercial );
 router.get ( '/mercadocomercialmercaderias' , productController.getMercadoComercialMercaderias );
 
 // @post /mercadocomercial/mercadocomercialmercadrias 
-router.post ('/mercadocomercialmercaderias', uploadMarcas.single('img') , productController.postMercadoComercialMercaderias);
+router.post ('/mercadocomercialmercaderias', uploadMarcas.any('img') , productController.postMercadoComercialMercaderias);
 
 
 
@@ -75,7 +74,7 @@ router.get ( '/mercadousuarios' , productController.getMercadoUsuarios );
 router.get ( '/mercadousuariosmercaderias' , productController.getMercadoUsuariosMercaderias );
 
 //@post /mercadousuarios/mercaderiausuarios 
-router.post ( '/mercadousuariosmercaderias' , upload.single('img') , productController.postMercaderiaUsuariosMercaderias );
+router.post ( '/mercadousuariosmercaderias' , upload.any('img') , productController.postMercaderiaUsuariosMercaderias );
 
 
 
