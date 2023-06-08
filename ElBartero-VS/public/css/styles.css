@@ -501,10 +501,5121 @@ h4 {
 .card-tres,
 .card-cuatro {
 
+<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 20%;
+=======
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20%;
+
+    }
+
+
+    .card_image {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+
+
+    .title-black {
+
+        color: black;
+
+    }
+
+    .card_title {
+
+        text-align: center;
+        border-radius: 0px 0px 40px 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 80%;
+        margin-top: -20%;
+        height: 40px;
+        width: 100%;
+
+    }
+
+
+    .card-uno,
+    .card-dos,
+    .card-tres,
+    .card-cuatro {
+
+        margin: 30px auto;
+        width: 20%;
+        height: 20%;
+        border-radius: 40px;
+        box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        transition: 0.4s;
+
+    }
+
+
+    .card-uno:hover,
+    .card-dos:hover,
+    .card-tres:hover,
+    .card-cuatro:hover {
+
+        transform: scale(0.9, 0.9);
+        box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+            -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+
+    }
+
+
+
+
+
+    /* El mercado de comercios y el mercado de usuarios es la misma congfiguracion, excepto la seccion uno */
+    /*  En la seccion uno se separa la configuracion. distinguir opmc de opmu */
+
+    /* Mercado de Usuarios : Abre body */
+
+
+    .on-page-mercado-usuarios {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+        width: 100%;
+        position: relative;
+
+
+    }
+
+    .opmu-titulo-primero {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 10%;
+        width: 100%;
+        flex-grow: .3;
+        font-size: 28px;
+        justify-content: center;
+
+    }
+
+    .opmu-acceder-mercado {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 80px;
+        border-bottom: solid 5px gray;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .opmu-titulo-segundo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100px;
+        height: 50%;
+        flex-grow: .3;
+        font-size: 28px;
+        text-decoration: none;
+        justify-content: center;
+
+    }
+
+    .opmu-cateogrias {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 30%;
+        width: 90%;
+        border: solid 2px gray;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        background-color: whitesmoke;
+    }
+
+
+    .ompu-buscador {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 30%;
+
+    }
+
+    .ompu-categorias-filtro-buscador {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        border: solid 2px gray;
+        background-color: gainsboro;
+        border-radius: 10px;
+        padding: 1%;
+    }
+
+
+    /*  */
+
+    .opmu-categoria-oro {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 60%;
+        width: 25%;
+        border: solid 2px black;
+        flex-grow: .30;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border-radius: 10px;
+        background-color: gold;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .opmu-categoria-plata {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 60%;
+        width: 25%;
+        border: solid 2px black;
+        flex-grow: .30;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border-radius: 10px;
+        background-color: silver;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .opmu-categoria-bronce {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 60%;
+        width: 25%;
+        border: solid 2px black;
+        flex-grow: .30;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border-radius: 10px;
+        background-color: darkorange;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .opmu-input-label {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .opmu-categoria-filtro-opciones-oro,
+    .opmu-categoria-filtro-opciones-plata,
+    .opmu-categoria-filtro-opciones-bronce {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 50%;
+        background-color: gold;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opmu-categoria-filtro-opciones-plata {
+
+        background-color: silver;
+    }
+
+    .opmu-categoria-filtro-opciones-bronce {
+
+        background-color: darkorange;
+    }
+
+
+    .input-search-mercado-usuarios {
+
+        display: flex;
+        flex-wrap: wrap;
+        order: 1;
+        width: 100%;
+        height: 25px;
+        max-width: 300px;
+        flex-grow: .7;
+        align-self: center;
+        justify-content: center;
+        position: relative;
+        left: 10px;
+
+    }
+
+    .opmu-categorias-filtro-opciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+
+    /*  */
+
+    .buscar-por-categoria-on-page-usuarios {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        background-color: gainsboro;
+        border-radius: 2%;
+    }
+
+    .opmu-titulares-article {
+
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        width: 100%;
+        height: 15px;
+        order: -1;
+        flex-grow: .1;
+    }
+
+    .on-page-usuarios-on-article-categorias {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2%;
+        background-color: rgb(17, 202, 202);
+        border-radius: 10px;
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .opmu-buscar-categorias-iconos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 10%;
+        flex-direction: row;
+    }
+
+    .on-page-usuarios-ofertas {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        background-color: whitesmoke;
+        border-radius: 2%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .opmu-muestra-mercaderia-f1-c1 {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 400px;
+        height: 80%;
+        font-size: 12px;
+        padding: 10px;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: solid 2px gray;
+        border-radius: 10px;
+
+
+    }
+
+    .opmu-muestra-foto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+        border: solid 1px gray;
+        border-radius: 10px;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+
+    .opmu-muestra-datos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        padding: 2%;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(255, 95, 2);
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        bottom: 0px;
+
+    }
+
+
+    .opmu-muestra-mercaderia-foto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 80%;
+        padding: 2%;
+        order: 0;
+    }
+
+    .opmu-muestra-titulo,
+    .opmu-muestra-precio {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+
+    .opmu-muestra-mercaderia-choosewindow {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 40%;
+        height: 100%;
+        border: solid 1px gray;
+        border-radius: 10px;
+        padding: 1%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    /* Botones choosewindow */
+
+    .opmu-boton-ver,
+    .opmu-boton-a-valoracion,
+    .opmu-boton-al-almacen,
+    .opmu-boton-a-negociacion,
+    .opmu-boton-compra {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 15%;
+        border: solid 2px orange;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: black;
+        background-color: orange;
+    }
+
+
+
+
+    /* Mercado de Usuarios : Cierra body */
+
+
+    /* Mercado de comercios: ABRE BODY  */
+
+    /* article. buscar por categoria - seccion dos */
+
+    .on-page-mercado-comercios {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 300px;
+        position: relative;
+    }
+
+    .opmc-titulo-primero {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 20%;
+        width: 100%;
+        flex-grow: .3;
+        font-size: 25px;
+        justify-content: center;
+    }
+
+    .opmc-titulo-segundo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 10%;
+        width: 100%;
+        flex-grow: .3;
+        font-size: 25px;
+        font-weight: bold;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .input-search-comercios {
+
+        display: flex;
+        flex-wrap: wrap;
+        order: 1;
+        width: 100%;
+        height: 25px;
+        max-width: 300px;
+        flex-grow: .7;
+        align-self: center;
+        justify-content: center;
+
+    }
+
+    .opmc-input-label {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    /* Se diferencia La primera y segunda seccion por ser de busqueda */
+
+    .buscar-por-categoria-on-page-comercios {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        background-color: gainsboro;
+        border-radius: 2%;
+
+    }
+
+    /* Titulares de articles. on page mercados comerciales */
+
+    .on-page-comercios-on-article-categorias {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2%;
+        background-color: rgb(17, 202, 202);
+        border-radius: 10px;
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .opmc-titulares-article {
+
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        width: 100%;
+        height: 15px;
+        order: -1;
+        flex-grow: .1;
+
+    }
+
+    /* Listado de categorias de mercado, iconos */
+    /* En seccion dos, de pagina mercado de comercios */
+
+    .opmc-buscar-categorias-iconos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 10%;
+        flex-direction: row;
+    }
+
+    .fa-laptop,
+    .fa-mobile-button,
+    .fa-washing-machine {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        border: solid 2px black;
+        flex-direction: row;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        font-size: 30px;
+        background-color: rgb(123, 123, 213);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 5px;
+    }
+
+
+
+
+    /* APLICA A AMBAS , repite esquema , seccion tres y cuatro*/
+
+    /* seccion tres, pagina de comercios. ofertas */
+    /* seccion cuatro ,pagina de comercios . ofertas */
+
+
+    .on-page-comercios-ofertas-seccion-tres {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        background-color: whitesmoke;
+        border-radius: 2%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .on-page-comercios-ofertas-seccion-cuatro {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        background-color: whitesmoke;
+        border-radius: 2%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+
+    /* RECUADRO: productos en muestra fila uno y dos. Se repite esquema en seccion tres y cuatro */
+    /* Aqui figuran algunas mercaderias en oferta. */
+
+    /* Se muestran dos mercaderias para menos de 480 */
+    /* Despues aparecen las otras */
+
+    .opmc-muestra-mercaderia-f1-c1,
+    .opmc-muestra-mercaderia-f2-c1 {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        border: solid 1px gray;
+        border-radius: 10px;
+        max-width: 250px;
+        width: 90%;
+        height: 40%;
+        padding: 20px;
+        background-color: gainsboro;
+        flex-direction: column;
+        justify-content: space-around;
+        opacity: .8;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .opmc-muestra-mercaderia-f1-c2 {
+
+        display: none;
+    }
+
+
+    .opmc-muestra-mercaderia-f2-c2 {
+
+        display: none;
+    }
+
+
+    /* En menos de 480 mostramos solo un producto */
+
+    /*  */
+
+
+    .opmc-muestra-titulo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 10%;
+        font-size: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .opmc-muestra-mercaderia-foto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 60%;
+        border: solid 1px gray;
+        border-radius: 10px;
+    }
+
+    .opmc-muestra-mercaderia-choosewindow {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 30%;
+        border: solid 1px gray;
+        border-radius: 10px;
+        padding: 1%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    /* caracteristicas internas de choosewindow */
+
+    .opmc-boton-compra,
+    .opmc-boton-ver,
+    .opmc-boton-al-almacen {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        min-height: 40px;
+        font-size: 8px;
+        font-weight: bold;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+    }
+
+
+    /* Seccion 4: ofertas */
+
+    .opmc-f1-c1,
+    .opmc-f2-c1 {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        border: solid 2px gray;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    /* cierra body mercado de comercios */
+
+
+
+    /* on page : cuneta marcas : Abre Body */
+
+    .seccion-uno-cuenta-marcas {
+
+        display: flex;
+        flex-wrap: wrap;
+        background-color: orange;
+        width: 100vw;
+        height: 40vh;
+        min-height: 300px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        position: relative;
+    }
+
+    .on-page-cuenta-marcas-cuadro {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        height: 100%;
+        width: 95%;
+        border: solid 2px black;
+        background-color: gainsboro;
+        border-radius: 10px;
+        padding: 1%;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+
+    }
+
+    .opcu-cuadro-marcas-uno {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        background-color: rgb(124, 124, 218);
+        padding: 2%;
+        margin-bottom: 5px;
+        border: solid 2px rgb(89, 89, 221);
+        border-radius: 10px;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .opcu-marca-nombre {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        font-size: 12px;
+        background-color: antiquewhite;
+    }
+
+    .opcu-marca-imagen {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 50%;
+        background-color: wheat;
+    }
+
+    .opcu-marca-comentario {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+    }
+
+    .opcu-cuadro-marcas-dos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        background-color: rgb(124, 124, 218);
+        padding: 2%;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border: solid 2px rgb(89, 89, 221);
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .opcu-cuadro-marcas-tres {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        background-color: rgb(124, 124, 218);
+        padding: 2%;
+        border: solid 2px rgb(89, 89, 221);
+        border-radius: 10px;
+        margin-bottom: 5px;
+        margin-bottom: 10px;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+
+    /* on page : cuenta marcas : Cierra Body */
+
+
+    /* On page: Cuenta de usuario : Abre Body */
+
+    .seccion-uno-cuenta-usuario {
+
+        display: flex;
+        flex-wrap: wrap;
+        background-color: orange;
+        width: 100vw;
+        height: 40vh;
+        min-height: 300px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        position: relative;
+
+
+    }
+
+    .on-page-cuenta-usuario-cuadro {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        height: 100%;
+        width: 95%;
+        border: solid 2px black;
+        background-color: gainsboro;
+        border-radius: 10px;
+        padding: 1%;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+
+    }
+
+    .opcu-cuadro-usuario-uno {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        background-color: rgb(124, 124, 218);
+        padding: 2%;
+        margin-bottom: 5px;
+        border: solid 2px rgb(89, 89, 221);
+        border-radius: 10px;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    /* donde estan los iconos */
+
+    .opcu-cuadro-usuario-dos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        background-color: rgb(124, 124, 218);
+        padding: 2%;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border: solid 2px rgb(89, 89, 221);
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+
+    }
+
+    .opcu-cuadro-usuario-tres {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        background-color: rgb(124, 124, 218);
+        padding: 2%;
+        border: solid 2px rgb(89, 89, 221);
+        border-radius: 10px;
+        margin-bottom: 5px;
+        margin-bottom: 10px;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+
+    .opcu-listados-almacen {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 8px;
+        width: 98%;
+        height: 8%;
+        padding: 1%;
+        order: 4;
+        background-color: rgb(124, 124, 218);
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        bottom: 2px;
+
+    }
+
+    /* on page- cuenta de usuario , Hasta aca pirmera seccion , donde esta el cuadro del almacen , */
+
+    /* on page- cuenta de usuario - cuadro uno - */
+
+    .opcu-user-nombre {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        font-size: 12px;
+        background-color: antiquewhite;
+
+    }
+
+    .opcu-user-imagen {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 50%;
+        background-color: wheat;
+    }
+
+    .opcu-user-comentario {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+    }
+
+
+    /* iconos negociacion en cuadro del almacen - dos */
+
+    .opcu-iconos-negociaciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 75%;
+        margin: 2px;
+        padding: 5%;
+        background-color: rgb(194, 194, 235);
+        border: solid 1px black;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+
+    }
+
+    /* Esto es solo para menos de 480 */
+    /*  La imagen debe mostrar las otras opciones como icnos */
+
+    .opcu-iconos-choosewindow {
+
+        display: block;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        margin: 12px;
+
+    }
+
+    /* On page cuenta de usuario Contenido desplegable */
+
+
+    .opcu-balanza-icono-contenido-despelgable {
+        display: inline-block;
+        position: relative;
+
+    }
+
+    .opcu-contenido-desplegable {
+
+        display: none;
+        position: absolute;
+        background-color: blue;
+        width: 80px;
+        min-width: 60px;
+        box-shadow: 0px 8px 16px 0px;
+        z-index: 8;
+        text-align: center;
+
+    }
+
+    .opcu-contenido-desplegable a {
+
+        display: block;
+        padding: 12px 16px;
+
+    }
+
+    .opcu-contenido-desplegable a :hover {
+
+        margin-top: 50px;
+        background-color: orange;
+    }
+
+    .opcu-balanza-icono-contenido-despelgable:hover .opcu-contenido-desplegable {
+
+        display: block;
+    }
+
+    .opcu-iconos-desplegables {
+
+        width: 50px;
+    }
+
+
+
+    /* Cierra contenido desplegable para cuenta de usuario */
+
+    .iconos-negociaciones-Balanza-color {
+
+        display: none;
+    }
+
+    .iconos-negociaciones-Subasta-color {
+
+        display: none;
+    }
+
+    .iconos-negociaciones-Valoracion-color {
+
+        display: none;
+    }
+
+    .iconos-negociaciones-Canasta-color {
+
+        display: none;
+    }
+
+
+    /* disponibilidad, cuadro del usuario. cuadro dos */
+
+    .opcu-disponibilidad {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 22%;
+        background-color: rgb(194, 194, 235);
+        border: solid 1px black;
+        border-radius: 5px;
+        margin: 2px;
+        font-size: 8px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        order: 1;
+        flex-grow: 1;
+
+    }
+
+
+    .opcu-radio-baja {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 15px;
+        height: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        border-radius: 50%;
+    }
+
+
+    .opcu-radio-media {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 15px;
+        height: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+        border-radius: 50%;
+
+    }
+
+    .opcu-radio-alta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 15px;
+        height: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: chartreuse;
+        border-radius: 50%;
+
+    }
+
+    /* hasta aca es disponibilidad del ususario */
+
+    /* En el almacen */
+    /* segunda seccion de cuenta usuarios */
+
+    .opcu-almacen {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: white;
+        width: 95vw;
+        height: 95vh;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 2px gray;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+    }
+
+    /* Tercera seccion de cuenta usuarios  */
+
+    .opcu-negociaciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: white;
+        width: 95vw;
+        height: 95vh;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 2px gray;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Cuarta seccion de cuenta usuarios */
+
+    .opcu-de-interes-y-tracking {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: white;
+        width: 95vw;
+        height: 95vh;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 2px gray;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+
+    /* opcu- almacen  . segunda seccion de cuenta de usuario */
+
+    .opcu-almacen-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 14px;
+        width: 100%;
+        height: 25px;
+        padding: 2px 10px;
+        border: solid 1px black;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: gainsboro;
+        border-radius: 10px;
+
+    }
+
+    .opcu-almacen-titulo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 20px;
+    }
+
+    .opcu-almacen-control {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20%;
+        height: 20px;
+        padding: 1px;
+        font-size: 14px;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .opcu-almacen-lista {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        background-color: gainsboro;
+        padding: 10px;
+        width: 95%;
+        height: 50%;
+        border: solid 1px black;
+        border-radius: 10px;
+        order: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 50px;
+
+    }
+
+    .opcu-almacen-desplegar-seccion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        width: 100%;
+        height: 25px;
+        padding: 2px 10px;
+        border: solid 1px black;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: gainsboro;
+        border-radius: 10px;
+        order: 1;
+
+
+    }
+
+    .opcu-almacen-lista-text {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 20px;
+        margin: 2px;
+        padding: 2px;
+        border-bottom: solid 1px black;
+    }
+
+    .opcu-almacen-lista-mercaderia {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 50px;
+        width: 95%;
+        background-color: beige;
+        margin: 2px;
+        padding: 2px;
+        margin-top: 20px;
+        border: solid 1px gray;
+        border-radius: 10px;
+
+
+    }
+
+    .on-page-almacen-lista-scroll {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 80%;
+        width: 2%;
+        margin: 2px;
+        margin-top: 30px;
+        background-color: gray;
+        border: solid 1px black;
+        border-radius: 5px;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+    }
+
+    .on-page-almacen-lista-inerscroll {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: blue;
+        width: 50%;
+        height: 80%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin: 2px;
+    }
+
+    .opcu-almacen-lista-mercaderia-item {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 10%;
+        height: 90%;
+        margin: 2px;
+        padding: 2px;
+        margin-left: 10px;
+        background-color: orange;
+        border: solid 1px gray;
+        border-radius: 5px;
+
+    }
+
+
+
+    /* Comienza, seccion tres, cuenta de usuario, negociaciones lista. */
+
+
+    .opcu-negociaciones-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        width: 100%;
+        height: 25px;
+        padding: 2px 10px;
+        border: solid 1px black;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: gainsboro;
+        border-radius: 10px;
+
+    }
+
+    .opcu-negociaciones-titulo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 20px;
+        flex-grow: 1;
+    }
+
+    .opcu-negociaciones-control {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20%;
+        height: 20px;
+        padding: 1px;
+        font-size: 14px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+
+    .opcu-negociaciones-lista {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        background-color: gainsboro;
+        padding: 10px;
+        width: 95%;
+        height: 50%;
+        border: solid 1px black;
+        border-radius: 10px;
+        order: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 50px;
+
+    }
+
+    .opcu-negociaciones-desplegar-seccion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        width: 100%;
+        height: 25px;
+        padding: 2px 10px;
+        border: solid 1px black;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: gainsboro;
+        border-radius: 10px;
+        order: 1;
+
+    }
+
+    .opcu-negociaciones-lista-text {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 20px;
+        margin: 2px;
+        padding: 2px;
+        border-bottom: solid 1px black;
+    }
+
+    .opcu-negociaciones-lista-mercaderia {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 50px;
+        width: 95%;
+        background-color: beige;
+        margin: 2px;
+        padding: 2px;
+        margin-top: 20px;
+        border: solid 1px gray;
+        border-radius: 10px;
+
+
+    }
+
+    .on-page-negociaciones-lista-scroll {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 80%;
+        width: 2%;
+        margin: 2px;
+        margin-top: 30px;
+        background-color: gray;
+        border: solid 1px black;
+        border-radius: 5px;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+    }
+
+    .on-page-negociaciones-lista-inerscroll {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: blue;
+        width: 50%;
+        height: 80%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin: 2px;
+    }
+
+    .opcu-negociaciones-lista-mercaderia-item {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 10%;
+        height: 90%;
+        margin: 2px;
+        padding: 2px;
+        margin-left: 10px;
+        background-color: orange;
+        border: solid 1px gray;
+        border-radius: 5px;
+
+    }
+
+    /* Comienza seccion cuatro - bienes en observacion - seccion cuatro */
+    /* se divide en : bienes en observacion , y tracking. Primero la seccion dividida, luego lo demas */
+
+    .opcu-en-observacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 5px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: greenyellow;
+        border-radius: 10px;
+    }
+
+    .opcu-tracking {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 5px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: coral;
+        border-radius: 10px;
+
+    }
+
+
+
+    /* Continuan caracteristicas de ambos conjuntos donde van las listas */
+
+    .opcu-en-observacion-titular,
+    .opcu-en-tracking-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        width: 100%;
+        height: 25px;
+        padding: 2px 10px;
+        border: solid 1px black;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: gainsboro;
+        border-radius: 10px;
+        order: 0;
+
+    }
+
+    .opcu-en-observacion-titulo,
+    .opcu-en-tracking-titulo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 20px;
+        flex-grow: 1;
+    }
+
+    .opcu-en-observacion-control,
+    .opcu-en-tracking-control {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20%;
+        height: 20px;
+        padding: 1px;
+        font-size: 14px;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .opcu-en-observacion-lista,
+    .opcu-en-tracking-lista {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        background-color: gainsboro;
+        padding: 10px;
+        width: 100%;
+        height: 60%;
+        border: solid 1px black;
+        border-radius: 10px;
+        order: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+    }
+
+    .opcu-en-observacion-desplegar-seccion,
+    .opcu-en-tracking-desplegar-seccion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        width: 100%;
+        height: 15%;
+        padding: 2px 10px;
+        border: solid 1px black;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: gainsboro;
+        border-radius: 10px;
+        order: 1;
+
+    }
+
+    .opcu-en-observacion-lista-text,
+    .opcu-en-tracking-lista-text {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 20px;
+        margin: 2px;
+        padding: 2px;
+        border-bottom: solid 1px black;
+    }
+
+    .opcu-en-observacion-lista-mercaderia,
+    .opcu-en-tracking-lista-mercaderia {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 30px;
+        width: 95%;
+        background-color: beige;
+        margin: 2px;
+        padding: 2px;
+        margin-top: 5px;
+        border: solid 1px gray;
+        border-radius: 10px;
+
+
+    }
+
+    .on-page-en-observacion-lista-scroll,
+    .on-page-en-tracking-lista-scroll {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 80%;
+        width: 2%;
+        margin: 2px;
+        margin-top: 30px;
+        background-color: gray;
+        border: solid 1px black;
+        border-radius: 5px;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+    }
+
+    .on-page-en-observacion-lista-inerscroll,
+    .on-page-en-tracking-lista-inerscroll {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: blue;
+        width: 50%;
+        height: 80%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin: 2px;
+
+    }
+
+    .opcu-en-observacion-lista-mercaderia-item,
+    .opcu-en-tracking-lista-mercaderia-item {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 10%;
+        height: 90%;
+        margin: 2px;
+        padding: 2px;
+        margin-left: 10px;
+        background-color: orange;
+        border: solid 1px gray;
+        border-radius: 5px;
+
+    }
+
+    /* Cuenta de usuario : Cierra Body */
+
+
+    /* On page - mercaderias en exhibicion - aqui es donde redirige clicquear en la mercaderia a la que se averigua. */
+
+    /* Primero la mercaderia exhibida muestra opciones. */
+    /* 1- comprar. , 2- ver mercaderia. , 3 - mercaderia en observacion,  */
+    /* Las primeras dos lelvan a la pagina de mercaderia exhibida , a diferencia que una ya la compra*/
+
+
+    .on-page-seccion-mercaderia-en-exhibicion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .opme-caracteristicas-article {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 90%;
+        background-color: gainsboro;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+
+    .opme-caracteristicas-nombre {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 10%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 80%;
+        font-weight: bold;
+    }
+
+    .opme-caracteristicas-fotos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 30%;
+        border: solid 2px gray;
+        border-radius: 10px;
+    }
+
+    .opme-caracteristicas-info {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 30%;
+        border: solid 2px gray;
+        border-radius: 10px;
+    }
+
+    .opme-caracteristicas-opciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    /* Caracteristicas internas */
+
+    .opme-caracteristicas-fotos-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 24px;
+        width: 100%;
+        height: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opme-caracteristicas-info-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 18px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .opme-boton-de-compra {
+
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 40%;
+        height: 60%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 100%;
+        background-color: blue;
+        color: white;
+    }
+
+    .opme-boton-interes {
+
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 40%;
+        height: 60%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 100%;
+        background-color: blue;
+        color: white;
+
+    }
+
+    /* on page mercaderia exhibida, cierra body */
+
+    /* On oage - mercaderia exhibida USUARIOS, abre body */
+
+    /* Atencion: se diferencia de mercaderia exhibida por la letra u. opmeu */
+
+
+    .on-page-seccion-mercaderia-en-exhibicion-usuarios {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        min-height: 1800px;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .opmeu-caracteristicas-article {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 90%;
+        background-color: gainsboro;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+    .opmeu-caracteristicas-nombre {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 80px;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 80%;
+        font-weight: bold;
+    }
+
+    .opmeu-caracteristicas-fotos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        border: solid 2px gray;
+        border-radius: 10px;
+
+    }
+
+    .opmeu-caracteristicas-info {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 30%;
+        border: solid 2px gray;
+        border-radius: 10px;
+
+    }
+
+    .opmeu-caracteristicas-opciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        font-size: 18px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .opmeu-opciones-edicion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        font-size: 18px;
+    }
+
+
+    /* Caracteristicas internas */
+
+    .opmeu-caracteristicas-fotos-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 24px;
+        width: 100%;
+        height: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opmeu-caracteristicas-info-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 18px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .opmeu-boton-de-valoracion,
+    .opmeu-boton-interes {
+
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 45%;
+        height: 30%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 100%;
+        background-color: blue;
+        color: white;
+
+
+    }
+
+    .opmeu-boton-de-compra,
+    .opmeu-boton-de-negociacion {
+
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 100%;
+        background-color: blue;
+        color: white;
+
+    }
+
+
+
+    /* On oage - mercaderia exhibida USUARIOS, cierra body */
+
+
+
+
+    /*  On page - balanza. Abre body. */
+
+    /*  para las paginas como balanza, subasta, valoracion y canasta no aplica la seccion uno,dos,tres y cuatro.  */
+    /*  por eso hay que asignar nuevas secciones. Una que ocupa todo el main */
+    /*  entonces es seccion unica para esta pagina. */
+
+    .seccion-uno-balanza {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        width: 100vw;
+        height: 70vh;
+        min-height: 300px;
+        padding: 0 5%;
+        padding-top: 30px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .seccion-dos-balanza {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        width: 100vw;
+        height: 100vh;
+        min-height: 1800px;
+        padding: 0 5%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .seccion-tres-balanza,
+    .seccion-cuatro-balanza {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        width: 100vw;
+        height: 50vh;
+        min-height: 400px;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .seccion-cinco-balanza {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        width: 100vw;
+        height: 30vh;
+        min-height: 400px;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+
+    /* continuan los articles */
+
+    .on-page-balanza-listas-guardadas {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        font-size: 16px;
+        margin-top: 5px;
+        background-color: rgb(255, 173, 85);
+        border-radius: 10px;
+        border: solid 2px gray;
+        color: white;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        order: 0;
+
+    }
+
+    .opb-comando {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 50%;
+        margin-top: 10px;
+        background-color: rgb(255, 173, 85);
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opb-balanza {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 40%;
+        background-color: rgb(255, 173, 85);
+        border: solid 2px gray;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .opb-negociacion-usuarios-pizarra {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        background-color: rgb(255, 173, 85);
+        border: solid 2px gray;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+    .opb-negociacion-usuarios {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 35%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(255, 173, 85);
+    }
+
+
+    .opb-usuarios-votan {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(255, 173, 85);
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 5%;
+
+    }
+
+    .opb-informacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(255, 173, 85);
+        border: solid 2px gray;
+        border-radius: 5px;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opb-usuarios-otros {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(255, 173, 85);
+        border: solid 2px gray;
+        border-radius: 5px;
+        padding: 5%;
+    }
+
+    /* on page balanza - Hasta aca articles principales */
+
+    /* continuan caracteristicas de cada article */
+    /* corresponde a article comando */
+
+    .opb-estado-publico-privado,
+    .opb-balanza-invitacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 25%;
+        height: 60%;
+        border: solid 2px gray;
+        border-radius: 20%;
+        background-color: brown;
+    }
+
+    .opb-balanza-nombre {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 35%;
+        height: 80%;
+        font-size: 12px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+
+
+    /* continua article balanza */
+
+
+    .opb-canasta-icono {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: peru;
+        border-radius: 5px;
+    }
+
+
+    .opb-canasta-consulta-oferta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 25%;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: brown;
+        color: yellow;
+        border-radius: 5px;
+    }
+
+    /* la imagen se la contiene en opb-icono-balanza.  */
+
+    .opb-icono {
+
+        display: flex;
+
+    }
+
+    .opb-icono-balanza {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80px;
+        height: 70px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+    /* Segunda parte de lo que hay en la balanza */
+
+    .opb-canasta-izq-der {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 25%;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: peru;
+
+    }
+
+    .opb-canasta-representada {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 25%;
+        height: 60%;
+        max-width: 50px;
+        max-height: 50px;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+
+    }
+
+    /* oferta lado izquierdo y derecho, representan la canasta */
+
+    .opb-oferta-canasta-uno,
+    .opb-oferta-canasta-dos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 60%;
+        height: 60%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+
+    }
+
+
+    .opb-icono-bartero-flechas {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: .5;
+
+    }
+
+    .imagen-logo-sinNombre {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        z-index: 10;
+
+    }
+
+    .fa-left-long {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        color: gold;
+        align-self: flex-end;
+        font-size: 20px;
+
+    }
+
+    .fa-rotate-180 {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        color: gold;
+        align-self: flex-start;
+
+    }
+
+    /* on page balanza, negociacion */
+
+    .opb-negociacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: peru;
+    }
+
+
+
+    .opb-negociacion-cronologia {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 35%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        background-color: violet;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* on page balanza negociacion, caracteristicas internas */
+
+    /* on page balanza, negociacion */
+
+    .opb-negociacion-oferta,
+    .opb-negociacion-consulta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20%;
+        height: 80%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: blueviolet;
+
+    }
+
+    .opb-negociacion-tablero {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50%;
+        height: 80%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: brown;
+
+    }
+
+    .opb-negociacion-desplegar {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        width: 100%;
+        height: 5%;
+        min-height: 20px;
+        max-height: 50px;
+        border: solid 2px gray;
+        border-radius: 5px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        justify-self: flex-end;
+        align-self: flex-end;
+        order: 1;
+        background-color: gainsboro;
+    }
+
+    /* opb negociacion pizarra */
+
+    .opb-negociacion-usuarios-pizzarra-izq,
+    .opb-negociacion-usuarios-pizzarra-der {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+    }
+
+    .opb-negociacion-usuarios-listado {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 90%;
+        padding: 2%;
+        background-color: white;
+        border: solid 2px gray;
+        border-radius: 5px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+
+    .opb-negociacion-ususarios-listado-titulo {
+
+        font-size: 10px;
+        width: 100%;
+        height: 20px;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .opb-negociacion-usuarios-comentarios-destacados {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        background-color: gainsboro;
+        border: solid 2px gray;
+        padding: 2%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* opb - negociacion - usuarios */
+    /* en este article debe figurar la votacion y los comentarios debajo */
+
+    .opb-negociacion-usuario-consulta,
+    .opb-negociacion-usuario-oferta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20%;
+        height: 30%;
+        padding: 2%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .opb-negociaciion-imagen-bartero {
+
+        display: block;
+        box-sizing: border-box;
+
+
+    }
+
+    .opb-negociacion-usuario-chat {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 90%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: gray;
+    }
+
+    .opb-negociacion-chat-usuarios {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    /* Caracteristicas internaas chat */
+
+    .opb-chat-comentarios-destacados {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 10%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+    }
+
+    .opb-chat-publico-o-privado {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 10%;
+        border: solid 2px gray;
+        background-color: gainsboro;
+        font-size: 12px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opb-chat-privado-publico {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 40%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .opb-chat-privado-publico-subir-comentario {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        width: 90%;
+        height: 30px;
+        background-color: gainsboro;
+        padding: 2%;
+        margin: 2px;
+    }
+
+    .opb-chat {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+    }
+
+    /* on page balanza, historia e informacion */
+
+    .opb-negociacion-cronologia-historia,
+    .opb-negociacion-cronologia-informacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-weight: bold;
+        width: 90%;
+        height: 40%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        background-color: rgb(104, 104, 225);
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    /* on page balanza, usuarios anonimos */
+
+    .opb-usuarios-calificar {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-weight: bold;
+        width: 100%;
+        height: 20%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        background-color: cyan;
+        color: rgb(64, 56, 41);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .opb-usuarios-votacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 35%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        background-color: coral;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opb-usuarios-resultados-calificacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-weight: bold;
+        width: 90%;
+        height: 30%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        background-color: yellow;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opb-usuarios-resultados-votacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 50%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        background-color: yellow;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opb-usuarios-resultados-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 12px;
+        font-weight: bold;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .opb-votacion-single {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        border: solid 2px gray;
+        border-radius: 5px;
+    }
+
+    .opb-usuarios-comentarios,
+    .opb-usuarios-comentarios-chat {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        padding: 2%;
+        font-size: 12px;
+        border: solid 2px gray;
+        border-radius: 5px;
+        background-color: whitesmoke;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: flex-end;
+    }
+
+    .opb-usuarios-comentarios-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 70%;
+        padding: 2%;
+        margin-left: 10px;
+    }
+
+    .opb-usuarios-comentarios-chat-mensaje {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 60%;
+        height: 80%;
+    }
+
+
+    /* Article. negociacion tablero */
+
+    .opb-negociacion-porcentaje {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 20%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: coral;
+    }
+
+
+    .opb-negociacion-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 12px;
+        color: yellow;
+    }
+
+    .opb-negociacion-oferta-single {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 20%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .opb-desplegar-contenido {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+
+    /* Dentro de oferta single. ofertas internas , en tablero de la negociacion */
+
+    .opb-n-t-single-oferta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 25%;
+        height: 80%;
+        border: solid 2px gray;
+        background-color: chocolate;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opb-n-t-s-barra {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 40%;
+        height: 70%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        background-color: burlywood;
+    }
+
+    .opb-n-t-s-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 8px;
+    }
+
+
+    /* caracteristicas internas. dentro del tablero  de consultor y ofertante, a los lados */
+
+    .opb-n-o-single {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 25%;
+        padding: 5%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        background-color: burlywood;
+    }
+
+    .opb-n-o-s-texto {
+
+        font-size: 10px;
+    }
+
+
+    /* Article. dentro de negociacion ususarios */
+
+    .opb-chat-c-texto {
+
+        font-size: 12px;
+    }
+
+
+
+    /* article comentariors de otros usuarios */
+
+    .opb-usuarios-comentarios-foto-ejemplo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 15%;
+        height: 60%;
+        border: solid 2px gray;
+        margin: auto;
+    }
+
+    /* on page - balanza ,  CIERRA BODY */
+
+    /* On page - canasta- Abre Body */
+
+    .seccion-uno-canasta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        width: 100vw;
+        height: 30vh;
+        min-height: 150px;
+        padding: 5%;
+        padding-top: 30px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .seccion-dos-canasta,
+    .seccion-tres-canasta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        width: 100vw;
+        height: 100vh;
+        min-height: 1200px;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* Articles on page canasta */
+
+    .on-page-canasta-listas-guardadas {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 30%;
+        font-size: 16px;
+        background-color: rgb(255, 173, 85);
+        border-radius: 10px;
+        border: solid 2px gray;
+        color: white;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        order: 0;
+
+    }
+
+    .opcan-comando {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 30%;
+        background-color: rgb(255, 173, 85);
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opcan-canasta,
+    .opcan-mercaderia {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 100%;
+        background-color: rgb(255, 173, 85);
+        border: solid 2px gray;
+        border-radius: 10px;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+
+
+
+    /* on page canasta  */
+
+    .opcan-comando-icono {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opcan-comando-canasta-imagen {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 30%;
+        height: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opcan-nombre {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 18px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opcan-canasta-izq-der {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opcan-canasta-configuracion,
+    .opcan-mercaderia-configuracion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        background-color: rgb(243, 146, 110);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .opcan-canasta-listado-mercaderias {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        background-color: rgb(243, 146, 110);
+        position: relative;
+
+    }
+
+
+    /* on page canasta caracteristicas internas */
+
+
+    .imagen-logo-sinNombre {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 10%;
+        align-self: flex-end;
+
+    }
+
+
+    .opcan-comando-icono-canasta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+    }
+
+    .opcan-comando-canasta-imagen-file {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        background-color: gainsboro;
+    }
+
+    /* on page canasta configuracion */
+
+
+    .opcan-canasta-informacion,
+    .opcan-canasta-valoracion,
+    .opcan-mercaderia-informacion,
+    .opcan-mercaderia-valoracion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 45%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Caracteristicas internas */
+
+    .opcan-canasta-informacion-uno,
+    .opcan-canasta-informacion-dos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 45%;
+        height: 80%;
+        border: solid 2px gray;
+        border-radius: 5px;
+
+    }
+
+    .opcan-canasta-valoracion-uno,
+    .opcan-canasta-valoracion-dos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 45%;
+        height: 80%;
+        border: solid 2px gray;
+        border-radius: 5px;
+
+    }
+
+
+    .opcan-mercaderia-item {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 30%;
+        padding: 2%;
+    }
+
+    .opcan-canasta-vistualizacion-segun {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        position: absolute;
+        right: 10px;
+    }
+
+    .opcan-canasta-listado-mercaderias-items {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        background-color: coral;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .opcan-canasta-desplegar {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 15%;
+        border: solid 2px gray;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-self: flex-end;
+    }
+
+    .opcan-canasta-listado-items {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 20%;
+        height: 80%;
+        margin: 0px 5px;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+    }
+
+    /* on page canasta , mercaderias seleccionadas */
+
+    .opcan-titulo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        font-size: 20px;
+    }
+
+    .opcan-mercaderia-item-seleccionado {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 40%;
+        height: 60%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    /* On page - canasta- Cierra Body */
+
+
+    /* La pagina de contacto cuenta con su propio tamaño de seccion */
+    /* on page- contacto abre body */
+
+    .seccion-uno-contacto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 2%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .seccion-dos-contacto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 2%;
+        min-height: 1400px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+
+    .opc-contacto-info {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 2%;
+        width: 90%;
+        height: 90%;
+        background-color: gainsboro;
+    }
+
+    .opc-contacto-mensaje-datos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 5%;
+        width: 90%;
+        height: 60%;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
+    .opc-contacto-mensaje-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 5%;
+        width: 90%;
+        height: 30%;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+
+    /* Article */
+
+    .opc-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 20px;
+        padding: 5%;
+        width: 100%;
+        height: 60px;
+    }
+
+    .opc-contacto-telefono,
+    .opc-contacto-mail,
+    .opc-contacto-direccion,
+    .opc-contacto-opciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 10%;
+    }
+
+    /* article dos, enviar mensaje , informacion*/
+
+
+    .opc-datos-usuario-mensaje {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 60%;
+        height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: solid 2px gray;
+
+    }
+
+    .opc-mensaje-informacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 60%;
+        min-height: 60%;
+        margin: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-grow: 1;
+
+    }
+
+    .opc-mensaje {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: flex-start;
+        position: relative;
+    }
+
+    .opc-informacion-mensaje-single {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 150px;
+        height: 50px;
+    }
+
+
+    .opc-mensaje-configuracion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+    }
+
+    .opc-mensaje-button {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 15%;
+        width: 80px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+    }
+
+
+    /* on page- contacto cierra body */
+
+    /* on page- cmbios y devoluciones Abre body */
+
+    .seccion-uno-cambios-devoluciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion-dos-cambios-devoluciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        min-height: 1400px;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    /* Articles */
+
+    .on-page-cambios-devoluciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        margin-top: 100px;
+        padding: 2%;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .opcd-motivos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        padding: 5%;
+        width: 100%;
+        height: 35%;
+        position: relative;
+
+    }
+
+
+    .opcd-transacciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        padding: 1%;
+        width: 100%;
+        height: 30%;
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+    .opcd-terminos-aceptar {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 30%;
+        margin-top: 20px;
+    }
+
+    /* Caracteristicas */
+
+    .opcd-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+
+    .opcd-fecha {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 2%;
+        width: 100%;
+    }
+
+    .opcd-iniciar-cambio-devolucion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 45%;
+        min-height: 200px;
+        padding: 2%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        order: 2;
+        flex-grow: .5;
+
+    }
+
+    .opcd-iniciar-cambio,
+    .opcd-iniciar-devolucion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 2%;
+        width: 80%;
+        height: 50%;
+        font-size: 24px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 2px gray;
+
+    }
+
+    .opcd-checkbox-cambio {
+
+        display: flex;
+    }
+
+    .opcd-checkbox-devolucion {
+
+        display: flex;
+
+    }
+
+    /* Article dos motivos */
+
+    .opcd-motivos-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 20px;
+        width: 100%;
+        height: 20px;
+        padding: 2%;
+    }
+
+    .opcd-motivos-select {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 50px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcd-motivos-comentario {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 20px;
+        width: 100%;
+        height: 20px;
+        padding: 2%;
+    }
+
+    .opcd-motivos-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .opcd-motivos-texto-button {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80px;
+        height: 30px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 15%;
+        bottom: 8%;
+        margin-top: 10px;
+    }
+
+    /* artcile tres transacciones */
+
+
+    .opcd-transacciones-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 4%;
+    }
+
+    .opcd-input-buscar-transaccion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 75%;
+        height: 20px;
+
+    }
+
+
+    .opcd-transacciones-muestra-datos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 50%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: white;
+    }
+
+    .opcd-transaccion-ejemplo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2%;
+        height: 15%;
+        font-size: 12px;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+
+    /* caracteristicas. terminos de aceptacion */
+
+    .opcd-checkbox-hecho-cambios-devoluciones,
+    .opcd-checkbox-cargos-cambios-devoluciones,
+    .opcd-checkbox-condiciones-cambios-devoluciones {
+
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    .opcd-button-submit {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: blue;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* on page- cmbios y devoluciones Cierra body */
+
+    /* La siguiente pagina, arrepentimiento de actividades cuenta con propia seccion uno y dos */
+
+    /* on page- arrepentimiento de actividades -Abre body */
+
+    .seccion-uno-arrepentimiento {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 5%;
+        padding-top: 10%;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .seccion-dos-arrepentimiento {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5%;
+        width: 100%;
+        min-height: 1200px;
+        height: 100vh;
+    }
+
+    /* articles */
+
+    .on-page-arrepentimiento {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        min-height: 250px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: gainsboro;
+        border-radius: 5px;
+        padding: 2%;
+
+    }
+
+    .opaa-motivos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        padding: 5%;
+        width: 100%;
+        height: 35%;
+        position: relative;
+    }
+
+    .opaa-transacciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        padding: 1%;
+        width: 100%;
+        height: 30%;
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opaa-terminos-aceptar {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 30%;
+        margin-top: 20px;
+    }
+
+    /* Seccion uno. arrepentimiento */
+
+    .opaa-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 35%;
+        font-size: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opaa-fecha {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+    }
+
+
+    .opaa-checkbox-arrepentimiento {
+
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1%;
+        max-width: 300px;
+        margin-bottom: 15px;
+        border-bottom: solid 1px gray;
+    }
+
+    /* article dos motivos */
+
+    .opaa-motivos-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20px;
+    }
+
+
+    .opaa-motivos-select {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin: 2%;
+        width: 100%;
+        height: 30px;
+
+    }
+
+    .opaa-motivos-comentario {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20px;
+    }
+
+    .opaa-motivos-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .opaa-motivos-texto-button {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-self: flex-end;
+        align-self: flex-end;
+        margin-top: 20px;
+        position: absolute;
+        right: 5%;
+        bottom: 10px;
+
+    }
+
+    /* article tres, transacciones realizadas */
+
+    .opaa-transacciones-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 4%;
+    }
+
+    .opaa-input-buscar-transaccion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 75%;
+        height: 20px;
+    }
+
+    .opaa-transacciones-muestra-datos {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+        height: 50%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 5px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: white;
+    }
+
+    .opaa-transaccion-ejemplo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2%;
+        height: 15%;
+        font-size: 12px;
+        background-color: gainsboro;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* seccion cuatro, condiciones */
+
+
+    .opaa-checkbox-hecho,
+    .opaa-checkbox-cargos,
+    .opaa-checkbox-condiciones {
+
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .opaa-terminos-y-condiciones {
+
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 12px
+    }
+
+
+    .opaa-button-submit {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: row;
+        width: 100%;
+        height: 30%;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: white;
+        background-color: blue;
+        margin-top: 50px;
+    }
+
+    /* on page- arrepentimiento de actividades -Cierra body */
+
+
+    /* on page - politicas de privacidad Abre body */
+
+    .seccion-uno-politicas-privacidad {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+
+    }
+
+
+    .oppp-politicas-info {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 80%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+        padding: 5%;
+    }
+
+    .oppp-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 24px;
+    }
+
+
+    .oppp-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+
+
+    /* on page - politicas de privacidad Cierra body */
+
+
+    /* on page - Terminos y condiciones Abre body */
+
+
+    .seccion-uno-terminos-condiciones {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+
+    }
+
+
+    .optc-terminos-condiciones-info {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 80%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+        padding: 5%;
+    }
+
+    .optc-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 24px;
+    }
+
+
+    .optc-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+
+    /* on page - Terminos y condiciones Cierra body */
+
+    /* on page - Transporte Abre body */
+
+
+    .seccion-uno-transporte {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+
+    }
+
+
+    .opt-transporte-info {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 80%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+        padding: 5%;
+    }
+
+    .opt-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 24px;
+    }
+
+
+    .opt-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+
+
+    /* on page - Transporte Cierra body */
+
+
+
+    /* on page - preguntas frecuentes  Abre body*/
+
+    .seccion-uno-preguntas {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 20%;
+        padding: 5%;
+
+    }
+
+    .seccion-dos-preguntas {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 30vh;
+        min-height: 800px;
+        padding: 5%;
+    }
+
+
+    .oppf-preguntas-info {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        background-color: gainsboro;
+        padding: 5%;
+    }
+
+
+    .oppf-respuestas {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 80vh;
+        background-color: gainsboro;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .oppf-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+    }
+
+    .oppf-realizar-pregunta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 50px;
+    }
+
+    .oppf-respuestas-parrafo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+    }
+
+    /* on page - preguntas frecuentes  Cierra body*/
+
+    /* on page - Contratacion Abre  body*/
+
+    .seccion-uno-contratacion,
+    .seccion-dos-contratacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 80vh;
+        min-height: 400px;
+        padding: 5%;
+    }
+
+    .seccion-tres-contratacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 80vh;
+        min-height: 1000px;
+        padding: 5%;
+    }
+
+
+    /* Article  seccion uno dos tres*/
+
+    .opcont-contratacion-info,
+    .opcont-solicitud {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: gainsboro;
+
+    }
+
+    .opcont-enviar-infomacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: gainsboro;
+
+    }
+
+    /* caracteristica internas */
+
+    .opcont-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .opcont-parrafo {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 25%;
+        min-height: 200px;
+        padding: 5%;
+        text-align: left;
+    }
+
+    /* article seccion dos */
+
+    .opcont-enviar-solicitud {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 20px;
+        width: 250px;
+        height: 100px;
+        padding: 2%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Article tres, enviar informacion */
+
+
+    .opcont-datos-usuario {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50%;
+        height: 20px;
+        margin-bottom: 50px;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .opcont-informacion {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        padding: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opcont-informacion-single {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    /* on page - Contratacion  Cierra body*/
+
+    /* on page - blog de usuarios Abre body */
+
+    .seccion-uno-blog {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        padding: 5%;
+
+    }
+
+    .seccion-dos-blog {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .opbu-article-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 300px;
+        padding: 5%;
+        background-color: gainsboro;
+    }
+
+    .opbu-pregunta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+        background-color: gainsboro;
+    }
+
+    .opbu-respuesta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+        background-color: gainsboro;
+
+    }
+
+
+    .opbu-titular {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-hacer-pregunta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+    }
+
+    .blog-textarea {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        padding: 1%;
+    }
+
+
+    /* on page - blog de usuarios Cierra body */
+
+
+    /* on page  comprar mercaderia  abre body*/
+
+    .seccion-uno-comprar-mercaderia {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        min-height: 1400px;
+        padding: 5%;
+        background-color: orange;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .on-page-comprar-mercaderia {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        height: 100%;
+        background-color: gainsboro;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opcompmerc-mercaderia {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        padding: 2%;
+        border: solid 2px gray;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .opcompmerc-informacion {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        padding: 2%;
+    }
+
+    .opcompmerc-boton-compra {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 5%;
+        min-height: 100px;
+        border: solid 2px gray;
+        border-radius: 10px;
+    }
+
+    /* Caracteristicas internas , on page comprar mercaderia*/
+
+    .opcompmerc-subtotal {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 5%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 10px;
+    }
+
+    .opcompmerc-subtotal-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50%;
+        font-size: 24px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcompmerc-subtotal-numero {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 50%;
+        background-color: white;
+        color: green;
+    }
+
+    .opcompmerc-condiciones-compra-venta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .opcompmerc-datos-usuario {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 25%;
+        padding: 2%;
+        font-size: 14px;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .opcompmerc-datos-transporte {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        font-size: 14px;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .opcompmerc-transporte-independiente {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 10px;
+    }
+
+    .opcompmerc-datos-tarjeta {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 35%;
+        padding: 2%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcompmerc-datos-tarjeta-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .opcompmerc-datos-tarjetas-select {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 90%;
+    }
+
+    .opcompmerc-form {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        height: 10%;
+        padding: 2%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* caracteristicas internas */
+
+    .opcompmerc-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+
+    .opcompmerc-transporte-independiente-texto {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        font-size: 10px;
+    }
+
+    .opcompmerc-boton {
+
+        width: 100%;
+        margin: 2%;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+    }
+
+    .opcompmerc-boton:hover {
+
+        background-color: rgb(48, 48, 241);
+    }
+
+
+    /* on page  comprar mercaderia  cierra body*/
+
+
+
+
+
+
+    /*          FOOTER      0     */
+    /*          FOOTER      0     */
+    /*          FOOTER      0     */
+    /*          FOOTER      0     */
+
+
+    .footer {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 36vh;
+        background-color: rgb(227, 227, 23);
+        border-top: solid 5px black;
+        position: relative;
+        top: 0px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .seccion-footer {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: #fdbc07;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 20vw;
+    }
+
+    /* footer redes, contiene los otros bloques de redes */
+
+    .footer-redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: rgba(255, 0, 0, 0.144);
+        width: 20vw;
+        height: 7vh;
+    }
+
+    .redes {
+        font-size: small;
+        color: rgb(0, 0, 194);
+    }
+
+    .listado-izquierdo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        width: 120px;
+        height: 70px;
+        color: blue;
+    }
+
+    .listado-derecho {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        width: 120px;
+        height: 70px;
+        color: blue;
+    }
+    .inline {
+        display: block;
+    }
+
+    .footer-end {
+        width: 96vw;
+        height: 1px;
+        font-size: xx-small;
+    }
+
+    .logo-footer {
+
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: orange;
+        margin: 10px;
+        width: 10vw;
+        min-width: 80px;
+        max-width: 100px;
+        position: relative;
+        order: 0;
+    }
+
+    .copyrigth {
+
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 8px;
+        margin: 10px;
+        order: 1;
+    }
+>>>>>>> 9efa8c09e70786b6468c85579f20262f79cfee43
 
 }
 
@@ -6352,16 +11463,16 @@ h4 {
 
 
 
-    .seccion-footer-listados {
+    /*.seccion-footer-listados {
         display: flex;
         background-color: rgba(red, rgb(76, 179, 76), rgb(182, 182, 206), 50%);
         position: absolute;
-        /*padding: 20px;*/
+        /*padding: 20px;
         z-index: 95;
-        /*left: 20px;*/
+        /*left: 20px;
         right: 10px;
         width: 90vw;
-    }
+    }*/
 
     .bars-button {
 
@@ -6375,7 +11486,6 @@ h4 {
 
     .redes {
         font-size: medium;
-
     }
 
     .listado-izquierdo {
@@ -6514,8 +11624,8 @@ h4 {
     }
 
     .footer-redes {
-        height: 67px;
-        width: 25vw;
+        height: 57px;
+        width: 27vw;
     }
 
     .redes {
