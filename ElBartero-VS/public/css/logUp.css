@@ -4,8 +4,8 @@
     padding: 0;
   } */
   h1 {
-    color: #ebe9e5;
-    text-shadow: 1px 1px 1px#11100f;
+    color: #000000;
+    text-shadow: 1px 1px 1px #fdbc07;
   }
   .signup-botons button {
     background-color: transparent;
@@ -30,13 +30,13 @@
   }
   
   .main-login {
-    background-image: radial-gradient(
-      circle,
-      #ffee00,
-      #ffdc00,
-      #ffc900,
-      #ffb700,
-      #ffa500
+    background-image: linear-gradient(
+      
+      #a0a19833,
+      #a0a19833,
+      #a0a19833,
+      #a0a19833,
+      #a0a19833
     );
     
     margin: auto;
@@ -49,19 +49,21 @@
   i.fa-regular.fa-circle-user {
     font-size: 80px;
     margin-top: 10px;
-    color: #ebe9e5;
-    border: #ebe9e5 solid 3px;
+    /* color: #ebe9e5; */
+    border: #000000 solid 3px;
     padding: 10px;
     border-radius: 15px;
     margin-bottom: 10px;
+    box-shadow: inset -5px -4px 0px 0px #fdbc07;
     transition: all 0.5s ease-in;
   }
   i.fa-regular.fa-circle-user:hover {
-    border: #000000 solid 5px;
+    /* border: #000000 solid 5px; */
     margin-top: 10px;
     color: #18130b;
     border-radius: 20px;
     margin-bottom: 10px;
+    box-shadow: inset 0px 0px 10px 20px #fdbc07;
   }
   .container-form {
     display: flex;
@@ -86,7 +88,7 @@
   #btn-add-card,
   #btn-add-acount {
     margin: 5px 0px;
-    color: #000000;
+    /* color: #000000; */
     border-radius: 10px;
     border: solid #000000 1px;
   }
@@ -121,14 +123,13 @@
   input[type="number"],
   input[type="date"],
   select {
-    width: 50vw;
-    height: 5vh;
+    min-width: 30vw;
+    height: 4vh;
     padding: 0 20px;
     font-size: 13px;
     color: #11100f;
     border-radius: 50px;
     background: #ebe9e5;
-    border: 0.5px solid #ffdd03;
   }
   #btn-firts-grade {
     margin-top: 10px;
@@ -139,13 +140,13 @@
   
   #btn-second-grade,
   #btn-third-grade {
-    color: #000000;
+    /* color: #000000; */
     border: #000000 1px solid;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   #btn-third-grade {
-    margin-left: 60px;
+    margin: 10px 80px;
   }
   /* .fa-solid,
   .fa-bars {
@@ -182,8 +183,8 @@
   }
   
   button[type="submit"] {
-    background-color: #ffa500;
-    color: rgb(255, 255, 255);
+    background-color: #000;
+    color: #fdbc07;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -344,8 +345,7 @@
     input[type="number"],
     input[type="date"],
     select {
-      width: 30vw;
-      height: 5vh;
+     
       text-align: center;
     }
     .parrapher1 {
@@ -465,5 +465,14 @@
         .third-footer {
           right: -180px;
         }
+        input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  select {
+   max-width: 30vw;
+    
+  }
   }
   
