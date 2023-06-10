@@ -1,1 +1,65 @@
-[{"id":1,"title":"Plancha","price":"25000"},{"id":2,"title":"Heladera","price":"200000"},{"id":3,"title":"Cafetera","price":"80000"},{"title":"Cafetera","price":80000,"id":4},{"title":"Cafetera","price":80000,"id":5},{"id":8,"title":"Plancha","price":"130000"},{"title":"Plancha","price":100000,"id":9},{"id":10,"title":"Tostadora","price":"120000"},{"title":"Licuadora","description":"Super teconologica","categoria de mercado":"","price":90000,"actividadescomercialesadmitidas":"Todas las opciones","estadodelamercaderia":"","Comentariomercaderia":"Escribir un comentario","Cargarmercaderiaalmercadodeusuarios":"on","id":9}]
+[
+    {
+        "id": 1,
+        "title": "Plancha",
+        "price": "25000"
+    },
+    {
+        "id": 2,
+        "title": "Heladera",
+        "price": "200000"
+    },
+    {
+        "id": 3,
+        "title": "Cafetera",
+        "price": "80000"
+    },
+    {
+        "title": "Cafetera",
+        "price": 80000,
+        "id": 4
+    },
+    {
+        "title": "Cafetera",
+        "price": 80000,
+        "id": 5
+    },
+    {
+        "id": 8,
+        "title": "Plancha",
+        "price": "130000"
+    },
+    {
+        "title": "Licuadora",
+        "description": "Super teconologica",
+        "categoria de mercado": "",
+        "price": 90000,
+        "actividadescomercialesadmitidas": "Todas las opciones",
+        "estadodelamercaderia": "",
+        "Comentariomercaderia": "Escribir un comentario",
+        "Cargarmercaderiaalmercadodeusuarios": "on",
+        "id": 9
+    },
+    {
+        "title": "titulo",
+        "description": "",
+        "categoria de mercado": "",
+        "price": 34234234,
+        "actividadescomercialesadmitidas": "Todas las opciones",
+        "estadodelamercaderia": "",
+        "Comentariomercaderia": "Escribir un comentario",
+        "Cargarmercaderiaalmercadodeusuarios": "on",
+        "id": 10
+    },
+    {
+        "title": "titulo uno",
+        "description": "",
+        "categoria de mercado": "",
+        "price": 555555,
+        "actividadescomercialesadmitidas": "Todas las opciones",
+        "estadodelamercaderia": "",
+        "Comentariomercaderia": "Escribir un comentario",
+        "Cargarmercaderiaalmercadodeusuarios": "on",
+        "id": 11
+    }
+]

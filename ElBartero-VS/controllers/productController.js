@@ -1,10 +1,10 @@
 
 const path = require( 'path');
 const fs = require ('fs');
+const expressValidator = require('express-validator');
 
 const mercaderiasModel = require ('../models/mercaderia');
 const mercaderiasMarcasModel = require('../models/mercaderiaMarca');
-
 
 
 const productController = {
@@ -54,11 +54,14 @@ const productController = {
     /* Envia a mercado cmercial, formulario */
     postMercadoComercialMercaderias :(req,res) =>{
 
+    /* validation result le pasamos todo por req */
+
+         
         const datosMarcas = req.body;
 
         datosMarcas.price = Number(datosMarcas.price);
-        datosMarcas.img = '/uploadImages/imagenesmercaderiasmarcas/'+req.file.filename ;
-        
+        datosMarcas.img = req.file ? req.file.filename : 'No sube';
+      
         mercaderiasMarcasModel.createOne(datosMarcas);
         
         res.redirect('/mercadocomercialmercaderias');
@@ -215,7 +218,7 @@ const productController = {
         const newMercaderia = req.body; 
 
         newMercaderia.price = Number(newMercaderia.price);
-        newMercaderia.img = '/uploadImages/imagenesmercaderias/' + req.file.filename;
+       /*  newMercaderia.img = '/uploadImages/imagenesmercaderias/' + req.file.filename; */
         
         mercaderiasModel.createOne(newMercaderia);
 

@@ -6,6 +6,8 @@ const multer = require('multer');
 
 const productController = require ('../controllers/productController.js');
 
+const validationsMiddlewares = require ('../middlewares/validations.js');
+
 
 const storage = multer.diskStorage({
 
@@ -30,8 +32,8 @@ const storageMarcas = multer.diskStorage({
 
 
 
-const upload = multer({ storage:storage });
-const uploadMarcas = multer({storageMarcas : storageMarcas});
+const upload = multer({ storage: storage });
+const uploadMarcas = multer({ storage : storageMarcas});
 
 
 // @get /mercadocomercial
@@ -41,7 +43,7 @@ router.get ( '/mercadocomercial' , productController.getMercadoComercial );
 router.get ( '/mercadocomercialmercaderias' , productController.getMercadoComercialMercaderias );
 
 // @post /mercadocomercial/mercadocomercialmercadrias 
-router.post ('/mercadocomercialmercaderias', uploadMarcas.any('img') , productController.postMercadoComercialMercaderias);
+router.post ('/mercadocomercialmercaderias', [uploadMarcas.single('img'), validationsMiddlewares.validateCreateMercaderia] , productController.postMercadoComercialMercaderias);
 
 
 

@@ -1,1 +1,96 @@
-[{"id":1,"title":"Heladera","price":425100},{"id":2,"title":"Heladera","price":425100},{"id":3,"title":"Licuadora","price":171300},{"id":4,"title":"Cafetera","price":225100},{"title":"Heladera","price":425000,"description":"Super teconologica","year":"","img":"","id":5},{"id":7,"title":"Tostadora","price":70000}]
+[
+    {
+        "id": 1,
+        "title": "Heladera",
+        "price": 425100
+    },
+    {
+        "id": 2,
+        "title": "Heladera",
+        "price": 425100
+    },
+    {
+        "id": 3,
+        "title": "Licuadora",
+        "price": 171300
+    },
+    {
+        "id": 4,
+        "title": "Cafetera",
+        "price": 225100
+    },
+    {
+        "title": "Heladera",
+        "price": 425000,
+        "description": "Super teconologica",
+        "year": "",
+        "img": "",
+        "id": 5
+    },
+    {
+        "title": "",
+        "price": 45000,
+        "description": "",
+        "year": "",
+        "id": 6
+    },
+    {
+        "title": "",
+        "price": 45005,
+        "description": "",
+        "year": "",
+        "id": 7
+    },
+    {
+        "title": "",
+        "price": 47005,
+        "description": "",
+        "year": "",
+        "id": 8
+    },
+    {
+        "title": "",
+        "price": 3232,
+        "description": "",
+        "year": "",
+        "id": 9
+    },
+    {
+        "title": "Tostadora",
+        "price": 60000,
+        "description": "",
+        "year": "",
+        "id": 10
+    },
+    {
+        "title": "tostadora",
+        "price": 5555,
+        "description": "",
+        "year": "",
+        "id": 11
+    },
+    {
+        "title": "Tostadora",
+        "price": 54004,
+        "description": "",
+        "year": "",
+        "img": "1686359877796-Toaster_ETS11_Perspective_Electrolux_Spanish_1000x1000.png",
+        "id": 12
+    },
+    {
+        "title": "Tostadora",
+        "price": 54004,
+        "description": "",
+        "year": "",
+        "img": "1686360461606-Toaster_ETS11_Perspective_Electrolux_Spanish_1000x1000.png",
+        "id": 13
+    },
+    {
+        "title": "TostadoraX",
+        "price": 1234,
+        "description": "",
+        "year": "",
+        "img": "1686361057307-Toaster_ETS11_Perspective_Electrolux_Spanish_1000x1000.png",
+        "id": 14
+    }
+]

@@ -4,6 +4,7 @@ const app = express();
 
 const path = require ('path');
 const methodOverride = require ('method-override'); 
+const morgan = require('morgan');
 
 const publicPath = path.join (__dirname, './public');
 
@@ -27,6 +28,7 @@ app.use ( express.static ( publicPath));
 app.use ( express.urlencoded({ extended: true }));
 app.use ( express.json());
 app.use (methodOverride('_method'));
+app.use (morgan('tiny'));
 
 
 /* Routers */
@@ -36,6 +38,12 @@ app.use ( mainRoutes);
 app.use (productRoutes);
 app.use ( userRoutes);
 app.use ( footerRoutes);
+
+
+app.use((req,res,next)=>{
+
+    res.render('404');
+});
 
 
 app.listen ( 3002 , ()=>{   

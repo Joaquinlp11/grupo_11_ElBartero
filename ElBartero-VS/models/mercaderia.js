@@ -87,7 +87,7 @@ const model={
 
         let mercaderias = this.findAll();
 
-        newMercaderia.id = mercaderias.length +1;
+        newMercaderia.id = mercaderias[mercaderias.length - 1].id +1;
         
         mercaderias.push(newMercaderia); 
 

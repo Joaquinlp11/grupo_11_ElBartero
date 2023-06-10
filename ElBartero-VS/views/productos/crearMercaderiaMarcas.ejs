@@ -3,16 +3,17 @@
 <html lang="en">
 <head>
     <%- include ('../partials/head') %>
-    <title> <%= title %></title>
+    <title><%=title%></title>
 </head>
 <body>
     <header>
-        <%- include('../partials/header')  %>
+        <%- include('../partials/header') %>
     </header>
     <main>
         <section class="seccion-uno">
             <h2>Creacion de mercaderia marcas</h2>
 
+         
             <form action="/mercadocomercialmercaderias" method="post" enctype="multipart/form-data">
                 <label for="">Nombre</label>
                 <input type="text" name="title">
