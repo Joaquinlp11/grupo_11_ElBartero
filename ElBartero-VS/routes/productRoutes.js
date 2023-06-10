@@ -76,7 +76,7 @@ router.get ( '/mercadousuarios' , productController.getMercadoUsuarios );
 router.get ( '/mercadousuariosmercaderias' , productController.getMercadoUsuariosMercaderias );
 
 //@post /mercadousuarios/mercaderiausuarios 
-router.post ( '/mercadousuariosmercaderias' , upload.any('img') , productController.postMercaderiaUsuariosMercaderias );
+router.post ( '/mercadousuariosmercaderias' , upload.single('img') , productController.postMercaderiaUsuariosMercaderias );
 
 
 

@@ -60,7 +60,7 @@ const productController = {
         const datosMarcas = req.body;
 
         datosMarcas.price = Number(datosMarcas.price);
-        datosMarcas.img = req.file ? req.file.filename : 'No sube';
+        datosMarcas.img = req.file ? '/uploadImages/imagenesmercaderias'+req.file.filename : 'No sube';
       
         mercaderiasMarcasModel.createOne(datosMarcas);
         
@@ -218,8 +218,8 @@ const productController = {
         const newMercaderia = req.body; 
 
         newMercaderia.price = Number(newMercaderia.price);
-       /*  newMercaderia.img = '/uploadImages/imagenesmercaderias/' + req.file.filename; */
-        
+        newMercaderia.img = req.file ? '/uploadImages/imagenesmercaderias/'+ req.file.filename : 'No sube';
+       
         mercaderiasModel.createOne(newMercaderia);
 
         res.redirect('/mercadousuariosmercaderias');
