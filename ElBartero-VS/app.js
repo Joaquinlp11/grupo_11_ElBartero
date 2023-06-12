@@ -5,6 +5,7 @@ const app = express();
 const path = require ('path');
 const methodOverride = require ('method-override'); 
 const morgan = require('morgan');
+const fs = require('fs');
 
 const publicPath = path.join (__dirname, './public');
 
@@ -23,12 +24,24 @@ app.set ('views' , [
     
 ]);
 
+
+
 /* Middlewares */
 app.use ( express.static ( publicPath));
 app.use ( express.urlencoded({ extended: true }));
 app.use ( express.json());
 app.use (methodOverride('_method'));
 app.use (morgan('tiny'));
+
+
+/*  Registro de rutas del sitio del usuario */
+/* app.use((req,res,next)=>{
+
+    const ruta = req.originalUrl + '\n';
+    fs.appendFileSync(path.join(__dirname,'./data/rutas.txt'),ruta);
+
+    next();
+});  */
 
 
 /* Routers */

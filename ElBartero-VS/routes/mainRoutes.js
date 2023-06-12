@@ -24,6 +24,8 @@ router.get ( '/valoracion' , controlador.getValoracion );
 //@get /canasta
 router.get ( '/canasta' , controlador.getCanasta );
 
+//@get /piedepagina
+router.get ( '/piedepagina' , controlador.getSmallFooter );
 
 
 

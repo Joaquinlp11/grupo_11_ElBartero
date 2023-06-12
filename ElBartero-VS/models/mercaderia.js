@@ -70,7 +70,8 @@ const model={
             id: mercaderias[index].id,
             title: newData.title,
             price: newData.price,
-            description: newData.description
+            description: newData.description,
+            img: newData.img? '/uploadImages/imagenesmercaderias/'+Date.now()+'-'+ newData.img:'No sube'
         }
 
         const mercaderiasJSON =JSON.stringify(mercaderias);

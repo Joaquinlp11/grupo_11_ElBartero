@@ -85,8 +85,6 @@ const model={
 
         let usersMarcas = this.findAll();
 
-        newUserMarca.email = usersMarcas.length +1;
-        
         usersMarcas.push(newUserMarca); 
 
         const usersMarcasJSON = JSON.stringify(usersMarcas);

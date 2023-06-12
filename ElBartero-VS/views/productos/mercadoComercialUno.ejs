@@ -16,16 +16,16 @@
         <section class="seccion-uno">
             <article>
                 <h2>Productos</h2>
-
+                <div>
                 <%mercaderiasMarcas.forEach(elemento=> {%>
 
-                    <%=elemento.title %>
-                    <%=elemento.price %>
-                    <%=elemento.img%>
+                   <p> <%=elemento.title %></p>
+                    <p><%=elemento.price %></p>
+                   <img  width="100px" src="<%=elemento.img%>" alt="Imagen  "> 
                     <a href="/<%= elemento.id%>/mercaderiaenexhibiciondetalle"><button>Ver detalles de la mercaderia</button></a>
 
                     <% }); %>
-
+                </div>
             </article>
         </section>
         <section class="seccion-dos">

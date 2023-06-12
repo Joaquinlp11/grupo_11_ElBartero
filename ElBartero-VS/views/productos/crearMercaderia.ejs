@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%- include('../partials/head')  %>
-    <title><%= title %></title>
+   
 </head>
 <body>
     <header>
@@ -11,6 +11,17 @@
     <main class="main">
         <section class="seccion-uno">
             <h2>Creacion de mercaderia</h2>
+            <ul>
+                <ul>
+                    <% errors.forEach(elemento=>{ %>
+    
+                       <li class="on-page-crear-mercaderia"> <%= elemento.msg%></li>
+    
+                        <%});%>
+    
+                </ul>
+            </ul>
+
         <form action="/mercadousuariosmercaderias" method="post" enctype="multipart/form-data">
             <label for="">Nombre</label>
             <input type="text" name="title" id="">
@@ -61,7 +72,7 @@
             </select>
             <br>
             <label for="img">Subir Foto</label>
-            <input type="file" name="img" id="img" accept=".jpg , .png">
+            <input type="file" name="img" id="img" accept=".jpeg, .jpg , .png">
             <br>
             <textarea name="Comentariomercaderia" id="" cols="30" rows="4" maxlength="150">Escribir un comentario</textarea>
             <br>

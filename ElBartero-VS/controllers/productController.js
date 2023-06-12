@@ -47,20 +47,26 @@ const productController = {
     /* Creamos la pagina de crear mercaderia, marcas , desde usuario marcas*/
     getCrearMercaderiaMarcas : (req,res)=>{
 
-        res.render ( 'crearMercaderiaMarcas' ,{title:'Crear mercaderia marcas'})
+        res.render ( 'crearMercaderiaMarcas' , {title:'Crear mercaderia marcas' , errors:[]})
 
     },
 
     /* Envia a mercado cmercial, formulario */
     postMercadoComercialMercaderias :(req,res) =>{
 
-    /* validation result le pasamos todo por req */
-
-         
         const datosMarcas = req.body;
+        
+        /* validation result le pasamos todo por req */
+
+        const validations = expressValidator.validationResult(req);
+        
+        if(validations.errors.length >0 ){  
+            
+            return res.render ('crearMercaderiaMarcas' , {errors : validations.errors});
+        };
 
         datosMarcas.price = Number(datosMarcas.price);
-        datosMarcas.img = req.file ? '/uploadImages/imagenesmercaderias'+req.file.filename : 'No sube';
+        datosMarcas.img = req.file ? '/uploadImages/imagenesmercaderiasmarcas/'+req.file.filename : 'No sube';
       
         mercaderiasMarcasModel.createOne(datosMarcas);
         
@@ -215,7 +221,14 @@ const productController = {
     /* Envia a mercado de usuarios, formulario */
     postMercaderiaUsuariosMercaderias: (req,res)=>{
         
-        const newMercaderia = req.body; 
+        const newMercaderia = req.body;
+
+        const validations = expressValidator.validationResult(req);
+        
+        if(validations.errors.length >0 ){  
+            
+            return res.render ('crearMercaderia' , {errors : validations.errors});
+        };
 
         newMercaderia.price = Number(newMercaderia.price);
         newMercaderia.img = req.file ? '/uploadImages/imagenesmercaderias/'+ req.file.filename : 'No sube';
@@ -229,7 +242,7 @@ const productController = {
     /* Creamos la pagina de crear mercaderia, usuarios */
     getCrearMercaderia : (req,res)=>{
         
-        res.render ('crearMercaderia' , {title:'Crear mercaderia'});
+        res.render ('crearMercaderia' , {title:'Crear mercaderia', errors:[]});
 
     },
 

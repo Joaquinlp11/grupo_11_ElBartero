@@ -24,3 +24,20 @@ Otros html. por hacer o considerar como necesarios para el funcionamiento del si
 11/05: Se crearon los temas y redirecciones del footer.
 
 15/05 : Empezamos sprint tres, orden de carpetas
+
+Sin fecha:
+Las tareas de organizacion de carpetas fueron abarcados. MVC.
+Se crearon los controladores y archivos de ruteo.
+Se hicieron los cambios a ejs.
+Instalcion de modulos.
+
+Se crearon los formularios y rutas segun destinos.
+
+Crud: se hicieron los archivos de funciones para productos y usuarios.
+Se creo la seudoBase de datos json. Se vincularon los archivos para el correcto funcionamiento.
+
+09/06 : Se corrijio el multer. Se pueden subir archivos imagenes a la creacion de Mercaderias. Para usuarios y para comerciales.
+
+11/06 : Se viene la entrega de Sprint Cuatro. Falta trabajo en el css y html.
+        Se creo un nuevo fomulario para usuarios de marcas.
+        

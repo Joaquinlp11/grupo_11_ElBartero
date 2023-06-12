@@ -68,7 +68,9 @@ updateById: function(id, newData){
         id: mercaderiasMarcas[index].id,
         title: newData.title,
         price: Number(newData.price),
-        description: newData.description
+        description: newData.description,
+        img: newData.img? '/uploadImages/imagenesmercaderiasmarcas/'+Date.now()+newData.img: 'No sube'
+      
     }
 
     const mercaderiasMarcasJSON =JSON.stringify(mercaderiasMarcas);

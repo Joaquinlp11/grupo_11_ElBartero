@@ -39,6 +39,12 @@ const controlador= {
         
     },
 
+    getSmallFooter : ( req , res ) =>{
+
+        res.render ( 'smallFooter' , { title : 'Pie de pagina'});
+        
+    },
+
 }
 
 

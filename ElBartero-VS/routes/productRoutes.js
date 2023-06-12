@@ -4,36 +4,18 @@ const express = require ('express');
 const router = express.Router();
 const multer = require('multer');
 
+const storage=require('../middlewares/storage');
+const storageMarca=require('../middlewares/storageMarca');
+
 const productController = require ('../controllers/productController.js');
 
-const validationsMiddlewares = require ('../middlewares/validations.js');
-
-
-const storage = multer.diskStorage({
-
-    destination:(req, file , cb)=>{
-        cb(null,'./public/uploadImages/imagenesmercaderias')
-    },
-    filename:(req , file , cb )=>{
-        cb(null,  Date.now() + '-'+ file.originalname);
-    }
-});
-
-const storageMarcas = multer.diskStorage({
-
-    destination: (req, file , cb)=>{
-        cb(null,'./public/uploadImages/imagenesmercaderiasmarcas')
-    },
-    filename: (req , file , cb )=>{
-    
-        cb(null, Date.now()+ '-'+ file.originalname);
-    }
-});
+const validationsMarcaMiddlewares = require ('../middlewares/validationsMarca.js');
+const validationsMiddlewares= require('../middlewares/validations.js')
 
 
 
 const upload = multer({ storage: storage });
-const uploadMarcas = multer({ storage : storageMarcas});
+const uploadMarca = multer({ storage : storageMarca});
 
 
 // @get /mercadocomercial
@@ -43,7 +25,7 @@ router.get ( '/mercadocomercial' , productController.getMercadoComercial );
 router.get ( '/mercadocomercialmercaderias' , productController.getMercadoComercialMercaderias );
 
 // @post /mercadocomercial/mercadocomercialmercadrias 
-router.post ('/mercadocomercialmercaderias', [uploadMarcas.single('img'), validationsMiddlewares.validateCreateMercaderia] , productController.postMercadoComercialMercaderias);
+router.post ('/mercadocomercialmercaderias', [uploadMarca.single('img'), validationsMarcaMiddlewares.validateCreateMercaderiaMarca] , productController.postMercadoComercialMercaderias);
 
 
 
@@ -62,7 +44,7 @@ router.delete ( '/mercaderiaenexhibiciondetalle/:id/delete' , productController.
 router.get ( '/mercaderiaenexhibiciondetalle/:id/update' , productController.getUpdateMercaderiaExhibidaDetalle );
 
 // @put /mercadocomercial/mercadocomercialmercaderias/mercaderiaenexhibiciondetalle
-router.put ( '/mercaderiaenexhibiciondetalle/:id/update' , productController.updateMercaderiaExhibidaDetalle );
+router.put ( '/mercaderiaenexhibiciondetalle/:id/update',[uploadMarca.single('img')] , productController.updateMercaderiaExhibidaDetalle );
 
 
 
@@ -76,7 +58,7 @@ router.get ( '/mercadousuarios' , productController.getMercadoUsuarios );
 router.get ( '/mercadousuariosmercaderias' , productController.getMercadoUsuariosMercaderias );
 
 //@post /mercadousuarios/mercaderiausuarios 
-router.post ( '/mercadousuariosmercaderias' , upload.single('img') , productController.postMercaderiaUsuariosMercaderias );
+router.post ( '/mercadousuariosmercaderias' ,[ upload.single('img'), validationsMiddlewares.validateCreateMercaderia ], productController.postMercaderiaUsuariosMercaderias );
 
 
 
