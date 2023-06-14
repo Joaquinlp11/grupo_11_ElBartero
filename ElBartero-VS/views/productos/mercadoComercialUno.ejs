@@ -2,10 +2,8 @@
 <html lang="en">
 
 <head>
-    <%- include('../partials/head') %>
-        <title>
-            <%= title %>
-        </title>
+    <%- include('../partials/head' , {title}) %>
+
 </head>
 
 <body>
@@ -13,27 +11,44 @@
         <%- include ('../partials/header')%>
     </header>
     <main>
-        <section class="seccion-uno">
-            <article>
-                <h2>Productos</h2>
-                <div>
-                <%mercaderiasMarcas.forEach(elemento=> {%>
+        <section class="seccion-uno-opmc1">
+            
+            
+            <article class="on-page-mercado-comercial-uno-listado">
+                <h2 class="opmc1-titulo">Mercaderias</h2>
 
-                   <p> <%=elemento.title %></p>
-                    <p><%=elemento.price %></p>
-                   <img  width="100px" src="<%=elemento.img%>" alt="Imagen  "> 
-                    <a href="/<%= elemento.id%>/mercaderiaenexhibiciondetalle"><button>Ver detalles de la mercaderia</button></a>
+                <% mercaderiasMarcas.forEach(elemento=> {%>
+                    <div class="on-page-mercado-comercial-uno-cart">
+                        <div class="opmc1-contiene-imagen">
+                        <img class="opmc1-imagen" src="<%=elemento.img%>" alt="Imagen  ">
+                        </div>
+                        <div class="opmc1-title-price">
 
+                            <p class="opmc1-title">
+                                <%=elemento.title %>
+                            </p>
+                            <p class="opmc1-price">
+                                <%=elemento.price %>
+                            </p>
+                            <p><%= elemento.description %></p>
+
+                        </div>
+
+                        <div class="opmc1-buttons">
+                        
+                        <button class="opmc1-buttons-single" onclick="location.href='/<%= elemento.id%>/mercaderiaenexhibiciondetalle';">Ver detalles de la
+                                mercaderia</button>
+                        <button onclick="location.href='/<%= elemento.id%>/';" class="opmc1-buttons-single">Cargar al almacen</button>
+                        <button onclick="location.href='/<%= elemento.id%>/';" class="opmc1-buttons-single">Señalar mercaderia</button>
+                        <button onclick="location.href='/<%= elemento.id%>/comprarmercaderia';" class="opmc1-buttons-single">Comprar</button>
+
+                        </div>
+                    </div>
                     <% }); %>
-                </div>
-            </article>
+                </article>
+
         </section>
-        <section class="seccion-dos">
-        </section>
-        <section class="seccion-tres">
-        </section>
-        <section class="seccion-cuatro">
-        </section>
+
     </main>
     <footer>
         <%- include ('../partials/footer')%>

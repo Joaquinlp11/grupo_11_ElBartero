@@ -102,7 +102,7 @@ router.get ( '/mercadousuariosbronce' , productController.getMercadoUsuariosBron
 // @get /mercadocomercial/ * search , * buscar por categorias , * buscar por rubro / comprarmercaderia
 // @get /mercadousuarios /  * mercadousuariosoro , * mercadousuariosplata , * mercadousuariosbronce / comprarmercaderia
 
-router.get ( '/comprarmercaderia' , productController.getComprarMercaderia );
+router.get ( '/:id/comprarmercaderia' , productController.getComprarMercaderia );
 
 
 

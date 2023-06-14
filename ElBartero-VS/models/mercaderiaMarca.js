@@ -70,7 +70,7 @@ updateById: function(id, newData){
         price: Number(newData.price),
         description: newData.description,
         img: newData.img? '/uploadImages/imagenesmercaderiasmarcas/'+Date.now()+newData.img: 'No sube'
-      
+        
     }
 
     const mercaderiasMarcasJSON =JSON.stringify(mercaderiasMarcas);

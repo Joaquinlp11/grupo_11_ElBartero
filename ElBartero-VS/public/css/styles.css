@@ -97,7 +97,7 @@ body{
     border-radius: 10%;
 
     position: relative;
-    top: 10vh;
+    top: 50px;
     right: 60vw;
     order: 0;
     flex-grow: 1;
@@ -1043,8 +1043,6 @@ h4 {
 }
 
 
-
-
 /* APLICA A AMBAS , repite esquema , seccion tres y cuatro*/
 
 /* seccion tres, pagina de comercios. ofertas */
@@ -1089,6 +1087,7 @@ h4 {
 
 /* Se muestran dos mercaderias para menos de 480 */
 /* Despues aparecen las otras */
+
 
 .opmc-muestra-mercaderia-f1-c1 , .opmc-muestra-mercaderia-f2-c1{
 
@@ -1207,7 +1206,6 @@ h4 {
 }
 
 /* cierra body mercado de comercios */
-
 
 
 /* on page : cuneta marcas : Abre Body */
@@ -1445,6 +1443,7 @@ h4 {
     bottom: 2px;
 
 }
+
 /* on page- cuenta de usuario , Hasta aca pirmera seccion , donde esta el cuadro del almacen , */
 
 /* on page- cuenta de usuario - cuadro uno - */
@@ -1870,7 +1869,6 @@ h4 {
 }
 
 
-
 /* Comienza, seccion tres, cuenta de usuario, negociaciones lista. */
 
 
@@ -2227,7 +2225,9 @@ h4 {
 
 }
 
+
 /* Cuenta de usuario : Cierra Body */
+
 
 
 /* On page - mercaderias en exhibicion - aqui es donde redirige clicquear en la mercaderia a la que se averigua. */
@@ -2382,6 +2382,7 @@ h4 {
     color: white;
 
 }
+
 
 /* on page mercaderia exhibida, cierra body */
 
@@ -3854,6 +3855,269 @@ h4 {
 
 /* On page - canasta- Cierra Body */
 
+/* on page mercado de comercios uno Abre body */
+
+.seccion-uno-opmc1{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 100vh;
+    min-height: 3000px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    position: relative;
+
+}
+
+.opmc1-titulo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10%;
+}
+
+
+.on-page-mercado-comercial-uno-listado{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 95vw;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.on-page-mercado-comercial-uno-cart{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 250px;
+    height: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: solid 2px gainsboro;
+    box-shadow: 10px 5px 5px gray;
+
+}
+
+.opmc1-contiene-imagen{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opmc1-imagen{
+
+    width: 100px;
+}
+
+.opmc1-title-price{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    color:yellowgreen;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opmc1-title , .opmc1-price{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opmc1-buttons{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+.opmc1-buttons-single{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+/* on page mercado de comercios uno Cierra body */
+/* on page mercado de comercios uno Cierra body */
+
+
+
+/* on page mercado de USUARIOS UNO ABRE body */
+/* on page mercado de USUARIOS UNO ABRE body */
+/* on page mercado de USUARIOS UNO ABRE body */
+
+.seccion-uno-opmu1{
+
+    width: 100vw;
+    height: 5000px;
+    background-color: orange;
+}
+
+.opmu1-titulo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.on-page-mercado-usuarios-uno-listado{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 95vw;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.on-page-mercado-usuarios-uno-cart{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 250px;
+    height: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: solid 2px gainsboro;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.opmu1-contiene-imagen{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opmu1-imagen{
+
+    width: 200px;
+}
+
+.opmu1-title-price{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    color:yellowgreen;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.opmu1-title , .opmu1-price{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opmu1-buttons{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.opmu1-buttons-single{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+
+}
+
+/* on page mercado de USUARIOS UNO CIERRA body */
+/* on page mercado de USUARIOS UNO CIERRA body */
+/* on page mercado de USUARIOS UNO CIERRA body */
+
 
 /* La pagina de contacto cuenta con su propio tamaño de seccion */
 /* on page- contacto abre body */
@@ -4800,7 +5064,6 @@ h4 {
 /* on page - Transporte Cierra body */
 
 
-
 /* on page - preguntas frecuentes  Abre body*/
 
 .seccion-uno-preguntas{
@@ -4868,6 +5131,7 @@ h4 {
     box-sizing: border-box;
     width: 80%;
     height: 50px;
+
 }
 
 .oppf-respuestas-parrafo{
@@ -4876,6 +5140,7 @@ h4 {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 90%;
+
 }
 
 /* on page - preguntas frecuentes  Cierra body*/
@@ -5437,6 +5702,26 @@ h4 {
 /*          FOOTER      0     */
 /*          FOOTER      0     */
 /*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
+/*          FOOTER      0     */
 
 
 .footer{
@@ -5597,6 +5882,38 @@ h4 {
 
 
 /*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+/*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  *//*  480  */
+
+
 
 @media  ( min-width : 480px ){
 
@@ -5609,8 +5926,15 @@ h4 {
 .balanza-icono{
 
         background-color: tomato;
-
+        top: 50px;
+        right: 70vw;
     }
+
+
+.contenido-desplegable{
+
+    right: 70vw;
+}
 
 
     .seccion-user{
@@ -5805,14 +6129,80 @@ height: 100vh;
 
 
 
+/*  Abre body : MErcado comercial UNO - Mercado comercial UNO - 480 */
+/*  Abre body : MErcado comercial UNO - Mercado comercial UNO - 480 */
+/*  Abre body : MErcado comercial UNO - Mercado comercial UNO - 480 */
+
+
+.on-page-mercado-comercial-uno-cart{
+
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.opmc1-imagen{
+
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
+
+/*  CIERRA body : MErcado comercial UNO - Mercado comercial UNO - 480*/
+/*  CIERRA body : MErcado comercial UNO - Mercado comercial UNO - 480*/
+/*  CIERRA body : MErcado comercial UNO - Mercado comercial UNO - 480*/
+
+/*  Abre body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
+/*  Abre body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
+/*  Abre body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
+
+
+.on-page-mercado-usuarios-uno-cart{
+
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+/*  Cierra body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
+/*  Cierra body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
+/*  Cierra body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
+/*  Cierra body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
+
+
+/* FOOTER  480      */
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+    /* FOOTER  480      */
 
     /* FOOTER  480      */
     /* FOOTER  480      */
     /* FOOTER  480      */
     /* FOOTER  480      */
+
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+    /* FOOTER  480      */
+
+
 
 .bars-button{
 
@@ -5831,15 +6221,74 @@ height: 100vh;
 
 
 /***************  MEDIA QUERIES !!   TABLETS, LARGER SMARTPHONES   *********************/
+/***************  MEDIA QUERIES !!   TABLETS, LARGER SMARTPHONES   *********************/
+/***************  MEDIA QUERIES !!   TABLETS, LARGER SMARTPHONES   *********************/
+/***************  MEDIA QUERIES !!   TABLETS, LARGER SMARTPHONES   *********************/
+/***************  MEDIA QUERIES !!   TABLETS, LARGER SMARTPHONES   *********************/
+
+
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+
+
 
 
 @media ( min-width : 769px ){
 
-    
+
     /*      HEADER  769      */
     /*      HEADER  769     */
     /*      HEADER  769     */
     /*      HEADER  769     */
+    /*      HEADER  769      */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769      */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769      */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769      */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769      */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769      */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769      */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    /*      HEADER  769     */
+    
+.balanza-icono{ 
+
+    top: 30px;
+    right: 75vw;
+}
 
 
 .balanza-icono-contenido-despelgable{
@@ -6156,6 +6605,27 @@ height: 100vh;
     /*       MAIN  769        */
     /*       MAIN  769        */
     /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+    /*       MAIN  769        */
+
+
 
 
     /* secciones del sitio */
@@ -6304,10 +6774,108 @@ height: 100vh;
     min-height: 1000px;
 }
 
-
-
-
 /* On page, mercaderia exhibida USUARIOS, cierra body*/
+
+
+
+
+/* MERCADO DE COMERCIOS UNO , Abre body*/
+/* MERCADO DE COMERCIOS UNO , Abre body*/
+/* MERCADO DE COMERCIOS UNO , Abre body*/
+
+
+
+
+.on-page-mercado-comercial-uno-cart{
+
+    width: 90vw;
+    height: 300px;
+    flex-direction: row;
+
+}
+
+.opmc1-contiene-imagen{
+
+    height: 100%;
+    width: 30%;
+}
+
+.opmc1-imagen{
+
+    width: 200px;
+}
+
+.opmc1-title-price{
+
+    height: 100%;
+    width: 30%;
+
+}
+
+.opmc1-buttons{
+
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/* MERCADO DE COMERCIOS UNO , Cierra body*/
+/* MERCADO DE COMERCIOS UNO , Cierra body*/
+/* MERCADO DE COMERCIOS UNO , Cierra body*/
+
+
+/* MERCADO DE USUARIOS UNO , Abre body*/
+/* MERCADO DE USUARIOS UNO , Abre body*/
+/* MERCADO DE USUARIOS UNO , Abre body*/
+
+
+.on-page-mercado-usuarios-uno-cart{
+
+    width: 90vw;
+    height: 300px;
+    flex-direction: row;
+
+}
+
+
+.opmu1-contiene-imagen{
+
+    height: 100%;
+    width: 30%;
+}
+
+.opmu1-imagen{
+
+    width: 200px;
+}
+
+.opmu1-title-price{
+
+    height: 100%;
+    width: 30%;
+
+}
+
+.opmu1-buttons{
+
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+/* MERCADO DE USUARIOS UNO , CIERRA body*/
+/* MERCADO DE USUARIOS UNO , CIERRA body*/
+/* MERCADO DE USUARIOS UNO , CIERRA body*/
 
 
     /*      FOOTER  769     */
@@ -6399,6 +6967,31 @@ height: 100vh;
 
 
 /***************  MEDIA QUERIES !!   LAPTOPS , LARGER TABLETS , SMALL DESKTOP   *********************/
+/***************  MEDIA QUERIES !!   LAPTOPS , LARGER TABLETS , SMALL DESKTOP   *********************/
+/***************  MEDIA QUERIES !!   LAPTOPS , LARGER TABLETS , SMALL DESKTOP   *********************/
+/***************  MEDIA QUERIES !!   LAPTOPS , LARGER TABLETS , SMALL DESKTOP   *********************/
+/***************  MEDIA QUERIES !!   LAPTOPS , LARGER TABLETS , SMALL DESKTOP   *********************/
+/***************  MEDIA QUERIES !!   LAPTOPS , LARGER TABLETS , SMALL DESKTOP   *********************/
+
+
+
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+
+
 
 @media ( min-width : 1279px){
 
@@ -6407,6 +7000,18 @@ height: 100vh;
     /*   HEADER  1279     */
     /*   HEADER  1279     */
     /*   HEADER  1279     */
+    /*   HEADER  1279     */
+    /*   HEADER  1279     */
+    /*   HEADER  1279     */
+    /*   HEADER  1279     */
+    /*   HEADER  1279     */
+
+
+
+    .balanza-icono{
+
+        right: 80vw;
+    }
 
 
 
@@ -6420,10 +7025,21 @@ height: 100vh;
 }
 
 
+
     /*      MAIN    1279     */
     /*      MAIN    1279     */
     /*      MAIN    1279     */
     /*      MAIN    1279     */
+    /*      MAIN    1279     */
+    /*      MAIN    1279     */
+    /*      MAIN    1279     */
+    /*      MAIN    1279     */
+    /*      MAIN    1279     */
+    /*      MAIN    1279     */
+    /*      MAIN    1279     */
+    /*      MAIN    1279     */
+    /*      MAIN    1279     */
+
 
 
     /* opcu-cuadro del almacen, cuadro dos, iconos negociaciones */
@@ -6457,6 +7073,23 @@ height: 100vh;
     /*   FOOTER  1279     */
     /*   FOOTER  1279     */
     /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+    /*   FOOTER  1279     */
+
+
+
+
+
+
+
 
 
 

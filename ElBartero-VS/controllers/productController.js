@@ -6,6 +6,9 @@ const expressValidator = require('express-validator');
 const mercaderiasModel = require ('../models/mercaderia');
 const mercaderiasMarcasModel = require('../models/mercaderiaMarca');
 
+const mercaderiasMarcas = mercaderiasMarcasModel.findAll();
+const mercaderia = mercaderiasModel.findAll();
+
 
 const productController = {
 
@@ -39,7 +42,7 @@ const productController = {
 
             return res.send ('El id de la mercaderia no es valido');
         }
-
+            
         res.render ('mercaderiaExhibidaDetalle' , { title:'Mercaderia' , mercaderiasMarcas:mercaderiaMarcaAMostrar});
 
     },
@@ -251,7 +254,10 @@ const productController = {
     /* Comprar mercaderia, igual usuarios o comercios */
     getComprarMercaderia : ( req,res)=>{
 
-        res.render ('comprarMercaderia' , { title : 'Compra'});
+       /*  const mercaderiasMarcas = mercaderiasMarcasModel.findById();
+        const mercaderia = mercaderiasModel.findById();
+ */
+        res.render ('comprarMercaderia' , { title : 'Compra' , mercaderiasMarcas , mercaderia});
     }
 
 

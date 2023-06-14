@@ -3,8 +3,8 @@
 <html lang="en">
 
 <head>
-    <%- include ( '../partials/head' ) %>
-    <title> <%= title %></title>
+    <%- include ( '../partials/head', {title} ) %>
+ 
     </head>
 
 <body>
@@ -26,7 +26,7 @@
                     <div class="opme-caracteristicas-fotos">
                         <h4 class="opme-caracteristicas-fotos-titular"></h4>
 
-                            Foto <img src="<%=mercaderiasMarcas.img%>" alt="Imagen">
+                        <img width="100%" src="<%=mercaderiasMarcas.img%>" alt="Imagen">
                          
                     </div>
                     <div class="opme-caracteristicas-info">
@@ -36,7 +36,7 @@
                     </div>
                     <div class="opme-caracteristicas-opciones">
 
-                        <button class="opme-boton-de-compra" type="button" onclick="location.href='/comprarmercaderia';">Comprar</button>
+                        <button class="opme-boton-de-compra" type="button" onclick="location.href='/<%=mercaderiasMarcas.id%>/comprarmercaderia';">Comprar</button>
                         <button class="opme-boton-interes" type="button">Cargar en el almacen</button>
                     </div>
                     <div>

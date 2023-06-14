@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include('../partials/head') %>
-    <title> <%= title %></title>
+    <%- include('../partials/head', {title}) %>
 </head>
 <body>
     <header>
@@ -13,7 +12,12 @@
         <article class="on-page-comprar-mercaderia">
 
             <div class="opcompmerc-mercaderia">
-                <p>Producto seleccionado</p>
+                Foto
+                <img src="<%= mercaderia.img? mercaderia.img:'' %>" alt="Imagen">
+                <img src="<%= mercaderiasMarcas.img? mercaderiasMarcas.img:'' %>" alt="">
+
+                <p><%= mercaderia.title %></p>
+                <p><%= mercaderiasMarcas.title %></p>
             </div>
             <div class="opcompmerc-subtotal">
                 <p class="opcompmerc-subtotal-texto">Subtotal</p>

@@ -2,10 +2,8 @@
 <html lang="en">
 
 <head>
-    <%- include ( '../partials/head' ) %>
-        <title>
-            <%= title %>
-        </title>
+    <%- include ( '../partials/head', { title } ) %>
+       
 </head>
 
 <body>
@@ -46,7 +44,7 @@
 
                     <button class="opmeu-boton-de-negociacion" type="button">Iniciar negociacion</button>
 
-                    <button class="opmeu-boton-de-compra" type="button">Comprar</button>
+                    <button class="opmeu-boton-de-compra" type="button" onclick="location.href='/<%=mercaderia.id%>/comprarmercaderia';">Comprar</button>
                 </div>
                 <div class="opmeu-opciones-edicion">
                     <form action="/mercaderiausuariosdetalle/<%= mercaderia.id %>/delete?_method=delete" method="post">
