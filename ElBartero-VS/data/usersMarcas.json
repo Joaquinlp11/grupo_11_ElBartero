@@ -1,0 +1,26 @@
+[
+    {
+        "title": "SuperMarca",
+        "email": 1
+    },
+    {
+        "title": "SuperMegaMarca",
+        "email": 2
+    },
+    {
+        "title": "SuperHiperMegaMarca",
+        "email": 3
+    },
+    {
+        "email": 4,
+        "title": "SuperHiperMegaRecontraMarca"
+    },
+    {
+        "title": "Supermarca",
+        "email": 5
+    },
+    {
+        "title": "Supermarca",
+        "email": "supermarca@hotmail.com"
+    }
+]
